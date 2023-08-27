@@ -1,0 +1,195 @@
+body { /* 替换为您的背景图片路径 */
+    background-color:#e6e8f4;
+    background-size:cover; /* 如果背景图片未加载或不显示时，显示的背景颜色 */
+}
+
+.office-header{height:5rem;background: url("../images/office_efficiency_header_bg.png")no-repeat center center;background-size: 100% 100%;}
+.office-header .title-info{height: 2em;color:#03C2EC;text-align: center;font-size: 24px;font-family:'cuhei';font-weight: 600;line-height: 2em;vertical-align: middle;}
+.mainbox {
+    display: flex;
+    min-width: 1024px;
+    max-width: 1920px;
+    padding: 0.125rem 0.125rem 0;
+    margin: 0 auto;
+    justify-content: space-between;
+    background: no-repeat rgba(220, 249, 250, 0.9);
+	background-size: cover; /* Add this to create space between chart1 and chart2 */
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #719cd4;
+}
+
+#chart1 {
+    width: 850px;
+    height: 250px;
+    margin-bottom: 20px;
+    background: no-repeat rgba(220, 249, 250, 0.9);/* Add margin to create space between chart1 and chart2 */
+}
+
+#chart2 {
+    width: 850px;
+    height: 250px;
+    background: no-repeat rgba(220, 249, 250, 0.9);
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    background: no-repeat rgba(220, 249, 250, 0.9);
+}
+
+#sicker {
+    width: 650px;
+    height: 300px;
+    h1 {
+        font-size: 20px;
+        color: red;
+        text-align: left;
+        line-height: 30px;
+        margin-bottom: 10px; /* Add margin to create space between h1 and the container */
+    }
+}
+
+.machine {
+    display: flex;
+}
+
+#neural {
+    width: 325px;
+    height: 320px;
+    border: 1px solid #5384c5; 
+}
+
+#risk {
+    width: 325px;
+    height: 320px;
+    border: 1px solid #5384c5; 
+}
+
+.otherbox {
+    display: flex;
+    position: relative;
+    background: no-repeat rgba(220, 249, 250, 0.9);
+	background-size: cover;
+    border: 1px solid #5384c5; /* Add this to make "position: absolute" work properly */
+}
+
+#exception {
+    width: 950px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: no-repeat rgba(220, 249, 250, 0.9);
+    border: 1px solid #5384c5; /* Add this to make "position: absolute" work properly */
+}
+
+#select {
+    width: 950px;
+    height: 30px;
+    position: top;
+}
+
+#exceptions {
+    width: 950px;
+    height: 250px;
+    display: flex;
+    background: no-repeat rgba(220, 249, 250, 0.9);
+}
+
+#exception1 {
+    width: 475px;
+    height: 250px;
+}
+
+#exception2 {
+    width: 800px;
+    height: 250px;
+}
+
+#sickerrisk {
+    width: 630px;
+    height: 270px;
+    border: 1px solid #719cd4;
+    background: no-repeat rgba(220, 249, 250, 0.9);
+    position: relative;
+    #select-sicker{
+        width: 630px;
+        height: 30px;
+        #button1{
+            background-color:rgba(220, 249, 250, 0.9);
+        }
+        #button2{
+            background-color:rgba(220, 249, 250, 0.9);
+            margin-right: 10px;
+        }
+    }
+}
+.hidden {
+    display: none;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    margin-top: 2px;
+}
+
+#patients-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+#patients-table th,
+#patients-table td {
+    border: 1px solid #97ceeb;
+    padding: 3px;
+}
+
+#patients-table th {
+    background-color: #92d3eb;
+}
+
+#patients-table tr:nth-child(even) {
+    background-color: #edf1f7;
+}
+
+#patients-table tr:first-child {
+    border-top: none;
+}
+
+#patients-table tr:last-child td {
+    border-bottom: none;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination button {
+    margin: 0 20px;
+}
+
+.pagination .disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.pagination .disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.search-patient {
+    position: absolute;
+    top: -35px;
+    right: 0;
+    margin-right: 10px;
+}
