@@ -1,3 +1,0 @@
-python相关代码
-GCN为预测模型代码
-newtest_n为社区标签代码
