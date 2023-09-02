@@ -13,7 +13,7 @@ def cos_similarity(vec1,vec2):   #计算向量余弦相似度
     simi1 = np.sum(vec1 * vec2) / (np.linalg.norm(vec1) * np.linalg.norm(vec2))
     return simi1
 
-test_patient = load_csv("F:\A_MyWork\Research\MedicalVisualization_BasedonTable2Graph\FeatureRelationGraph\Data\Test1_patidata.csv") #测试患者特征矩阵
+test_patient = load_csv("F:\A_MyWork\Research\MedicalVisualization_BasedonTable2Graph\FeatureRelationGraph\Data\Test3_patidata.csv") #测试患者特征矩阵
 # print(mat)
 class1_mat = load_csv("F:\A_MyWork\Research\MedicalVisualization_BasedonTable2Graph\FeatureRelationGraph\Data\class1.csv")  #第一类患者特征矩阵
 # print(class1_mat)
