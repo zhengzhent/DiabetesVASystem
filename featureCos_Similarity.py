@@ -13,13 +13,13 @@ def cos_similarity(vec1,vec2):   #计算向量余弦相似度
     simi1 = np.sum(vec1 * vec2) / (np.linalg.norm(vec1) * np.linalg.norm(vec2))
     return simi1
 
-test_patient = load_csv("F:\A_MyWork\Research\MedicalVisualization_BasedonTable2Graph\FeatureRelationGraph\Data\Test3_patidata.csv") #测试患者特征矩阵
+test_patient = load_csv("F:\A_MyWork\Research\MedicalVisualization_BasedonTable2Graph\FeatureRelationGraph\Data_Updated\modify\classes3patient.csv") #测试患者特征矩阵
 # print(mat)
-class1_mat = load_csv("F:\A_MyWork\Research\MedicalVisualization_BasedonTable2Graph\FeatureRelationGraph\Data\class1.csv")  #第一类患者特征矩阵
+class1_mat = load_csv("F:\A_MyWork\Research\MedicalVisualization_BasedonTable2Graph\FeatureRelationGraph\Data_Updated\modify\classes1.csv")  #第一类患者特征矩阵
 # print(class1_mat)
-class2_mat = load_csv("F:\A_MyWork\Research\MedicalVisualization_BasedonTable2Graph\FeatureRelationGraph\Data\class2.csv")  #第二类患者特征矩阵
+class2_mat = load_csv("F:\A_MyWork\Research\MedicalVisualization_BasedonTable2Graph\FeatureRelationGraph\Data_Updated\modify\classes2.csv")  #第二类患者特征矩阵
 # print(class2_mat)
-class3_mat = load_csv("F:\A_MyWork\Research\MedicalVisualization_BasedonTable2Graph\FeatureRelationGraph\Data\class3.csv")  #第三类患者特诊矩阵
+class3_mat = load_csv("F:\A_MyWork\Research\MedicalVisualization_BasedonTable2Graph\FeatureRelationGraph\Data_Updated\modify\classes3.csv")  #第三类患者特诊矩阵
 # print(class3_mat)
 class1_mat_flattened = class1_mat.reshape(1,-1)     #第一类转化为向量
 class2_mat_flattened = class2_mat.reshape(1,-1)     #第二类转化为向量

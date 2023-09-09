@@ -11,7 +11,7 @@ def load_csv(path):    #读取文件
 
 def matrix_kernel(X, Y, sigma):
     """
-    计算矩阵X和Y之间的核矩阵（使用HSIC定义）。
+    计算矩阵X和Y之间的核矩阵(使用HSIC定义)。
     参数：
     X: 第一个输入矩阵，形状为 (m, n)
     Y: 第二个输入矩阵，形状为 (m, n)
@@ -45,19 +45,19 @@ def matrix_similarity(X, Y, sigma):
 
     return similarity_score
 
-test_patient = load_csv("F:\A_MyWork\Research\MedicalVisualization_BasedonTable2Graph\FeatureRelationGraph\Data\Test3_patidata.csv") #测试患者特征矩阵
+test_patient = load_csv("F:\A_MyWork\Research\MedicalVisualization_BasedonTable2Graph\FeatureRelationGraph\Data_Updated\modify\classes1patient.csv") #测试患者特征矩阵
 # print(mat)
-class1_mat = load_csv("F:\A_MyWork\Research\MedicalVisualization_BasedonTable2Graph\FeatureRelationGraph\Data\class1.csv")  #第一类患者特征矩阵
+class1_mat = load_csv("F:\A_MyWork\Research\MedicalVisualization_BasedonTable2Graph\FeatureRelationGraph\Data_Updated\modify\classes1.csv")  #第一类患者特征矩阵
 # print(class1_mat)
-class2_mat = load_csv("F:\A_MyWork\Research\MedicalVisualization_BasedonTable2Graph\FeatureRelationGraph\Data\class2.csv")  #第二类患者特征矩阵
+class2_mat = load_csv("F:\A_MyWork\Research\MedicalVisualization_BasedonTable2Graph\FeatureRelationGraph\Data_Updated\modify\classes2.csv")  #第二类患者特征矩阵
 # print(class2_mat)
-class3_mat = load_csv("F:\A_MyWork\Research\MedicalVisualization_BasedonTable2Graph\FeatureRelationGraph\Data\class3.csv")  #第三类患者特诊矩阵
+class3_mat = load_csv("F:\A_MyWork\Research\MedicalVisualization_BasedonTable2Graph\FeatureRelationGraph\Data_Updated\modify\classes3.csv")  #第三类患者特诊矩阵
 # print(class3_mat)
 
-similarity1 = matrix_similarity(test_patient, class1_mat, sigma=0.1)
+similarity1 = matrix_similarity(test_patient, class1_mat, sigma=0.5)
 print(similarity1)
-similarity2 = matrix_similarity(test_patient, class2_mat, sigma=0.1)
+similarity2 = matrix_similarity(test_patient, class2_mat, sigma=0.5)
 print(similarity2)
-similarity3 = matrix_similarity(test_patient, class3_mat, sigma=0.1)
+similarity3 = matrix_similarity(test_patient, class3_mat, sigma=0.5)
 print(similarity3)
 

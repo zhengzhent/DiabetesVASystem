@@ -20,13 +20,13 @@ def Euclid_similarity(mat1,mat2):
     similar = 1 - (dist / denom)
     return similar
 
-test_patient = load_csv("F:\A_MyWork\Research\MedicalVisualization_BasedonTable2Graph\FeatureRelationGraph\Data\Test1_patidata.csv") #测试患者特征矩阵
+test_patient = load_csv("F:\A_MyWork\Research\MedicalVisualization_BasedonTable2Graph\FeatureRelationGraph\Data_Updated\modify\classes3patient.csv") #测试患者特征矩阵
 # print(mat)
-class1_mat = load_csv("F:\A_MyWork\Research\MedicalVisualization_BasedonTable2Graph\FeatureRelationGraph\Data\class1.csv")  #第一类患者特征矩阵
+class1_mat = load_csv("F:\A_MyWork\Research\MedicalVisualization_BasedonTable2Graph\FeatureRelationGraph\Data_Updated\modify\classes1.csv")  #第一类患者特征矩阵
 # print(class1_mat)
-class2_mat = load_csv("F:\A_MyWork\Research\MedicalVisualization_BasedonTable2Graph\FeatureRelationGraph\Data\class2.csv")  #第二类患者特征矩阵
+class2_mat = load_csv("F:\A_MyWork\Research\MedicalVisualization_BasedonTable2Graph\FeatureRelationGraph\Data_Updated\modify\classes2.csv")  #第二类患者特征矩阵
 # print(class2_mat)
-class3_mat = load_csv("F:\A_MyWork\Research\MedicalVisualization_BasedonTable2Graph\FeatureRelationGraph\Data\class3.csv")  #第三类患者特诊矩阵
+class3_mat = load_csv("F:\A_MyWork\Research\MedicalVisualization_BasedonTable2Graph\FeatureRelationGraph\Data_Updated\modify\classes3.csv")  #第三类患者特诊矩阵
 # print(class3_mat)
 
 eculid_distance1 = Euclid_similarity(test_patient,class1_mat)
