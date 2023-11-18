@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>糖尿病数据可视化</title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/echarts.js"></script>
+    <script src="js/ecStat.js"></script>
+    <script src="js/dataTool.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+</head>
+<body>
+    <div class="row  office-header">
+        <div class="col-sm-12 col-md-12 pd  title-info">Diabetes Visualization System</div>
+        <div class="right">
+            <div class="login-btn">Login in</div>  
+            <div class="welcome-info">Welcome, Admin</div>
+          </div>
+    </div>
+    <section class="mainbox">
+        <div class="time-exception">
+            <h1>Blood glucose timing module</h1>
+            <div class="time">
+                <div id="chart1"></div>
+                <div id="chart2"></div>
+            </div>
+            <div class="otherbox">
+                <div id="exception">
+                    <h1>Anomaly detection module</h1>
+                    <div id="select">
+                        <label for="chart-options",style="position: absolute; left: 0">Select the exception detection module：</label>
+                        <select id="chart-options">
+                          <option value="option1">并发症异常检测</option>
+                          <option value="option2">生理指标异常检测</option>
+                          <option value="option3">随访症状异常检测</option>
+                          <option value="option4">血糖情况异常检测</option>
+                        </select>
+                    </div>
+                    <div id="exceptions">
+                        <div id="exception1"></div>
+                        <div id="exception2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="information-T2G">
+            <div class="information">
+                <div id="sicker">
+                    <h1>Basic patient information</h1>
+                    <div class="container">
+                        <table id="patients-table">
+                            <thead>
+                                <tr>
+                                    <th>id</th>
+                                    <th>name</th>
+                                    <th>age</th>
+                                    <th>sex</th>
+                                    <th>BMI</th>
+                                    <th>Family history</th>
+                                    <th>complication</th>
+                                    <th>Degree grading</th>
+                                </tr>
+                            </thead>
+                            <tbody id="patients-data"></tbody>
+                        </table>
+                        <div class="pagination">
+                            <button id="previous-page" class="disabled">Previous</button>
+                            <div id="page-info">
+                                <span id="current-page"></span>/<span id="total-pages"></span>
+                            </div>
+                            <button id="next-page">Next</button>
+                        </div>
+                        <div class="search-patient">
+                            <input type="text" id="patient-id-input" placeholder="Please enter the patient id">
+                            <button id="search-patient-button">inquire</button>
+                        </div>
+                    </div>
+                    <script>
+                    </script>
+                </div>
+            </div>
+            <div class="T2G">
+                <div class="patient-csv-input">
+                    <span>New patients were introduced into the T2G model</span>
+                    <button class="import-csv-button">Import CSV</button>
+                </div>
+                <div class="T2G-model-grpah">
+                    <div class="graph">
+                        <div class="new-p-graph">
+                            <span>Visual analysis of new patients</span>
+                            <div class="grpahs1">img1</div>
+                        </div>
+                        <div class="class-grpah">
+                            <span>categories of patients</span>
+                            <div class="graphs2">img2</div>
+                        </div>
+                    </div>
+                    <div class="prediction">The predicted patient category：</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div class="separator"></div>
+
+</body>
+    <script src="js/index.js"></script>
+    <script src="js/ex.js"></script>
+
+</html>

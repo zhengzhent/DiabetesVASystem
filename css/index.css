@@ -1,0 +1,300 @@
+body {
+  /* 替换为您的背景图片路径 */
+  background-color: #f4e8e6;
+  background-size: cover;
+  /* 如果背景图片未加载或不显示时，显示的背景颜色 */
+}
+.office-header {
+  height: 3.6rem;
+  background: url("../images/bg3.jpg") no-repeat center center;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center; /* 垂直居中 */
+  justify-content: space-between;
+  border-radius: 10px 10px 0 0; /* 上面两个角是圆角，下面两个是直角 */
+  overflow: hidden; /* 避免边框溢出 */
+}
+.office-header .title-info {
+  height: 2.5rem;
+  color: #eff1f2;
+  text-align: left;
+  font-size: 20px;
+  font-family: 'cuhei';
+  font-weight: 600;
+  line-height: 2em;
+  vertical-align: middle;
+  padding-left: 40px;
+}
+.right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.login-btn {
+  background-color: white;
+  padding: 0.7rem 2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-right: 20px;
+  font-size: 15px;
+}
+
+.welcome-info {
+  color: white;
+  padding-right: 1rem; /* 调整欢迎信息距离右端的距离 */
+}
+.mainbox {
+  display: flex;
+  min-width: 1024px;
+  max-width: 1920px;
+  padding: 0.125rem 0.125rem 0;
+  margin: 0 auto;
+  justify-content: space-between;
+  background: no-repeat rgba(220, 249, 250, 0.795);
+  background-size: cover;
+  /* Add this to create space between chart1 and chart2 */
+}
+.content {
+  display: flex;
+}
+.time {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(220, 249, 250, 0.795);
+  width: 850px;
+  height: 500px;
+  margin-right: 0; 
+}
+
+.time-exception h1 {
+  font-size: 15px;
+  color: red;
+  text-align: left;
+  line-height: 30px;
+  margin-bottom: 10px;
+  /* Add margin to create space between h1 and the container */
+}
+
+#chart1 {
+  width: 850px;
+  height: 200px;
+  margin-bottom: 20px;
+  background: no-repeat rgba(220, 249, 250, 0.795);
+  /* Add margin to create space between chart1 and chart2 */
+}
+#chart2 {
+  width: 850px;
+  height: 200px;
+  background: no-repeat rgba(220, 249, 250, 0.9);
+}
+.information {
+  display: flex;
+  flex-direction: column;
+  background: no-repeat rgba(220, 249, 250, 0.795);
+  width: 773px;
+  height: 275px;
+
+}
+.information-T2G{
+  display: flex;
+  flex-direction: column; 
+  width: 773px;
+  height: 850px;
+
+}
+.T2G {
+  display: flex;
+  width: 773px;
+  height: 600px;
+  position: relative;
+  flex-direction: column; 
+
+}
+
+.patient-csv-input {
+  display: flex; 
+  align-items: center; 
+  padding-left: 50px;
+  position: relative;
+  border-bottom: 2px solid blue;
+  width: 90%;
+  margin: 0 auto;
+  height: 70px;
+}
+
+
+.patient-csv-input span {
+  margin-right: 100px; /* 调整文本和按钮之间的间隔大小 */
+  font-size: 20px;
+}
+.import-csv-button {
+  border-radius: 20px;
+}
+
+.T2G-model-grpah .graph {
+  display: flex;
+  width: 773px;
+  height: 400px;
+  
+}
+
+.T2G-model-grpah .new-p-graph{
+  padding-left: 70px;
+  margin-right: 240px;
+}
+
+.T2G-model-grpah .class-graph{
+  padding-right: 50px;
+}
+
+.new-p-graph span {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.class-grpah span {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.T2G-model-grpah .grpahs1,
+.T2G-model-grpah .graphs2 {
+    text-align: center; /* 如果内容是文本，也可以使用 text-align 来居中 */
+}
+
+#sicker {
+  width: 650px;
+  height: 300px;
+}
+#sicker h1 {
+  font-size: 20px;
+  color: red;
+  text-align: left;
+  line-height: 30px;
+  margin-bottom: 10px;
+  /* Add margin to create space between h1 and the container */
+}
+
+.otherbox {
+  display: flex;
+  position: relative;
+  background: no-repeat rgba(220, 249, 250, 0.9);
+  background-size: cover;
+  /* Add this to make "position: absolute" work properly */
+  width: 850px;
+  height: 330px;
+}
+#exception {
+  width: 850px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: no-repeat rgba(220, 249, 250, 0.9);
+  /* Add this to make "position: absolute" work properly */
+}
+#select {
+  width: 850px;
+  height: 30px;
+  position: top;
+  padding-right: 50px;
+  display: flex;
+  
+}
+#excepyions h1 {
+  font-size: 15px;
+  color: rgb(25, 0, 255);
+  text-align: left;
+  line-height: 30px;
+  margin-bottom: 10px;
+  /* Add margin to create space between h1 and the container */
+}
+#exceptions {
+  width: 850px;
+  height: 500px;
+  display: flex;
+  background: no-repeat rgba(220, 249, 250, 0.9);
+
+}
+#exception1 {
+  width: 475px;
+  height: 250px;
+}
+#exception2 {
+  width: 800px;
+  height: 250px;
+}
+#sickerrisk {
+  width: 630px;
+  height: 270px;
+
+  background: no-repeat rgba(220, 249, 250, 0.9);
+  position: relative;
+}
+#sickerrisk #select-sicker {
+  width: 630px;
+  height: 30px;
+}
+#sickerrisk #select-sicker #button1 {
+  background-color: rgba(220, 249, 250, 0.9);
+}
+#sickerrisk #select-sicker #button2 {
+  background-color: rgba(220, 249, 250, 0.9);
+  margin-right: 10px;
+}
+.hidden {
+  display: none;
+}
+.container {
+  margin: 0 auto;
+  width: 750px; 
+  position: relative;
+  text-align: center;
+  margin-top: 2px;
+}
+#patients-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+#patients-table th,
+#patients-table td {
+  border: 1px solid #97ceeb;
+  padding: 3px;
+}
+#patients-table th {
+  background-color: #92d3eb;
+}
+#patients-table tr:nth-child(even) {
+  background-color: #edf1f7;
+}
+#patients-table tr:first-child {
+  border-top: none;
+}
+#patients-table tr:last-child td {
+  border-bottom: none;
+}
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.pagination button {
+  margin: 0 20px;
+}
+.pagination .disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.pagination .disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.search-patient {
+  position: absolute;
+  top: -35px;
+  right: 0;
+  margin-right: 10px;
+}
