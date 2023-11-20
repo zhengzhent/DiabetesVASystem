@@ -167,10 +167,6 @@ const displayThemeRiverChart = (selectedPatient) => {
             const sleepBefore = selectedPatientData.map(data => data.睡前);
 
             const option = {
-                title: {
-                    text: '血糖时序变化',
-                    left: 0
-                },
                 color: ["#C58080", "#E1A4C4", "#C03C71", "#8C2487", "#503CD0", "#37A2DA","#9d96f5"],
 
                 tooltip: {
@@ -365,10 +361,7 @@ const displayWaterfallChart = (selectedPatient) => {
     var data0 = splitData(chartData);
     console.log(data0);
     option2 = {
-        title: {
-            text: '血糖时序变化',
-            left: 0
-        },
+
         tooltip: {
             trigger: 'axis',
             axisPointer: {
@@ -400,21 +393,7 @@ const displayWaterfallChart = (selectedPatient) => {
                 show: true
             }
         },
-        dataZoom: [
-            {
-                type: 'inside',
-                start: 0,
-                end: 100
-            },
-            {
-                show: true,
-                type: 'slider',
-                y: '90%',
-                bottom: '2%',
-                start: 50,
-                end: 100
-            }
-        ],
+
         series: [
             {
                 name: '血糖始末',

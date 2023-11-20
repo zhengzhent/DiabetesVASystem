@@ -11,6 +11,8 @@
     <script src="https://cdn.staticfile.org/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+    <script src="https://gw.alipayobjects.com/os/lib/antv/g2/4.2.7/dist/g2.min.js"></script>
+    <script src="https://gw.alipayobjects.com/os/antv/pkg/_antv.data-set-0.11.1/dist/data-set.js"></script>
 </head>
 <body>
     <div class="row  office-header">
@@ -34,14 +36,12 @@
                         <label for="chart-options",style="position: absolute; left: 0">Select the exception detection module：</label>
                         <select id="chart-options">
                           <option value="option1">并发症异常检测</option>
-                          <option value="option2">生理指标异常检测</option>
+                          <option value="option2">检测指标异常检测</option>
                           <option value="option3">随访症状异常检测</option>
-                          <option value="option4">血糖情况异常检测</option>
                         </select>
                     </div>
                     <div id="exceptions">
-                        <div id="exception1"></div>
-                        <div id="exception2"></div>
+
                     </div>
                 </div>
             </div>
@@ -108,6 +108,5 @@
 
 </body>
     <script src="js/index.js"></script>
-    <script src="js/ex.js"></script>
-
+    <script src="js/radar.js"></script>
 </html>
