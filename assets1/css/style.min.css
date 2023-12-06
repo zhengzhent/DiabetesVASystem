@@ -1,0 +1,227 @@
+@import 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700';
+	@import url(../fonts/font-awesome/css/font-awesome.min.css);
+	@import url(../plugin/bootstrap/css/bootstrap.min.css);
+	@import url(../plugin/nprogress/nprogress.css);
+	body,html {
+	position:relative;
+	height:100%;
+	background:#f5f7fa;
+	color:#505458
+}
+a {
+	transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	-o-transition:all 0.4s ease;
+	-ms-transition:all 0.4s ease;
+	-webkit-transition:all 0.4s ease
+}
+a {
+	text-decoration:none!important;
+	outline:none;
+	color:#1d84df
+}
+a:active,a:focus,a:hover {
+	text-decoration:none!important;
+	outline:none;
+	color:#304ffe
+}
+.fixed-navbar {
+	position:fixed;
+	top:0px;
+	left:0px;
+	z-index:20;
+	right:0px;
+	padding:0px 20px 0px 80px;
+	background:#1d84df;
+	color:#ffffff;
+}
+@media (max-width:799px) {
+.fixed-navbar {
+	left:0px;
+	right:0px;
+	box-shadow:0 0px 24px 0 rgba(0,0,0,0.06),0 1px 0px 0 rgba(0,0,0,0.02);
+	-moz-box-shadow:0 0px 24px 0 rgba(0,0,0,0.06),0 1px 0px 0 rgba(0,0,0,0.02);
+	-webkit-box-shadow:0 0px 24px 0 rgba(0,0,0,0.06),0 1px 0px 0 rgba(0,0,0,0.02)
+}
+}.header {
+	position:relative;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:185px;
+	text-align:left;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:75px
+}
+.header .logo {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	text-align:center;
+	font-family:"Poppins",sans-serif;
+	font-size:25px;
+	line-height:75px;
+	height:75px;
+	white-space:nowrap;
+	overflow:hidden;
+	color:#ffffff;
+	background:#1d84df;
+	font-weight:500;
+}
+.header .logo .ico {
+	margin-right:5px;
+	font-size:24px;
+	position:relative;
+	top:2px;
+}
+@media (min-width:800px) {
+.header .logo {
+	transition:none;
+	-moz-transition:none;
+	-o-transition:none;
+	-ms-transition:none;
+	-webkit-transition:none
+}
+}.fixed-navbar {
+	height:75px
+}
+
+.lights-container {
+    position: absolute;
+    top: 30px; /* Adjust the top position as needed */
+    left: 20px; /* Adjust the left position as needed */
+    display: flex;
+	
+}
+
+.traffic-light {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.red, .yellow, .green {
+    display: inline-block; /* 确保灯可见 */
+}
+
+.red { background: rgb(255,0,0); }
+.yellow { background: #FFFF00; }
+.green { background: rgb(0,255,0); z-index: 1;}
+
+.lights-container a:not(:last-child) {
+    margin-right: 10px; /* 根据需要调整此值以控制间距 */
+}
+
+#wrap{
+	display: flex;
+    flex-direction: column;
+}
+
+.mainbox {
+	display: flex;
+	width: 3320px;
+	height: 1810px;
+    padding: 0.125rem 0.125rem 0;
+    margin: 0;
+	box-shadow:0 0px 24px 0 rgba(0,0,0,0.06),0 1px 0px 0 rgba(0,0,0,0.02);
+	-moz-box-shadow:0 0px 24px 0 rgba(0,0,0,0.06),0 1px 0px 0 rgba(0,0,0,0.02);
+	-webkit-box-shadow:0 0px 24px 0 rgba(0,0,0,0.06),0 1px 0px 0 rgba(0,0,0,0.02)
+}
+
+.parllel-times {
+	float: left;  
+}
+
+.parllel {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid rgba(255, 255, 255, 0.5); /* 透明边框 */ 	
+	background-color: rgba(255, 255, 255, 0.1); /* 透明背景 */
+	width: 1800px;
+	height: 1130px;
+	margin-right: 10px;
+	border-radius: 30px;
+}
+
+.information-T2G{
+	display: flex;
+	flex-direction: column; 
+	width: 1450px;
+	height: 1810px;
+	border-radius: 30px;
+	float: left;
+
+}
+
+.information {
+	display: flex;
+	flex-direction: column;
+	width: 1470px;
+	height: 800px;
+	border: 2px solid rgba(255, 255, 255, 0.5); /* 透明边框 */
+	background-color: rgba(255, 255, 255, 0.1); /* 透明背景 */
+	border-radius: 30px;
+}
+
+.otherbox {
+	display: flex;
+	position: relative;
+	width: 1800px;
+	height: 680px;
+	border: 2px solid rgba(255, 255, 255, 0.5); /* 透明边框 */ 	
+	background-color: rgba(255, 255, 255, 0.1); /* 透明背景 */
+	border-radius: 30px;
+}
+
+.T2G-setting{
+	display: flex;
+	position: relative;
+	flex-direction: column; 
+	width: 1470px;
+	height: 220px;
+	border-radius: 30px;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	transition: height 0.3s ease;  
+}
+
+#toggleButton {
+    display: block;
+	background-color: #333333;
+	border-radius: 30px;
+	height: 30px;
+	position: relative;
+}
+
+#foldableContent {
+	position: relative;
+    display: block;
+    height: 400px; /* 你可以根据实际情况设置一个初始的最大高度 */
+    overflow: hidden;
+	font-size: 20px;
+}
+
+#foldableContent.collapsed {
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+
+.T2G{
+	display: flex;
+	position: relative;
+	flex-direction: column; 
+	width: 1470px;
+	height: 1000px;
+	border: 2px solid rgba(255, 255, 255, 0.5); /* 透明边框 */ 
+	background-color: rgba(255, 255, 255, 0.1); /* 透明背景 */
+	border-radius: 30px;
+	transition: height 0.3s ease;  
+}
