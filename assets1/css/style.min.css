@@ -225,3 +225,28 @@ a:active,a:focus,a:hover {
 	border-radius: 30px;
 	transition: height 0.3s ease;  
 }
+
+#sicker {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 1450px;
+    height: 800px;
+    margin-top: 100px; /* You can adjust this value to increase or decrease the space */
+}
+
+#example {
+    width: 100%; /* Set the width to 100% */
+	height: 100%;
+    margin-top: 20px; /* Add margin-top as needed */
+}
+
+/* Apply DataTable styles */
+#example.dataTable {
+    border-collapse: collapse;
+    width: 100%;
+	height: 100%;
+}
+
+
+

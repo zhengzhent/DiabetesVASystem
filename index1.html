@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="assets1/css/style.min.css">
     <link rel="stylesheet" href="assets1/css/style-black.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
 </head>
 <body>
 
@@ -39,7 +40,30 @@
         <div class="information-T2G">
             <div class="information">
                 <div id="sicker">
-
+                    <table id="example" class="display" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Position</th>
+                                <th>Office</th>
+                                <th>Age</th>
+                                <th>Start date</th>
+                                <th>Salary</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Name</th>
+                                <th>Position</th>
+                                <th>Office</th>
+                                <th>Age</th>
+                                <th>Start date</th>
+                                <th>Salary</th>
+                            </tr>
+                        </tfoot>
+                    </table>
                 </div>
             </div>
             <div class="T2G-setting">
@@ -53,8 +77,10 @@
             <div class="T2G"></div>
         </div>
     </div>
-    <script src="assets1/scripts/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
 	<script src="assets1/plugin/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets1/js/flod.js"></script>
+    <script type='module' src="assets1/js/information.js"></script>
 </body>
 </html>
