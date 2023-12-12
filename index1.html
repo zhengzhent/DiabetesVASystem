@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
 </head>
 <body>
-
+    <!-- 最顶层栏 -->
     <div class="fixed-navbar">
         <div class="header1">
             <div class="lights-container">
@@ -20,7 +20,7 @@
                 <a class="traffic-light green"></a>
             </div>
             <header class="header">
-                <a href="index1.html" class="logo"><i class="ico mdi mdi-cube-outline"></i>Diabetes visualization system</a>
+                <a href="index1.html" class="logo"><i class="ico mdi mdi-cube-outline"></i>Diabetes Visualization System</a>
                 <!-- /.user -->
             </header>
             
@@ -28,9 +28,12 @@
     </div>
     <div class="mainbox">
         <div class="parllel-times">
+            <!-- 特征平行坐标图 -->
             <div class="parllel">
             
             </div>
+
+            <!-- 时序图 -->
             <div class="otherbox">
                 <div id="times">
     
@@ -55,7 +58,7 @@
                         </thead>
                         <tbody>
                         </tbody>
-                        <tfoot>
+                        <!-- <tfoot>
                             <tr>
                                 <th>ID</th>
                                 <th>Age</th>
@@ -65,20 +68,26 @@
                                 <th>CREA</th>
                                 <th>Degree grading</th>
                             </tr>
-                        </tfoot>
+                        </tfoot> -->
                     </table>
                 </div>
             </div>
+
+            <!-- 模型参数设置 -->
             <div class="T2G-setting">
                 <button id="toggleButton">▼  Unfold  / fold  ▲</button>
                 <textarea id="foldableContent" class="editable-textarea">
                     T2GFormer(n_layers=3,d_token=512,n_heads=8,d_ffn_factor=4,attention_dropout=0.1,ffn_dropout=0.1462394754853018,
-residual_dropout=0,activation='reglu',prenormalization=True,initialization='kaiming',kv_compression=None,kv_compression_sharing=None
-                    ,d_out=3,d_numerical=12,categories=[2,2,2],token_bias=True)
+                                residual_dropout=0,activation='reglu',prenormalization=True,initialization='kaiming',kv_compression=None,kv_compression_sharing=None
+                                ,d_out=3,d_numerical=12,categories=[2,2,2],token_bias=True)
                 </textarea>
                 <button id="saveButton" onclick="saveParameters()">Save</button>
             </div>
-            <div class="T2G"></div>
+
+            <!-- 模型展示 -->
+            <div class="T2G">
+            
+            </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
