@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="/static/assets1/css/style.min.css">
+    <link rel="stylesheet" href="/static/assets1/css/style-black.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+</head>
+<body>
+
+    <div class="fixed-navbar">
+        <div class="header1">
+            <div class="lights-container">
+                <a class="traffic-light red"></a>
+                <a class="traffic-light yellow"></a>
+                <a class="traffic-light green"></a>
+            </div>
+            <header class="header">
+                <a href="index1.html" class="logo"><i class="ico mdi mdi-cube-outline"></i>Diabetes visualization system</a>
+                <!-- /.user -->
+            </header>
+            
+        </div>
+    </div>
+    <div class="mainbox">
+        <div class="parllel-times">
+            <div class="parllel">
+            
+            </div>
+            <div class="otherbox">
+                <div id="times">
+    
+                </div>
+            </div>
+        </div>
+        <div class="information-T2G">
+            <button id="toggleInformationButton">▼  Unfold Information  ▲</button>
+            <div class="information">
+                <div id="sicker">
+                    <table id="example" class="display" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Age</th>
+                                <th>BMI</th>
+                                <th>Family history</th>
+                                <th>RBC</th>
+                                <th>CREA</th>
+                                <th>Degree grading</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>ID</th>
+                                <th>Age</th>
+                                <th>BMI</th>
+                                <th>Family history</th>
+                                <th>RBC</th>
+                                <th>CREA</th>
+                                <th>Degree grading</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            <div class="T2G-setting">
+                <button id="toggleButton">▼  Unfold  / fold  ▲</button>
+                <textarea id="foldableContent" class="editable-textarea">
+                    T2GFormer(n_layers=3,d_token=512,n_heads=8,d_ffn_factor=4,attention_dropout=0.1,ffn_dropout=0.1462394754853018,
+residual_dropout=0,activation='reglu',prenormalization=True,initialization='kaiming',kv_compression=None,kv_compression_sharing=None
+                    ,d_out=3,token_bias=True)
+                </textarea>
+                <button id="saveButton">Save</button>
+            </div>
+            <div class="T2G"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+	<script src="/static/assets1/plugin/bootstrap/js/bootstrap.min.js"></script>
+    <script src="{% static 'assets1/js/flod.js' %}"></script>
+    <script src="/static/assets1/js/save.js"></script>
+    <script type='module' src="/static/assets1/js/information.js"></script>
+</body>
+</html>
