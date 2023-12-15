@@ -59,6 +59,7 @@ chart
     palette: 'inferno',
     offset: (t) => 1 - t,
   })
+  //设置图例 不能拖动？
   .legend({
     color: { length: 400, layout: { justifyContent: 'center' } },
     handle:true,
@@ -66,6 +67,7 @@ chart
     labelFontSize:20,
     labelStroke:'#ffffff'
   })
+  // 设置轴
   .axis('position', axis)
   .axis('position1', axis)
   .axis('position2', axis)
