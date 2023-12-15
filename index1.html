@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 
+    <script src="https://d3js.org/d3.v5.min.js"></script>
     <link rel="stylesheet" href="assets1/css/style.min.css">
     <link rel="stylesheet" href="assets1/css/style-black.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+    
 </head>
 <body>
     <!-- 最顶层栏 -->
@@ -30,7 +32,9 @@
         <div class="parllel-times">
             <!-- 特征平行坐标图 -->
             <div class="parllel">
-            
+                <div id="parallel-container"></div>
+                <script src="https://unpkg.com/@antv/g2/dist/g2.min.js"></script>
+                <script src="./assets1/js/parallelCoordinates.js"></script>
             </div>
 
             <!-- 时序图 -->
