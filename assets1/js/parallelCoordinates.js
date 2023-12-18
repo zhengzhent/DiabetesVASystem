@@ -3,7 +3,6 @@
  */
 // import { Chart } from '@antv/g2';
 
-
 const axis = {
     zIndex: 1,
     titlePosition: 'right',
