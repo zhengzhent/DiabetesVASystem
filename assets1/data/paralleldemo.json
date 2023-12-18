@@ -1,0 +1,1212 @@
+[
+    {
+      "name": "AMC Ambassador Brougham",
+      "economy (mpg)": 13,
+      "cylinders": 8,
+      "displacement (cc)": 360,
+      "power (hp)": 175,
+      "weight (lb)": 3821,
+      "0-60 mph (s)": 11,
+      "year": 73
+    },
+    {
+      "name": "AMC Ambassador DPL",
+      "economy (mpg)": 15,
+      "cylinders": 8,
+      "displacement (cc)": 390,
+      "power (hp)": 190,
+      "weight (lb)": 3850,
+      "0-60 mph (s)": 8.5,
+      "year": 70
+    },
+    {
+      "name": "AMC Ambassador SST",
+      "economy (mpg)": 17,
+      "cylinders": 8,
+      "displacement (cc)": 304,
+      "power (hp)": 150,
+      "weight (lb)": 3672,
+      "0-60 mph (s)": 11.5,
+      "year": 72
+    },
+    {
+      "name": "AMC Concord DL 6",
+      "economy (mpg)": 20.2,
+      "cylinders": 6,
+      "displacement (cc)": 232,
+      "power (hp)": 90,
+      "weight (lb)": 3265,
+      "0-60 mph (s)": 18.2,
+      "year": 79
+    },
+    {
+      "name": "AMC Concord DL",
+      "economy (mpg)": 18.1,
+      "cylinders": 6,
+      "displacement (cc)": 258,
+      "power (hp)": 120,
+      "weight (lb)": 3410,
+      "0-60 mph (s)": 15.1,
+      "year": 78
+    },
+    {
+      "name": "AMC Concord DL",
+      "economy (mpg)": 23,
+      "cylinders": 4,
+      "displacement (cc)": 151,
+      "power (hp)": null,
+      "weight (lb)": 3035,
+      "0-60 mph (s)": 20.5,
+      "year": 82
+    },
+    {
+      "name": "AMC Concord",
+      "economy (mpg)": 19.4,
+      "cylinders": 6,
+      "displacement (cc)": 232,
+      "power (hp)": 90,
+      "weight (lb)": 3210,
+      "0-60 mph (s)": 17.2,
+      "year": 78
+    },
+    {
+      "name": "AMC Concord",
+      "economy (mpg)": 24.3,
+      "cylinders": 4,
+      "displacement (cc)": 151,
+      "power (hp)": 90,
+      "weight (lb)": 3003,
+      "0-60 mph (s)": 20.1,
+      "year": 80
+    },
+    {
+      "name": "AMC Gremlin",
+      "economy (mpg)": 18,
+      "cylinders": 6,
+      "displacement (cc)": 232,
+      "power (hp)": 100,
+      "weight (lb)": 2789,
+      "0-60 mph (s)": 15,
+      "year": 73
+    },
+    {
+      "name": "AMC Gremlin",
+      "economy (mpg)": 19,
+      "cylinders": 6,
+      "displacement (cc)": 232,
+      "power (hp)": 100,
+      "weight (lb)": 2634,
+      "0-60 mph (s)": 13,
+      "year": 71
+    },
+    {
+      "name": "AMC Gremlin",
+      "economy (mpg)": 20,
+      "cylinders": 6,
+      "displacement (cc)": 232,
+      "power (hp)": 100,
+      "weight (lb)": 2914,
+      "0-60 mph (s)": 16,
+      "year": 75
+    },
+    {
+      "name": "AMC Gremlin",
+      "economy (mpg)": 21,
+      "cylinders": 6,
+      "displacement (cc)": 199,
+      "power (hp)": 90,
+      "weight (lb)": 2648,
+      "0-60 mph (s)": 15,
+      "year": 70
+    },
+    {
+      "name": "AMC Hornet Sportabout (Wagon)",
+      "economy (mpg)": 18,
+      "cylinders": 6,
+      "displacement (cc)": 258,
+      "power (hp)": 110,
+      "weight (lb)": 2962,
+      "0-60 mph (s)": 13.5,
+      "year": 71
+    },
+    {
+      "name": "AMC Hornet",
+      "economy (mpg)": 18,
+      "cylinders": 6,
+      "displacement (cc)": 199,
+      "power (hp)": 97,
+      "weight (lb)": 2774,
+      "0-60 mph (s)": 15.5,
+      "year": 70
+    },
+    {
+      "name": "AMC Hornet",
+      "economy (mpg)": 18,
+      "cylinders": 6,
+      "displacement (cc)": 232,
+      "power (hp)": 100,
+      "weight (lb)": 2945,
+      "0-60 mph (s)": 16,
+      "year": 73
+    },
+    {
+      "name": "AMC Hornet",
+      "economy (mpg)": 19,
+      "cylinders": 6,
+      "displacement (cc)": 232,
+      "power (hp)": 100,
+      "weight (lb)": 2901,
+      "0-60 mph (s)": 16,
+      "year": 74
+    },
+    {
+      "name": "AMC Hornet",
+      "economy (mpg)": 22.5,
+      "cylinders": 6,
+      "displacement (cc)": 232,
+      "power (hp)": 90,
+      "weight (lb)": 3085,
+      "0-60 mph (s)": 17.6,
+      "year": 76
+    },
+    {
+      "name": "AMC Matador (Wagon)",
+      "economy (mpg)": 14,
+      "cylinders": 8,
+      "displacement (cc)": 304,
+      "power (hp)": 150,
+      "weight (lb)": 4257,
+      "0-60 mph (s)": 15.5,
+      "year": 74
+    },
+    {
+      "name": "AMC Matador (Wagon)",
+      "economy (mpg)": 15,
+      "cylinders": 8,
+      "displacement (cc)": 304,
+      "power (hp)": 150,
+      "weight (lb)": 3892,
+      "0-60 mph (s)": 12.5,
+      "year": 72
+    },
+    {
+      "name": "AMC Matador",
+      "economy (mpg)": 14,
+      "cylinders": 8,
+      "displacement (cc)": 304,
+      "power (hp)": 150,
+      "weight (lb)": 3672,
+      "0-60 mph (s)": 11.5,
+      "year": 73
+    },
+    {
+      "name": "AMC Matador",
+      "economy (mpg)": 15,
+      "cylinders": 6,
+      "displacement (cc)": 258,
+      "power (hp)": 110,
+      "weight (lb)": 3730,
+      "0-60 mph (s)": 19,
+      "year": 75
+    },
+    {
+      "name": "AMC Matador",
+      "economy (mpg)": 15.5,
+      "cylinders": 8,
+      "displacement (cc)": 304,
+      "power (hp)": 120,
+      "weight (lb)": 3962,
+      "0-60 mph (s)": 13.9,
+      "year": 76
+    },
+    {
+      "name": "AMC Matador",
+      "economy (mpg)": 16,
+      "cylinders": 6,
+      "displacement (cc)": 258,
+      "power (hp)": 110,
+      "weight (lb)": 3632,
+      "0-60 mph (s)": 18,
+      "year": 74
+    },
+    {
+      "name": "AMC Matador",
+      "economy (mpg)": 18,
+      "cylinders": 6,
+      "displacement (cc)": 232,
+      "power (hp)": 100,
+      "weight (lb)": 3288,
+      "0-60 mph (s)": 15.5,
+      "year": 71
+    },
+    {
+      "name": "AMC Pacer D/L",
+      "economy (mpg)": 17.5,
+      "cylinders": 6,
+      "displacement (cc)": 258,
+      "power (hp)": 95,
+      "weight (lb)": 3193,
+      "0-60 mph (s)": 17.8,
+      "year": 76
+    },
+    {
+      "name": "AMC Pacer",
+      "economy (mpg)": 19,
+      "cylinders": 6,
+      "displacement (cc)": 232,
+      "power (hp)": 90,
+      "weight (lb)": 3211,
+      "0-60 mph (s)": 17,
+      "year": 75
+    },
+    {
+      "name": "AMC Rebel SST (Wagon)",
+      "economy (mpg)": null,
+      "cylinders": 8,
+      "displacement (cc)": 360,
+      "power (hp)": 175,
+      "weight (lb)": 3850,
+      "0-60 mph (s)": 11,
+      "year": 70
+    },
+    {
+      "name": "AMC Rebel SST",
+      "economy (mpg)": 16,
+      "cylinders": 8,
+      "displacement (cc)": 304,
+      "power (hp)": 150,
+      "weight (lb)": 3433,
+      "0-60 mph (s)": 12,
+      "year": 70
+    },
+    {
+      "name": "AMC Spirit DL",
+      "economy (mpg)": 27.4,
+      "cylinders": 4,
+      "displacement (cc)": 121,
+      "power (hp)": 80,
+      "weight (lb)": 2670,
+      "0-60 mph (s)": 15,
+      "year": 79
+    },
+    {
+      "name": "Audi 100 LS",
+      "economy (mpg)": 20,
+      "cylinders": 4,
+      "displacement (cc)": 114,
+      "power (hp)": 91,
+      "weight (lb)": 2582,
+      "0-60 mph (s)": 14,
+      "year": 73
+    },
+    {
+      "name": "Audi 100 LS",
+      "economy (mpg)": 23,
+      "cylinders": 4,
+      "displacement (cc)": 115,
+      "power (hp)": 95,
+      "weight (lb)": 2694,
+      "0-60 mph (s)": 15,
+      "year": 75
+    },
+    {
+      "name": "Audi 100 LS",
+      "economy (mpg)": 24,
+      "cylinders": 4,
+      "displacement (cc)": 107,
+      "power (hp)": 90,
+      "weight (lb)": 2430,
+      "0-60 mph (s)": 14.5,
+      "year": 70
+    },
+    {
+      "name": "Audi 4000",
+      "economy (mpg)": 34.3,
+      "cylinders": 4,
+      "displacement (cc)": 97,
+      "power (hp)": 78,
+      "weight (lb)": 2188,
+      "0-60 mph (s)": 15.8,
+      "year": 80
+    },
+    {
+      "name": "Audi 5000",
+      "economy (mpg)": 20.3,
+      "cylinders": 5,
+      "displacement (cc)": 131,
+      "power (hp)": 103,
+      "weight (lb)": 2830,
+      "0-60 mph (s)": 15.9,
+      "year": 78
+    },
+    {
+      "name": "Audi 5000S (Diesel)",
+      "economy (mpg)": 36.4,
+      "cylinders": 5,
+      "displacement (cc)": 121,
+      "power (hp)": 67,
+      "weight (lb)": 2950,
+      "0-60 mph (s)": 19.9,
+      "year": 80
+    },
+    {
+      "name": "Audi Fox",
+      "economy (mpg)": 29,
+      "cylinders": 4,
+      "displacement (cc)": 98,
+      "power (hp)": 83,
+      "weight (lb)": 2219,
+      "0-60 mph (s)": 16.5,
+      "year": 74
+    },
+    {
+      "name": "BMW 2002",
+      "economy (mpg)": 26,
+      "cylinders": 4,
+      "displacement (cc)": 121,
+      "power (hp)": 113,
+      "weight (lb)": 2234,
+      "0-60 mph (s)": 12.5,
+      "year": 70
+    },
+    {
+      "name": "BMW 320i",
+      "economy (mpg)": 21.5,
+      "cylinders": 4,
+      "displacement (cc)": 121,
+      "power (hp)": 110,
+      "weight (lb)": 2600,
+      "0-60 mph (s)": 12.8,
+      "year": 77
+    },
+    {
+      "name": "Buick Century 350",
+      "economy (mpg)": 13,
+      "cylinders": 8,
+      "displacement (cc)": 350,
+      "power (hp)": 175,
+      "weight (lb)": 4100,
+      "0-60 mph (s)": 13,
+      "year": 73
+    },
+    {
+      "name": "Buick Century Limited",
+      "economy (mpg)": 25,
+      "cylinders": 6,
+      "displacement (cc)": 181,
+      "power (hp)": 110,
+      "weight (lb)": 2945,
+      "0-60 mph (s)": 16.4,
+      "year": 82
+    },
+    {
+      "name": "Buick Century Luxus (Wagon)",
+      "economy (mpg)": 13,
+      "cylinders": 8,
+      "displacement (cc)": 350,
+      "power (hp)": 150,
+      "weight (lb)": 4699,
+      "0-60 mph (s)": 14.5,
+      "year": 74
+    },
+    {
+      "name": "Buick Century Special",
+      "economy (mpg)": 20.6,
+      "cylinders": 6,
+      "displacement (cc)": 231,
+      "power (hp)": 105,
+      "weight (lb)": 3380,
+      "0-60 mph (s)": 15.8,
+      "year": 78
+    },
+    {
+      "name": "Buick Century",
+      "economy (mpg)": 17,
+      "cylinders": 6,
+      "displacement (cc)": 231,
+      "power (hp)": 110,
+      "weight (lb)": 3907,
+      "0-60 mph (s)": 21,
+      "year": 75
+    },
+    {
+      "name": "Buick Century",
+      "economy (mpg)": 22.4,
+      "cylinders": 6,
+      "displacement (cc)": 231,
+      "power (hp)": 110,
+      "weight (lb)": 3415,
+      "0-60 mph (s)": 15.8,
+      "year": 81
+    },
+    {
+      "name": "Buick Electra 225 Custom",
+      "economy (mpg)": 12,
+      "cylinders": 8,
+      "displacement (cc)": 455,
+      "power (hp)": 225,
+      "weight (lb)": 4951,
+      "0-60 mph (s)": 11,
+      "year": 73
+    },
+    {
+      "name": "Buick Estate Wagon (Wagon)",
+      "economy (mpg)": 14,
+      "cylinders": 8,
+      "displacement (cc)": 455,
+      "power (hp)": 225,
+      "weight (lb)": 3086,
+      "0-60 mph (s)": 10,
+      "year": 70
+    },
+    {
+      "name": "Buick Estate Wagon (Wagon)",
+      "economy (mpg)": 16.9,
+      "cylinders": 8,
+      "displacement (cc)": 350,
+      "power (hp)": 155,
+      "weight (lb)": 4360,
+      "0-60 mph (s)": 14.9,
+      "year": 79
+    },
+    {
+      "name": "Buick Lesabre Custom",
+      "economy (mpg)": 13,
+      "cylinders": 8,
+      "displacement (cc)": 350,
+      "power (hp)": 155,
+      "weight (lb)": 4502,
+      "0-60 mph (s)": 13.5,
+      "year": 72
+    },
+    {
+      "name": "Buick Opel Isuzu Deluxe",
+      "economy (mpg)": 30,
+      "cylinders": 4,
+      "displacement (cc)": 111,
+      "power (hp)": 80,
+      "weight (lb)": 2155,
+      "0-60 mph (s)": 14.8,
+      "year": 77
+    },
+    {
+      "name": "Buick Regal Sport Coupe (Turbo)",
+      "economy (mpg)": 17.7,
+      "cylinders": 6,
+      "displacement (cc)": 231,
+      "power (hp)": 165,
+      "weight (lb)": 3445,
+      "0-60 mph (s)": 13.4,
+      "year": 78
+    },
+    {
+      "name": "Buick Skyhawk",
+      "economy (mpg)": 21,
+      "cylinders": 6,
+      "displacement (cc)": 231,
+      "power (hp)": 110,
+      "weight (lb)": 3039,
+      "0-60 mph (s)": 15,
+      "year": 75
+    },
+    {
+      "name": "Buick Skylark 320",
+      "economy (mpg)": 15,
+      "cylinders": 8,
+      "displacement (cc)": 350,
+      "power (hp)": 165,
+      "weight (lb)": 3693,
+      "0-60 mph (s)": 11.5,
+      "year": 70
+    },
+    {
+      "name": "Buick Skylark Limited",
+      "economy (mpg)": 28.4,
+      "cylinders": 4,
+      "displacement (cc)": 151,
+      "power (hp)": 90,
+      "weight (lb)": 2670,
+      "0-60 mph (s)": 16,
+      "year": 79
+    },
+    {
+      "name": "Buick Skylark",
+      "economy (mpg)": 20.5,
+      "cylinders": 6,
+      "displacement (cc)": 231,
+      "power (hp)": 105,
+      "weight (lb)": 3425,
+      "0-60 mph (s)": 16.9,
+      "year": 77
+    },
+    {
+      "name": "Buick Skylark",
+      "economy (mpg)": 26.6,
+      "cylinders": 4,
+      "displacement (cc)": 151,
+      "power (hp)": 84,
+      "weight (lb)": 2635,
+      "0-60 mph (s)": 16.4,
+      "year": 81
+    },
+    {
+      "name": "Cadillac Eldorado",
+      "economy (mpg)": 23,
+      "cylinders": 8,
+      "displacement (cc)": 350,
+      "power (hp)": 125,
+      "weight (lb)": 3900,
+      "0-60 mph (s)": 17.4,
+      "year": 79
+    },
+    {
+      "name": "Cadillac Seville",
+      "economy (mpg)": 16.5,
+      "cylinders": 8,
+      "displacement (cc)": 350,
+      "power (hp)": 180,
+      "weight (lb)": 4380,
+      "0-60 mph (s)": 12.1,
+      "year": 76
+    },
+    {
+      "name": "Chevroelt Chevelle Malibu",
+      "economy (mpg)": 16,
+      "cylinders": 6,
+      "displacement (cc)": 250,
+      "power (hp)": 105,
+      "weight (lb)": 3897,
+      "0-60 mph (s)": 18.5,
+      "year": 75
+    },
+    {
+      "name": "Chevrolet Bel Air",
+      "economy (mpg)": 15,
+      "cylinders": 8,
+      "displacement (cc)": 350,
+      "power (hp)": 145,
+      "weight (lb)": 4440,
+      "0-60 mph (s)": 14,
+      "year": 75
+    },
+    {
+      "name": "Chevrolet Camaro",
+      "economy (mpg)": 27,
+      "cylinders": 4,
+      "displacement (cc)": 151,
+      "power (hp)": 90,
+      "weight (lb)": 2950,
+      "0-60 mph (s)": 17.3,
+      "year": 82
+    },
+    {
+      "name": "Chevrolet Caprice Classic",
+      "economy (mpg)": 13,
+      "cylinders": 8,
+      "displacement (cc)": 400,
+      "power (hp)": 150,
+      "weight (lb)": 4464,
+      "0-60 mph (s)": 12,
+      "year": 73
+    },
+    {
+      "name": "Chevrolet Caprice Classic",
+      "economy (mpg)": 17,
+      "cylinders": 8,
+      "displacement (cc)": 305,
+      "power (hp)": 130,
+      "weight (lb)": 3840,
+      "0-60 mph (s)": 15.4,
+      "year": 79
+    },
+    {
+      "name": "Chevrolet Caprice Classic",
+      "economy (mpg)": 17.5,
+      "cylinders": 8,
+      "displacement (cc)": 305,
+      "power (hp)": 145,
+      "weight (lb)": 3880,
+      "0-60 mph (s)": 12.5,
+      "year": 77
+    },
+    {
+      "name": "Chevrolet Cavalier 2-Door",
+      "economy (mpg)": 34,
+      "cylinders": 4,
+      "displacement (cc)": 112,
+      "power (hp)": 88,
+      "weight (lb)": 2395,
+      "0-60 mph (s)": 18,
+      "year": 82
+    },
+    {
+      "name": "Chevrolet Cavalier Wagon",
+      "economy (mpg)": 27,
+      "cylinders": 4,
+      "displacement (cc)": 112,
+      "power (hp)": 88,
+      "weight (lb)": 2640,
+      "0-60 mph (s)": 18.6,
+      "year": 82
+    },
+    {
+      "name": "Chevrolet Cavalier",
+      "economy (mpg)": 28,
+      "cylinders": 4,
+      "displacement (cc)": 112,
+      "power (hp)": 88,
+      "weight (lb)": 2605,
+      "0-60 mph (s)": 19.6,
+      "year": 82
+    },
+    {
+      "name": "Chevrolet Chevelle Concours (Wagon)",
+      "economy (mpg)": null,
+      "cylinders": 8,
+      "displacement (cc)": 350,
+      "power (hp)": 165,
+      "weight (lb)": 4142,
+      "0-60 mph (s)": 11.5,
+      "year": 70
+    },
+    {
+      "name": "Chevrolet Chevelle Concours (Wagon)",
+      "economy (mpg)": 13,
+      "cylinders": 8,
+      "displacement (cc)": 307,
+      "power (hp)": 130,
+      "weight (lb)": 4098,
+      "0-60 mph (s)": 14,
+      "year": 72
+    },
+    {
+      "name": "Chevrolet Chevelle Malibu Classic",
+      "economy (mpg)": 16,
+      "cylinders": 6,
+      "displacement (cc)": 250,
+      "power (hp)": 100,
+      "weight (lb)": 3781,
+      "0-60 mph (s)": 17,
+      "year": 74
+    },
+    {
+      "name": "Chevrolet Chevelle Malibu Classic",
+      "economy (mpg)": 17.5,
+      "cylinders": 8,
+      "displacement (cc)": 305,
+      "power (hp)": 140,
+      "weight (lb)": 4215,
+      "0-60 mph (s)": 13,
+      "year": 76
+    },
+    {
+      "name": "Chevrolet Chevelle Malibu",
+      "economy (mpg)": 17,
+      "cylinders": 6,
+      "displacement (cc)": 250,
+      "power (hp)": 100,
+      "weight (lb)": 3329,
+      "0-60 mph (s)": 15.5,
+      "year": 71
+    },
+    {
+      "name": "Chevrolet Chevelle Malibu",
+      "economy (mpg)": 18,
+      "cylinders": 8,
+      "displacement (cc)": 307,
+      "power (hp)": 130,
+      "weight (lb)": 3504,
+      "0-60 mph (s)": 12,
+      "year": 70
+    },
+    {
+      "name": "Chevrolet Chevette",
+      "economy (mpg)": 29,
+      "cylinders": 4,
+      "displacement (cc)": 85,
+      "power (hp)": 52,
+      "weight (lb)": 2035,
+      "0-60 mph (s)": 22.2,
+      "year": 76
+    },
+    {
+      "name": "Chevrolet Chevette",
+      "economy (mpg)": 30,
+      "cylinders": 4,
+      "displacement (cc)": 98,
+      "power (hp)": 68,
+      "weight (lb)": 2155,
+      "0-60 mph (s)": 16.5,
+      "year": 78
+    },
+    {
+      "name": "Chevrolet Chevette",
+      "economy (mpg)": 30.5,
+      "cylinders": 4,
+      "displacement (cc)": 98,
+      "power (hp)": 63,
+      "weight (lb)": 2051,
+      "0-60 mph (s)": 17,
+      "year": 77
+    },
+    {
+      "name": "Chevrolet Chevette",
+      "economy (mpg)": 32.1,
+      "cylinders": 4,
+      "displacement (cc)": 98,
+      "power (hp)": 70,
+      "weight (lb)": 2120,
+      "0-60 mph (s)": 15.5,
+      "year": 80
+    },
+    {
+      "name": "Chevrolet Citation",
+      "economy (mpg)": 23.5,
+      "cylinders": 6,
+      "displacement (cc)": 173,
+      "power (hp)": 110,
+      "weight (lb)": 2725,
+      "0-60 mph (s)": 12.6,
+      "year": 81
+    },
+    {
+      "name": "Chevrolet Citation",
+      "economy (mpg)": 28,
+      "cylinders": 4,
+      "displacement (cc)": 151,
+      "power (hp)": 90,
+      "weight (lb)": 2678,
+      "0-60 mph (s)": 16.5,
+      "year": 80
+    },
+    {
+      "name": "Chevrolet Citation",
+      "economy (mpg)": 28.8,
+      "cylinders": 6,
+      "displacement (cc)": 173,
+      "power (hp)": 115,
+      "weight (lb)": 2595,
+      "0-60 mph (s)": 11.3,
+      "year": 79
+    },
+    {
+      "name": "Chevrolet Concours",
+      "economy (mpg)": 17.5,
+      "cylinders": 6,
+      "displacement (cc)": 250,
+      "power (hp)": 110,
+      "weight (lb)": 3520,
+      "0-60 mph (s)": 16.4,
+      "year": 77
+    },
+    {
+      "name": "Chevrolet Impala",
+      "economy (mpg)": 11,
+      "cylinders": 8,
+      "displacement (cc)": 400,
+      "power (hp)": 150,
+      "weight (lb)": 4997,
+      "0-60 mph (s)": 14,
+      "year": 73
+    },
+    {
+      "name": "Chevrolet Impala",
+      "economy (mpg)": 13,
+      "cylinders": 8,
+      "displacement (cc)": 350,
+      "power (hp)": 165,
+      "weight (lb)": 4274,
+      "0-60 mph (s)": 12,
+      "year": 72
+    },
+    {
+      "name": "Chevrolet Impala",
+      "economy (mpg)": 14,
+      "cylinders": 8,
+      "displacement (cc)": 350,
+      "power (hp)": 165,
+      "weight (lb)": 4209,
+      "0-60 mph (s)": 12,
+      "year": 71
+    },
+    {
+      "name": "Chevrolet Impala",
+      "economy (mpg)": 14,
+      "cylinders": 8,
+      "displacement (cc)": 454,
+      "power (hp)": 220,
+      "weight (lb)": 4354,
+      "0-60 mph (s)": 9,
+      "year": 70
+    },
+    {
+      "name": "Chevrolet Malibu Classic (Wagon)",
+      "economy (mpg)": 19.2,
+      "cylinders": 8,
+      "displacement (cc)": 267,
+      "power (hp)": 125,
+      "weight (lb)": 3605,
+      "0-60 mph (s)": 15,
+      "year": 79
+    },
+    {
+      "name": "Chevrolet Malibu",
+      "economy (mpg)": 13,
+      "cylinders": 8,
+      "displacement (cc)": 350,
+      "power (hp)": 145,
+      "weight (lb)": 3988,
+      "0-60 mph (s)": 13,
+      "year": 73
+    },
+    {
+      "name": "Chevrolet Malibu",
+      "economy (mpg)": 20.5,
+      "cylinders": 6,
+      "displacement (cc)": 200,
+      "power (hp)": 95,
+      "weight (lb)": 3155,
+      "0-60 mph (s)": 18.2,
+      "year": 78
+    },
+    {
+      "name": "Chevrolet Monte Carlo Landau",
+      "economy (mpg)": 15.5,
+      "cylinders": 8,
+      "displacement (cc)": 350,
+      "power (hp)": 170,
+      "weight (lb)": 4165,
+      "0-60 mph (s)": 11.4,
+      "year": 77
+    },
+    {
+      "name": "Chevrolet Monte Carlo Landau",
+      "economy (mpg)": 19.2,
+      "cylinders": 8,
+      "displacement (cc)": 305,
+      "power (hp)": 145,
+      "weight (lb)": 3425,
+      "0-60 mph (s)": 13.2,
+      "year": 78
+    },
+    {
+      "name": "Chevrolet Monte Carlo S",
+      "economy (mpg)": 15,
+      "cylinders": 8,
+      "displacement (cc)": 350,
+      "power (hp)": 145,
+      "weight (lb)": 4082,
+      "0-60 mph (s)": 13,
+      "year": 73
+    },
+    {
+      "name": "Chevrolet Monte Carlo",
+      "economy (mpg)": 15,
+      "cylinders": 8,
+      "displacement (cc)": 400,
+      "power (hp)": 150,
+      "weight (lb)": 3761,
+      "0-60 mph (s)": 9.5,
+      "year": 70
+    },
+    {
+      "name": "Chevrolet Monza 2+2",
+      "economy (mpg)": 20,
+      "cylinders": 8,
+      "displacement (cc)": 262,
+      "power (hp)": 110,
+      "weight (lb)": 3221,
+      "0-60 mph (s)": 13.5,
+      "year": 75
+    },
+    {
+      "name": "Chevrolet Nova Custom",
+      "economy (mpg)": 16,
+      "cylinders": 6,
+      "displacement (cc)": 250,
+      "power (hp)": 100,
+      "weight (lb)": 3278,
+      "0-60 mph (s)": 18,
+      "year": 73
+    },
+    {
+      "name": "Chevrolet Nova",
+      "economy (mpg)": 15,
+      "cylinders": 6,
+      "displacement (cc)": 250,
+      "power (hp)": 100,
+      "weight (lb)": 3336,
+      "0-60 mph (s)": 17,
+      "year": 74
+    },
+    {
+      "name": "Chevrolet Nova",
+      "economy (mpg)": 18,
+      "cylinders": 6,
+      "displacement (cc)": 250,
+      "power (hp)": 105,
+      "weight (lb)": 3459,
+      "0-60 mph (s)": 16,
+      "year": 75
+    },
+    {
+      "name": "Chevrolet Nova",
+      "economy (mpg)": 22,
+      "cylinders": 6,
+      "displacement (cc)": 250,
+      "power (hp)": 105,
+      "weight (lb)": 3353,
+      "0-60 mph (s)": 14.5,
+      "year": 76
+    },
+    {
+      "name": "Chevrolet Vega (Wagon)",
+      "economy (mpg)": 22,
+      "cylinders": 4,
+      "displacement (cc)": 140,
+      "power (hp)": 72,
+      "weight (lb)": 2408,
+      "0-60 mph (s)": 19,
+      "year": 71
+    },
+    {
+      "name": "Chevrolet Vega 2300",
+      "economy (mpg)": 28,
+      "cylinders": 4,
+      "displacement (cc)": 140,
+      "power (hp)": 90,
+      "weight (lb)": 2264,
+      "0-60 mph (s)": 15.5,
+      "year": 71
+    },
+    {
+      "name": "Chevrolet Vega",
+      "economy (mpg)": 20,
+      "cylinders": 4,
+      "displacement (cc)": 140,
+      "power (hp)": 90,
+      "weight (lb)": 2408,
+      "0-60 mph (s)": 19.5,
+      "year": 72
+    },
+    {
+      "name": "Chevrolet Vega",
+      "economy (mpg)": 21,
+      "cylinders": 4,
+      "displacement (cc)": 140,
+      "power (hp)": 72,
+      "weight (lb)": 2401,
+      "0-60 mph (s)": 19.5,
+      "year": 73
+    },
+    {
+      "name": "Chevrolet Vega",
+      "economy (mpg)": 25,
+      "cylinders": 4,
+      "displacement (cc)": 140,
+      "power (hp)": 75,
+      "weight (lb)": 2542,
+      "0-60 mph (s)": 17,
+      "year": 74
+    },
+    {
+      "name": "Chevrolet Woody",
+      "economy (mpg)": 24.5,
+      "cylinders": 4,
+      "displacement (cc)": 98,
+      "power (hp)": 60,
+      "weight (lb)": 2164,
+      "0-60 mph (s)": 22.1,
+      "year": 76
+    },
+    {
+      "name": "Chevy C10",
+      "economy (mpg)": 13,
+      "cylinders": 8,
+      "displacement (cc)": 350,
+      "power (hp)": 145,
+      "weight (lb)": 4055,
+      "0-60 mph (s)": 12,
+      "year": 76
+    },
+    {
+      "name": "Chevy C20",
+      "economy (mpg)": 10,
+      "cylinders": 8,
+      "displacement (cc)": 307,
+      "power (hp)": 200,
+      "weight (lb)": 4376,
+      "0-60 mph (s)": 15,
+      "year": 70
+    },
+    {
+      "name": "Chevy S-10",
+      "economy (mpg)": 31,
+      "cylinders": 4,
+      "displacement (cc)": 119,
+      "power (hp)": 82,
+      "weight (lb)": 2720,
+      "0-60 mph (s)": 19.4,
+      "year": 82
+    },
+    {
+      "name": "Chrysler Cordoba",
+      "economy (mpg)": 15.5,
+      "cylinders": 8,
+      "displacement (cc)": 400,
+      "power (hp)": 190,
+      "weight (lb)": 4325,
+      "0-60 mph (s)": 12.2,
+      "year": 77
+    },
+    {
+      "name": "Chrysler Lebaron Medallion",
+      "economy (mpg)": 26,
+      "cylinders": 4,
+      "displacement (cc)": 156,
+      "power (hp)": 92,
+      "weight (lb)": 2585,
+      "0-60 mph (s)": 14.5,
+      "year": 82
+    },
+    {
+      "name": "Chrysler Lebaron Salon",
+      "economy (mpg)": 17.6,
+      "cylinders": 6,
+      "displacement (cc)": 225,
+      "power (hp)": 85,
+      "weight (lb)": 3465,
+      "0-60 mph (s)": 16.6,
+      "year": 81
+    },
+    {
+      "name": "Chrysler Lebaron Town & Country (Wagon)",
+      "economy (mpg)": 18.5,
+      "cylinders": 8,
+      "displacement (cc)": 360,
+      "power (hp)": 150,
+      "weight (lb)": 3940,
+      "0-60 mph (s)": 13,
+      "year": 79
+    },
+    {
+      "name": "Chrysler New Yorker Brougham",
+      "economy (mpg)": 13,
+      "cylinders": 8,
+      "displacement (cc)": 440,
+      "power (hp)": 215,
+      "weight (lb)": 4735,
+      "0-60 mph (s)": 11,
+      "year": 73
+    },
+    {
+      "name": "Chrysler Newport Royal",
+      "economy (mpg)": 13,
+      "cylinders": 8,
+      "displacement (cc)": 400,
+      "power (hp)": 190,
+      "weight (lb)": 4422,
+      "0-60 mph (s)": 12.5,
+      "year": 72
+    },
+    {
+      "name": "Citroen DS-21 Pallas",
+      "economy (mpg)": null,
+      "cylinders": 4,
+      "displacement (cc)": 133,
+      "power (hp)": 115,
+      "weight (lb)": 3090,
+      "0-60 mph (s)": 17.5,
+      "year": 70
+    },
+    {
+      "name": "Datsun 1200",
+      "economy (mpg)": 35,
+      "cylinders": 4,
+      "displacement (cc)": 72,
+      "power (hp)": 69,
+      "weight (lb)": 1613,
+      "0-60 mph (s)": 18,
+      "year": 71
+    },
+    {
+      "name": "Datsun 200SX",
+      "economy (mpg)": 23.9,
+      "cylinders": 4,
+      "displacement (cc)": 119,
+      "power (hp)": 97,
+      "weight (lb)": 2405,
+      "0-60 mph (s)": 14.9,
+      "year": 78
+    },
+    {
+      "name": "Datsun 200SX",
+      "economy (mpg)": 32.9,
+      "cylinders": 4,
+      "displacement (cc)": 119,
+      "power (hp)": 100,
+      "weight (lb)": 2615,
+      "0-60 mph (s)": 14.8,
+      "year": 81
+    },
+    {
+      "name": "Datsun 210",
+      "economy (mpg)": 31.8,
+      "cylinders": 4,
+      "displacement (cc)": 85,
+      "power (hp)": 65,
+      "weight (lb)": 2020,
+      "0-60 mph (s)": 19.2,
+      "year": 79
+    },
+    {
+      "name": "Datsun 210",
+      "economy (mpg)": 37,
+      "cylinders": 4,
+      "displacement (cc)": 85,
+      "power (hp)": 65,
+      "weight (lb)": 1975,
+      "0-60 mph (s)": 19.4,
+      "year": 81
+    },
+    {
+      "name": "Datsun 210",
+      "economy (mpg)": 40.8,
+      "cylinders": 4,
+      "displacement (cc)": 85,
+      "power (hp)": 65,
+      "weight (lb)": 2110,
+      "0-60 mph (s)": 19.2,
+      "year": 80
+    },
+    {
+      "name": "Datsun 280ZX",
+      "economy (mpg)": 32.7,
+      "cylinders": 6,
+      "displacement (cc)": 168,
+      "power (hp)": 132,
+      "weight (lb)": 2910,
+      "0-60 mph (s)": 11.4,
+      "year": 80
+    },
+    {
+      "name": "Datsun 310 GX",
+      "economy (mpg)": 38,
+      "cylinders": 4,
+      "displacement (cc)": 91,
+      "power (hp)": 67,
+      "weight (lb)": 1995,
+      "0-60 mph (s)": 16.2,
+      "year": 82
+    },
+    {
+      "name": "Datsun 310",
+      "economy (mpg)": 37.2,
+      "cylinders": 4,
+      "displacement (cc)": 86,
+      "power (hp)": 65,
+      "weight (lb)": 2019,
+      "0-60 mph (s)": 16.4,
+      "year": 80
+    }
+  ]

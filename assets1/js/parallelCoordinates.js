@@ -36,7 +36,7 @@ chart
   .line()
   .data({
     type: 'fetch',
-    value: 'assets1/data/paralleltemp.json',
+    value: 'assets1/data/paralleldemo.json',
   })
   // 轴标签
   .encode('position', [  
