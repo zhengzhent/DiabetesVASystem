@@ -7,6 +7,10 @@ const axis = {
     zIndex: 1,
     titlePosition: 'right',
     line: true,
+    label:{
+      offset:200,
+      opacity:1
+    },
     labelStroke: '#ffffff',
     labelFill:'#ffffff',
     labelStrokeWidth: 2,
@@ -22,12 +26,35 @@ const axis = {
     tickStroke: 'White',
     lineStrokeWidth: 2,
   };
-  
+
+const classaxis = {
+  zIndex: 1,
+  titlePosition: 'right',
+  line: true,
+  label:{
+    offset:20
+  },
+  labelStroke: '#ffffff',
+  labelFill:'#ffffff',
+  labelStrokeWidth: 2,
+  labelFontSize: 25,
+  labelStrokeLineJoin: 'bevel',
+  titleStroke: '#ffffff',
+  titleFill:'#ffffff',
+  titleFontSize: 20,
+  titleStrokeWidth: 2,
+  titleStrokeLineJoin: 'bevel',
+  titleTransform: 'translate(-50%, 0) rotate(-90)',
+  lineStroke: 'White',
+  tickStroke: 'White',
+  lineStrokeWidth: 2,
+  ticks:[1,2,3]
+};
 const chart = new G2.Chart({
   container: 'parallel-container',
-  autoFit: true,
-  height:1020,
-  width:1750,
+  // autoFit: true,
+  height:1030,
+  width:1770,
 });
 
 chart.coordinate({ type: 'parallel' });
@@ -36,7 +63,7 @@ chart
   .line()
   .data({
     type: 'fetch',
-    value: 'assets1/data/output.json',
+    value: 'assets1/data/parallelCoordinates_Data.json',
   })
   // // 轴标签Demo
   // .encode('position', [  
@@ -61,8 +88,8 @@ chart
   // 颜色映射到weight(lb)
   .encode('color', 'Class')
   // 线的宽度和不透明度
-  .style('strokeWidth', 3)
-  .style('strokeOpacity', 0.5)
+  .style('strokeWidth', 5)
+  .style('strokeOpacity', 0.6)
   // 设置颜色比例尺和调色板
   .scale('color', {
     // palette: 'inferno',
@@ -78,16 +105,25 @@ chart
     labelStroke:'#ffffff'
   })
   // 设置轴
+  // .axis('position', axis)
+  // .axis('position1', axis)
+  // .axis('position2', axis)
+  // .axis('position3', axis)
+  // .axis('position4', axis)
+  // .axis('position5', axis)
+  // .axis('position6', axis)
+  // .axis('position7', axis);
+
   .axis('position', axis)
   .axis('position1', axis)
   .axis('position2', axis)
   .axis('position3', axis)
   .axis('position4', axis)
   .axis('position5', axis)
-  .axis('position6', axis)
+  .axis('position6', classaxis)
   .axis('position7', axis);
 
 
-chart.interaction('tooltip', { series: false });
+chart.interaction('tooltip', { series: false});
 
 chart.render();
