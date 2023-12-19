@@ -36,26 +36,37 @@ chart
   .line()
   .data({
     type: 'fetch',
-    value: 'assets1/data/paralleldemo.json',
+    value: 'assets1/data/output.json',
   })
+  // // 轴标签Demo
+  // .encode('position', [  
+  //   'economy (mpg)',
+  //   'cylinders',
+  //   'displacement (cc)',
+  //   'power (hp)',
+  //   'weight (lb)',
+  //   '0-60 mph (s)',
+  //   'year',
+  // ])
   // 轴标签
-  .encode('position', [  
-    'economy (mpg)',
-    'cylinders',
-    'displacement (cc)',
-    'power (hp)',
-    'weight (lb)',
-    '0-60 mph (s)',
-    'year',
+  .encode('position', [
+    'RBC(1012/L)',  
+    'Age',
+    'LDL--C',
+    'WBC(×109/L)',
+    'PPBP-2h(mmol/L)',
+    'PPInsulin-2h(pmol/l)',
+    'Class',
   ])
   // 颜色映射到weight(lb)
-  .encode('color', 'weight (lb)')
+  .encode('color', 'Class')
   // 线的宽度和不透明度
-  .style('strokeWidth', 2)
+  .style('strokeWidth', 3)
   .style('strokeOpacity', 0.5)
   // 设置颜色比例尺和调色板
   .scale('color', {
-    palette: 'inferno',
+    // palette: 'inferno',
+    palette: 'plasma',
     offset: (t) => 1 - t,
   })
   //设置图例 不能拖动？
