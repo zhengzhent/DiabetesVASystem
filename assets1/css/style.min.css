@@ -6,7 +6,7 @@
 	position:relative;
 	height:100%;
 	background:#f5f7fa;
-	color:#505458
+	color:#505458;
 }
 a {
 	transition:all 0.4s ease;
@@ -123,34 +123,42 @@ a:active,a:focus,a:hover {
 
 .mainbox {
 	display: flex;
-	width: 3320px;
-	height: 1810px;
+	width: 3293px;
+	height: 1738px;
     padding: 0.125rem 0.125rem 0;
     margin: 0;
 	margin-top: 78px;
 	box-shadow:0 0px 24px 0 rgba(0,0,0,0.06),0 1px 0px 0 rgba(0,0,0,0.02);
 	-moz-box-shadow:0 0px 24px 0 rgba(0,0,0,0.06),0 1px 0px 0 rgba(0,0,0,0.02);
-	-webkit-box-shadow:0 0px 24px 0 rgba(0,0,0,0.06),0 1px 0px 0 rgba(0,0,0,0.02)
+	-webkit-box-shadow:0 0px 24px 0 rgba(0,0,0,0.06),0 1px 0px 0 rgba(0,0,0,0.02);
+	border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .parllel-times {
-	float: left;  
+	float: left;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	width: 1800px;
+	height: 1738px;
 }
 
 .parllel {
-	display: flex;
-	flex-direction: column;
+
 	border: 2px solid rgba(255, 255, 255, 0.5); /* 透明边框 */ 	
 	background-color: rgba(255, 255, 255, 0.1); /* 透明背景 */
 	width: 1800px;
 	height: 1055px;
+	z-index: 98;
+}
+
+#times {
+	width: 1800px;
 }
 
 .information-T2G{
 	display: flex;
 	flex-direction: column; 
 	width: 1580px;
-	height: 1810px;
+	height: 1738px;
 	float: left;
 }
 
@@ -167,7 +175,7 @@ a:active,a:focus,a:hover {
 	display: flex;
 	position: relative;
 	width: 1800px;
-	height: 680px;
+	height: 683px;
 	border: 2px solid rgba(255, 255, 255, 0.5); /* 透明边框 */ 	
 	background-color: rgba(255, 255, 255, 0.1); /* 透明背景 */
 }
@@ -227,12 +235,14 @@ a:active,a:focus,a:hover {
     width: 1450px;
     max-height: 700px;
     margin-top: 50px; /* You can adjust this value to increase or decrease the space */
+	z-index: 80;
 }
 
 #example {
     width: 100%; /* Set the width to 100% */
 	height: 90%;
     margin-top: 20px; /* Add margin-top as needed */
+	border-spacing: 0;
 }
 
 /* Apply DataTable styles */
@@ -259,7 +269,11 @@ a:active,a:focus,a:hover {
 #toggleInformationButton {
     display: block;
     background-color: #333333;
+	width: 1490px;
     height: 30px;
     cursor: pointer;
 	z-index: 100;
+}
+.custom-font-size {
+    font-size: 16px; /* 设置你想要的字体大小 */
 }
