@@ -6,7 +6,7 @@ $(document).ready(function() {
         "ordering": true,    // 启用排序
         "searching": false    // 启用搜索
     });
-
+    $('#example').addClass('custom-font-size');
     $.ajax({
         url: 'assets1/staticdata/information.json',  // 指定 JSON 文件路径
         dataType: 'json',
