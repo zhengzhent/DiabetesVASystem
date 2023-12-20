@@ -89,77 +89,99 @@
                                 residual_dropout=0,activation='reglu',prenormalization=True,initialization='kaiming',kv_compression=None,kv_compression_sharing=None
                                 ,d_out=3,d_numerical=12,categories=[2,2,2],token_bias=True)
                 </textarea> -->
-                <style>
-                    table {
-                      width: 100%;
-                    }
-                    table, th, td {
-                      text-align: center;
-                    }
-                </style>
-                <table id="model-setting1" style="margin:20px;">
-                    <thead>
-                        <tr>
-                            <th>n_layers</th>
-                            <th>d_token</th>
-                            <th>n_heads</th>
-                            <th>attention_dropout</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <input type="text" id="n_layers" value="3"></input>
-                                <button id="n_layers-inc">+</button>
-                                <button id="n_layers-dec">-</button>
-                            </td>
-                            <td>
-                                <input id="d_token" value="64"></input>
-                                <button id="d_token-inc">+</button>
-                                <button id="d_token-dec">-</button>
-                            </td>
-                            <td>
-                                <input type="text" id="n_heads" value="2"></input>
-                                <button id="n_heads-inc">+</button>
-                                <button id="n_heads-dec">-</button>
-                            </td>
-                            <td>
-                                <input type="text" id="attention_dropout" value="0.2"></input>
-                                <button id="attention_dropouts-inc">+</button>
-                                <button id="attention_dropout-dec">-</button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                
-                <table id="model-setting2" style="margin: 10px;">
-                    <thead>
-                        <tr>
-                            <th>Residual_dropout</th>
-                            <th>Activation</th>
-                            <th>Prenormalization</th>
-                            <th>Initialization</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <input id="Residual_dropout" value="0.0"></input>
-                                <button id="Residual_dropout-inc">+</button>
-                                <button id="Residual_dropout-dec">-</button>
-                            </td>
-                            <td>
-                                <input type="text" id="Activation" value="relu"></input>
-                            </td>
-                            <td>
-                                <input type="text" id="Prenormalization" value="false"></input>
-                            </td>
-                            <td>
-                                <input type="text" id="Initialization" value="kaiming"></input>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div id="foldableContent" >
+                    <style>
+                        table {
+                          width: 100%;
+                        }
+                        table, th, td {
+                          text-align: center;
+                        }
+                    </style>
+                    <table id="model-setting1" style="margin:20px;">
+                        <thead>
+                            <tr>
+                                <th>n_layers</th>
+                                <th>d_token</th>
+                                <th>n_heads</th>
+                                <th>attention_dropout</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="text" id="n_layers" value="3"></input>
+                                    <button id="n_layers-inc" style="color: black;">+</button>
+                                    <button id="n_layers-dec" style="color: black;">-</button>
+                                </td>
+                                <td>
+                                    <input id="d_token" value="64"></input>
+                                    <button id="d_token-inc" style="color: black;">+</button>
+                                    <button id="d_token-dec" style="color: black;">-</button>
+                                </td>
+                                <td>
+                                    <input type="text" id="n_heads" value="2"></input>
+                                    <button id="n_heads-inc" style="color: black;">+</button>
+                                    <button id="n_heads-dec" style="color: black;">-</button>
+                                </td>
+                                <td>
+                                    <input type="text" id="attention_dropout" value="0.2"></input>
+                                    <button id="attention_dropouts-inc" style="color: black;">+</button>
+                                    <button id="attention_dropout-dec" style="color: black;">-</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <table id="model-setting2" style="margin: 10px;">
+                        <thead>
+                            <tr>
+                                <th>Residual_dropout</th>
+                                <th>Activation</th>
+                                <th>Prenormalization</th>
+                                <th>Initialization</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input id="Residual_dropout" value="0.0"></input>
+                                    <button id="Residual_dropout-inc" style="color: black;">+</button>
+                                    <button id="Residual_dropout-dec" style="color: black;">-</button>
+                                </td>
+                                <td>
+                                    <!-- <input type="text" id="Activation" value="relu"></input> -->
+                                    <form action="" id="Activation">
+                                        <select name="Activation" style="color: black;">
+                                        <option value="Relu" selected>Relu</option>
+                                        <option value="Sigmoid">Sigmoid</option>
+                                        <option value="Tanh">Tanh</option>
+                                        <option value="ELU">ELU</option>
+                                        </select>
+                                    </form>
+                                </td>
+                                <td>
+                                    <!-- <input type="text" id="Prenormalization" value="false"></input> -->
+                                    <form action="" id="Prenormalization">
+                                        <select name="Prenormalization" style="color: black;">
+                                        <option value="false" style="color: black;">False</option>
+                                        <option value="true" style="color: black;">True</option>
+                                        </select>
+                                    </form>
+                                </td>
+                                <td>
+                                    <!-- <input type="text" id="Initialization" value="kaiming"></input> -->
+                                    <form action="" id="Initialization">
+                                        <select name="Initialization" style="color: black;">
+                                        <option value="kaiming" selected>kaiming</option>
+                                        <option value="Xavier">Xavier</option>
+                                        </select>
+                                    </form>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 <button id="saveButton" onclick="saveParameters()" >Save</button>
             </div>
 
