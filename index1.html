@@ -9,9 +9,16 @@
     <link rel="stylesheet" href="assets1/css/style.min.css">
     <link rel="stylesheet" href="assets1/css/style-black.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+    
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+	<script src="assets1/plugin/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets1/js/flod.js"></script>
+    <script type='module' src="assets1/js/information.js"></script>
+    <script src="assets1/js/g2.min.js"></script>
 </head>
 <body>
-
+    <!-- 最顶层栏 -->
     <div class="fixed-navbar">
         <div class="header1">
             <div class="lights-container">
@@ -20,7 +27,7 @@
                 <a class="traffic-light green"></a>
             </div>
             <header class="header">
-                <a href="index1.html" class="logo"><i class="ico mdi mdi-cube-outline"></i>Diabetes visualization system</a>
+                <a href="index1.html" class="logo"><i class="ico mdi mdi-cube-outline"></i>Diabetes Visualization System</a>
                 <!-- /.user -->
             </header>
             
@@ -28,9 +35,13 @@
     </div>
     <div class="mainbox">
         <div class="parllel-times">
-            <div class="parllel" id="parallel-container">
-                
+            <!-- 特征平行坐标图 -->
+            <div class="parllel">
+                <div id="parallel-container"></div>
+                <script src="./assets1/js/parallelCoordinates.js"></script>
             </div>
+
+            <!-- 时序图 -->
             <div class="otherbox">
                 <div id="times">
     
@@ -53,9 +64,9 @@
                                 <th>Degree grading</th>
                             </tr>
                         </thead>
-                        <tbody id="patients-data">
+                        <tbody>
                         </tbody>
-                        <tfoot>
+                        <!-- <tfoot>
                             <tr>
                                 <th>ID</th>
                                 <th>Age</th>
@@ -65,30 +76,98 @@
                                 <th>CREA</th>
                                 <th>Degree grading</th>
                             </tr>
-                        </tfoot>
+                        </tfoot> -->
                     </table>
                 </div>
             </div>
+
+            <!-- 模型参数设置 -->
             <div class="T2G-setting">
                 <button id="toggleButton">▼  Unfold  / fold  ▲</button>
-                <textarea id="foldableContent" class="editable-textarea">
+                <!-- <textarea id="foldableContent" class="editable-textarea">
                     T2GFormer(n_layers=3,d_token=512,n_heads=8,d_ffn_factor=4,attention_dropout=0.1,ffn_dropout=0.1462394754853018,
-residual_dropout=0,activation='reglu',prenormalization=True,initialization='kaiming',kv_compression=None,kv_compression_sharing=None
-                    ,d_out=3,d_numerical=12,categories=[2,2,2],token_bias=True)
-                </textarea>
-                <button id="saveButton" onclick="saveParameters()">Save</button>
+                                residual_dropout=0,activation='reglu',prenormalization=True,initialization='kaiming',kv_compression=None,kv_compression_sharing=None
+                                ,d_out=3,d_numerical=12,categories=[2,2,2],token_bias=True)
+                </textarea> -->
+                <style>
+                    table {
+                      width: 100%;
+                    }
+                    table, th, td {
+                      text-align: center;
+                    }
+                </style>
+                <table id="model-setting1" style="margin:20px;">
+                    <thead>
+                        <tr>
+                            <th>n_layers</th>
+                            <th>d_token</th>
+                            <th>n_heads</th>
+                            <th>attention_dropout</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="text" id="n_layers" value="3"></input>
+                                <button id="n_layers-inc">+</button>
+                                <button id="n_layers-dec">-</button>
+                            </td>
+                            <td>
+                                <input id="d_token" value="64"></input>
+                                <button id="d_token-inc">+</button>
+                                <button id="d_token-dec">-</button>
+                            </td>
+                            <td>
+                                <input type="text" id="n_heads" value="2"></input>
+                                <button id="n_heads-inc">+</button>
+                                <button id="n_heads-dec">-</button>
+                            </td>
+                            <td>
+                                <input type="text" id="attention_dropout" value="0.2"></input>
+                                <button id="attention_dropouts-inc">+</button>
+                                <button id="attention_dropout-dec">-</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <table id="model-setting2" style="margin: 10px;">
+                    <thead>
+                        <tr>
+                            <th>Residual_dropout</th>
+                            <th>Activation</th>
+                            <th>Prenormalization</th>
+                            <th>Initialization</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input id="Residual_dropout" value="0.0"></input>
+                                <button id="Residual_dropout-inc">+</button>
+                                <button id="Residual_dropout-dec">-</button>
+                            </td>
+                            <td>
+                                <input type="text" id="Activation" value="relu"></input>
+                            </td>
+                            <td>
+                                <input type="text" id="Prenormalization" value="false"></input>
+                            </td>
+                            <td>
+                                <input type="text" id="Initialization" value="kaiming"></input>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button id="saveButton" onclick="saveParameters()" >Save</button>
             </div>
-            <div class="T2G" id="T2Gcompare"></div>
+
+            <!-- 模型展示 -->
+            <div class="T2G">
+            
+            </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-    <script src="https://unpkg.com/@antv/g2/dist/g2.min.js"></script>
-    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
-	<script src="assets1/plugin/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets1/js/flod.js"></script>
-    <script type='module' src="assets1/js/information.js"></script>
-    <script src="./assets1/js/parallelCoordinates.js"></script>
-    <script src="./assets1/js/time.js"></script>
-    <script type="module" src="./assets1/js/T2G.js"></script>
 </body>
 </html>
