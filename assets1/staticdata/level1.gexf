@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<gexf xmlns="http://gexf.net/1.3" version="1.3" xmlns:viz="http://gexf.net/1.3/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://gexf.net/1.3 http://gexf.net/1.3/gexf.xsd">
+  <meta lastmodifieddate="2023-12-22">
+    <creator>Gephi 0.10.1</creator>
+    <title></title>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="class" title="class" type="float"/>
+    </attributes>
+    <nodes>
+      <node id="RBC" label="RBC">
+        <attvalues>
+          <attvalue for="class" value="1.0"/>
+        </attvalues>
+        <viz:size value="7.6000004"/>
+        <viz:position x="-275.4892" y="140.72702"/>
+        <viz:color r="255" g="78" b="101"/>
+      </node>
+      <node id="Age" label="Age">
+        <attvalues>
+          <attvalue for="class" value="3.0"/>
+        </attvalues>
+        <viz:size value="5.8"/>
+        <viz:position x="-19.380253" y="-216.09256"/>
+        <viz:color r="0" g="229" b="0"/>
+      </node>
+      <node id="LDL--C" label="LDL--C">
+        <attvalues>
+          <attvalue for="class" value="1.0"/>
+        </attvalues>
+        <viz:size value="7.0"/>
+        <viz:position x="-222.82108" y="17.561237"/>
+        <viz:color r="255" g="78" b="101"/>
+      </node>
+      <node id="WBC" label="WBC">
+        <attvalues>
+          <attvalue for="class" value="1.0"/>
+        </attvalues>
+        <viz:size value="8.2"/>
+        <viz:position x="-309.10294" y="50.054115"/>
+        <viz:color r="255" g="78" b="101"/>
+      </node>
+      <node id="FCp" label="FCp">
+        <attvalues>
+          <attvalue for="class" value="1.0"/>
+        </attvalues>
+        <viz:size value="7.0"/>
+        <viz:position x="-187.87009" y="94.70221"/>
+        <viz:color r="255" g="78" b="101"/>
+      </node>
+      <node id="2H pCp" label="2H pCp">
+        <attvalues>
+          <attvalue for="class" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-107.21988" y="-68.46013"/>
+        <viz:color r="255" g="78" b="101"/>
+      </node>
+      <node id="TC" label="TC">
+        <attvalues>
+          <attvalue for="class" value="1.0"/>
+        </attvalues>
+        <viz:size value="8.8"/>
+        <viz:position x="-330.55283" y="-23.892643"/>
+        <viz:color r="255" g="78" b="101"/>
+      </node>
+      <node id="Neuter cell" label="Neuter cell">
+        <attvalues>
+          <attvalue for="class" value="2.0"/>
+        </attvalues>
+        <viz:size value="7.0"/>
+        <viz:position x="28.520935" y="46.449608"/>
+        <viz:color r="0" g="234" b="255"/>
+      </node>
+      <node id="TG" label="TG">
+        <attvalues>
+          <attvalue for="class" value="1.0"/>
+        </attvalues>
+        <viz:size value="9.4"/>
+        <viz:position x="-138.62608" y="48.08664"/>
+        <viz:color r="255" g="78" b="101"/>
+      </node>
+      <node id="CREA" label="CREA">
+        <attvalues>
+          <attvalue for="class" value="1.0"/>
+        </attvalues>
+        <viz:size value="7.0"/>
+        <viz:position x="-44.42627" y="-39.310093"/>
+        <viz:color r="255" g="78" b="101"/>
+      </node>
+      <node id="2H PG" label="2H PG">
+        <attvalues>
+          <attvalue for="class" value="1.0"/>
+        </attvalues>
+        <viz:size value="5.2"/>
+        <viz:position x="-131.29036" y="148.09406"/>
+        <viz:color r="255" g="78" b="101"/>
+      </node>
+      <node id="Fundus examination" label="Fundus examination">
+        <attvalues>
+          <attvalue for="class" value="2.0"/>
+        </attvalues>
+        <viz:size value="7.0"/>
+        <viz:position x="143.16898" y="6.2729053"/>
+        <viz:color r="0" g="234" b="255"/>
+      </node>
+      <node id="BG recording" label="BG recording">
+        <attvalues>
+          <attvalue for="class" value="2.0"/>
+        </attvalues>
+        <viz:size value="9.4"/>
+        <viz:position x="161.69154" y="87.22814"/>
+        <viz:color r="0" g="234" b="255"/>
+      </node>
+      <node id="2H PI" label="2H PI">
+        <attvalues>
+          <attvalue for="class" value="1.0"/>
+        </attvalues>
+        <viz:size value="7.0"/>
+        <viz:position x="-230.39906" y="-78.18242"/>
+        <viz:color r="255" g="78" b="101"/>
+      </node>
+      <node id="foot examination" label="foot examination">
+        <attvalues>
+          <attvalue for="class" value="2.0"/>
+        </attvalues>
+        <viz:size value="4.0"/>
+        <viz:position x="65.8435" y="114.17389"/>
+        <viz:color r="0" g="234" b="255"/>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="102" source="RBC" target="Age" weight="0.1310279816389084"/>
+      <edge id="103" source="RBC" target="LDL--C" weight="0.12234258651733398"/>
+      <edge id="104" source="RBC" target="WBC" weight="0.11294829100370407"/>
+      <edge id="105" source="RBC" target="FCp" weight="0.12007998675107956"/>
+      <edge id="106" source="RBC" target="2H pCp" weight="0.11911985278129578"/>
+      <edge id="107" source="RBC" target="TC" weight="0.07421266287565231"/>
+      <edge id="108" source="RBC" target="Neuter cell" weight="0.18179288506507874"/>
+      <edge id="109" source="RBC" target="TG" weight="0.11328192055225372"/>
+      <edge id="110" source="CREA" target="FCp" weight="0.1979173719882965"/>
+      <edge id="111" source="CREA" target="2H pCp" weight="0.3112552762031555"/>
+      <edge id="112" source="CREA" target="Neuter cell" weight="0.19719912111759186"/>
+      <edge id="113" source="CREA" target="TG" weight="0.30252066254615784"/>
+      <edge id="114" source="Age" target="CREA" weight="0.18632976710796356"/>
+      <edge id="115" source="Age" target="2H PG" weight="0.17822265625"/>
+      <edge id="116" source="Age" target="2H pCp" weight="0.2383773922920227"/>
+      <edge id="117" source="Age" target="TC" weight="0.19794832170009613"/>
+      <edge id="118" source="Age" target="Fundus examination" weight="0.18074539303779602"/>
+      <edge id="119" source="LDL--C" target="FCp" weight="0.246107816696167"/>
+      <edge id="120" source="LDL--C" target="Neuter cell" weight="0.17178303003311157"/>
+      <edge id="121" source="LDL--C" target="TG" weight="0.2719198763370514"/>
+      <edge id="122" source="LDL--C" target="BG recording" weight="0.2895579934120178"/>
+      <edge id="123" source="WBC" target="RBC" weight="0.09600591659545898"/>
+      <edge id="124" source="WBC" target="CREA" weight="0.08854556083679199"/>
+      <edge id="125" source="WBC" target="LDL--C" weight="0.09119166433811188"/>
+      <edge id="126" source="WBC" target="2H PG" weight="0.10011026263237"/>
+      <edge id="127" source="WBC" target="2H PI" weight="0.10303700715303421"/>
+      <edge id="128" source="WBC" target="2H pCp" weight="0.1061120480298996"/>
+      <edge id="129" source="WBC" target="TC" weight="0.1177927553653717"/>
+      <edge id="130" source="WBC" target="Fundus examination" weight="0.10714881122112274"/>
+      <edge id="131" source="WBC" target="BG recording" weight="0.10441836714744568"/>
+      <edge id="132" source="WBC" target="foot examination" weight="0.08938352763652802"/>
+      <edge id="133" source="2H PG" target="RBC" weight="0.17942401766777039"/>
+      <edge id="134" source="2H PG" target="CREA" weight="0.2048015594482422"/>
+      <edge id="135" source="2H PG" target="FCp" weight="0.16973134875297546"/>
+      <edge id="136" source="2H PG" target="TG" weight="0.1811453402042389"/>
+      <edge id="137" source="2H PG" target="Fundus examination" weight="0.22942832112312317"/>
+      <edge id="138" source="2H PI" target="LDL--C" weight="0.11624526232481003"/>
+      <edge id="139" source="2H PI" target="WBC" weight="0.15450438857078552"/>
+      <edge id="140" source="2H PI" target="2H pCp" weight="0.10870146006345749"/>
+      <edge id="141" source="2H PI" target="TC" weight="0.1551952064037323"/>
+      <edge id="142" source="2H PI" target="Neuter cell" weight="0.1614878922700882"/>
+      <edge id="143" source="2H PI" target="BG recording" weight="0.18029306828975677"/>
+      <edge id="144" source="2H PI" target="foot examination" weight="0.13440658152103424"/>
+      <edge id="145" source="FCp" target="RBC" weight="0.1788255125284195"/>
+      <edge id="146" source="FCp" target="CREA" weight="0.15549804270267487"/>
+      <edge id="147" source="FCp" target="LDL--C" weight="0.19140388071537018"/>
+      <edge id="148" source="FCp" target="2H PI" weight="0.14533676207065582"/>
+      <edge id="149" source="FCp" target="TC" weight="0.1335749328136444"/>
+      <edge id="150" source="FCp" target="BG recording" weight="0.17701123654842377"/>
+      <edge id="151" source="2H pCp" target="CREA" weight="0.14652888476848602"/>
+      <edge id="152" source="2H pCp" target="WBC" weight="0.13586829602718353"/>
+      <edge id="153" source="2H pCp" target="2H PG" weight="0.13400715589523315"/>
+      <edge id="154" source="2H pCp" target="2H PI" weight="0.09137564152479172"/>
+      <edge id="155" source="2H pCp" target="TC" weight="0.1385561227798462"/>
+      <edge id="156" source="2H pCp" target="Neuter cell" weight="0.08018933981657028"/>
+      <edge id="157" source="2H pCp" target="Fundus examination" weight="0.1025126501917839"/>
+      <edge id="158" source="2H pCp" target="BG recording" weight="0.10460203140974045"/>
+      <edge id="159" source="2H pCp" target="foot examination" weight="0.10368143022060394"/>
+      <edge id="160" source="TC" target="LDL--C" weight="0.22261986136436462"/>
+      <edge id="161" source="TC" target="2H PI" weight="0.19200889766216278"/>
+      <edge id="162" source="TC" target="2H pCp" weight="0.18675360083580017"/>
+      <edge id="163" source="TC" target="BG recording" weight="0.19004586338996887"/>
+      <edge id="164" source="TC" target="foot examination" weight="0.21437647938728333"/>
+      <edge id="165" source="Neuter cell" target="RBC" weight="0.18128854036331177"/>
+      <edge id="166" source="Neuter cell" target="CREA" weight="0.11964845657348633"/>
+      <edge id="167" source="Neuter cell" target="Age" weight="0.1370934247970581"/>
+      <edge id="168" source="Neuter cell" target="LDL--C" weight="0.09977588057518005"/>
+      <edge id="169" source="Neuter cell" target="FCp" weight="0.21188823878765106"/>
+      <edge id="170" source="Neuter cell" target="TC" weight="0.0952712669968605"/>
+      <edge id="171" source="Neuter cell" target="TG" weight="0.09161531925201416"/>
+      <edge id="172" source="TG" target="RBC" weight="0.06897219270467758"/>
+      <edge id="173" source="TG" target="CREA" weight="0.10052706301212311"/>
+      <edge id="174" source="TG" target="Age" weight="0.07176245003938675"/>
+      <edge id="175" source="TG" target="LDL--C" weight="0.106652170419693"/>
+      <edge id="176" source="TG" target="WBC" weight="0.08436068892478943"/>
+      <edge id="177" source="TG" target="2H PG" weight="0.08418165892362595"/>
+      <edge id="178" source="TG" target="2H PI" weight="0.0987498089671135"/>
+      <edge id="179" source="TG" target="2H pCp" weight="0.08907348662614822"/>
+      <edge id="180" source="TG" target="TC" weight="0.06348426640033722"/>
+      <edge id="181" source="TG" target="Fundus examination" weight="0.09714721888303757"/>
+      <edge id="182" source="TG" target="BG recording" weight="0.09740196913480759"/>
+      <edge id="183" source="Fundus examination" target="CREA" weight="0.14095528423786163"/>
+      <edge id="184" source="Fundus examination" target="Age" weight="0.12989944219589233"/>
+      <edge id="185" source="Fundus examination" target="FCp" weight="0.1553564965724945"/>
+      <edge id="186" source="Fundus examination" target="2H pCp" weight="0.10915140062570572"/>
+      <edge id="187" source="Fundus examination" target="TC" weight="0.1288740485906601"/>
+      <edge id="188" source="Fundus examination" target="Neuter cell" weight="0.14632652699947357"/>
+      <edge id="189" source="Fundus examination" target="TG" weight="0.15967097878456116"/>
+      <edge id="190" source="BG recording" target="RBC" weight="0.11357927322387695"/>
+      <edge id="191" source="BG recording" target="CREA" weight="0.0734701007604599"/>
+      <edge id="192" source="BG recording" target="Age" weight="0.08540220558643341"/>
+      <edge id="193" source="BG recording" target="LDL--C" weight="0.10374347865581512"/>
+      <edge id="194" source="BG recording" target="WBC" weight="0.09562794119119644"/>
+      <edge id="195" source="BG recording" target="2H PG" weight="0.10617534071207047"/>
+      <edge id="196" source="BG recording" target="FCp" weight="0.09877511113882065"/>
+      <edge id="197" source="BG recording" target="2H pCp" weight="0.07618637382984161"/>
+      <edge id="198" source="BG recording" target="TC" weight="0.0888688862323761"/>
+      <edge id="199" source="BG recording" target="Fundus examination" weight="0.12718240916728973"/>
+      <edge id="200" source="foot examination" target="Age" weight="0.24347378313541412"/>
+      <edge id="201" source="foot examination" target="LDL--C" weight="0.25352126359939575"/>
+      <edge id="202" source="foot examination" target="2H PI" weight="0.2394077032804489"/>
+      <edge id="203" source="foot examination" target="TC" weight="0.26550355553627014"/>
+    </edges>
+  </graph>
+</gexf>

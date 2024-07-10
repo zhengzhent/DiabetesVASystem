@@ -33,13 +33,18 @@ document.addEventListener("DOMContentLoaded", function () {
             dataTableContainer.style.display = 'none';
         } else {
             // 展开
-            informationDiv.style.maxHeight = '700px'; // 根据需要调整默认高度
+            informationDiv.style.maxHeight = '800px'; // 根据需要调整默认高度
 
             // 显示 DataTable 元素
             $('#example_info').show(); // 显示 "Showing 1 to 10 of 14 entries"
             $('#example_paginate').show(); // 显示分页部分
             $('#example_length').show(); 
             dataTableContainer.style.display = 'block';
+            setTimeout(function() { // 延迟一段时间等待折叠和展开动画完成
+                dataTableContainer.style.width = dataTableContainer.offsetWidth + 'px';
+                dataTableContainer.style.height = dataTableContainer.offsetHeight + 'px';
+                dataTable.draw();
+            }, 300);
         }
     });
 

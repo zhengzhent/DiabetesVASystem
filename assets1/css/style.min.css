@@ -6,7 +6,7 @@
 	position:relative;
 	height:100%;
 	background:#f5f7fa;
-	color:#505458
+	color:#505458;
 }
 a {
 	transition:all 0.4s ease;
@@ -123,34 +123,43 @@ a:active,a:focus,a:hover {
 
 .mainbox {
 	display: flex;
-	width: 3320px;
-	height: 1810px;
+	width: 3293px;
+	height: 1738px;
     padding: 0.125rem 0.125rem 0;
     margin: 0;
 	margin-top: 78px;
 	box-shadow:0 0px 24px 0 rgba(0,0,0,0.06),0 1px 0px 0 rgba(0,0,0,0.02);
 	-moz-box-shadow:0 0px 24px 0 rgba(0,0,0,0.06),0 1px 0px 0 rgba(0,0,0,0.02);
-	-webkit-box-shadow:0 0px 24px 0 rgba(0,0,0,0.06),0 1px 0px 0 rgba(0,0,0,0.02)
+	-webkit-box-shadow:0 0px 24px 0 rgba(0,0,0,0.06),0 1px 0px 0 rgba(0,0,0,0.02);
+	border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .parllel-times {
-	float: left;  
+	float: left;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	width: 1800px;
+	height: 1738px;
 }
 
 .parllel {
-	display: flex;
-	flex-direction: column;
+
 	border: 2px solid rgba(255, 255, 255, 0.5); /* 透明边框 */ 	
 	background-color: rgba(255, 255, 255, 0.1); /* 透明背景 */
 	width: 1800px;
 	height: 1055px;
+	z-index: 98;
+}
+
+#times {
+	width: 1800px;
+	display: flex;
 }
 
 .information-T2G{
 	display: flex;
 	flex-direction: column; 
 	width: 1580px;
-	height: 1810px;
+	height: 1738px;
 	float: left;
 }
 
@@ -164,12 +173,22 @@ a:active,a:focus,a:hover {
 }
 
 .otherbox {
-	display: flex;
 	position: relative;
 	width: 1800px;
-	height: 680px;
+	height: 683px;
 	border: 2px solid rgba(255, 255, 255, 0.5); /* 透明边框 */ 	
 	background-color: rgba(255, 255, 255, 0.1); /* 透明背景 */
+}
+
+.title-box {
+	text-align: center; /* 居中对齐 */
+	color: white; /* 白色字体颜色 */
+	margin-top: 10px; /* 可根据需要调整标题与图表之间的间距 */
+}
+
+.title-box h2 {
+	font-size: 30px; /* 标题字体大小 */
+	margin: 0; /* 去除默认的外边距 */
 }
 
 .T2G-setting {
@@ -189,6 +208,7 @@ a:active,a:focus,a:hover {
 	background-color: #333333;
 	height: 30px;
 	position: relative;
+	z-index: 80;
 }
 
 #foldableContent {
@@ -212,8 +232,7 @@ a:active,a:focus,a:hover {
 .T2G{
 	display: flex;
 	position: relative;
-	flex-direction: column; 
-	width: 1490px;
+	width: 990px;
 	height: 805px;
 	border: 2px solid rgba(255, 255, 255, 0.5); /* 透明边框 */ 
 	background-color: rgba(255, 255, 255, 0.1); /* 透明背景 */
@@ -227,12 +246,14 @@ a:active,a:focus,a:hover {
     width: 1450px;
     max-height: 700px;
     margin-top: 50px; /* You can adjust this value to increase or decrease the space */
+	z-index: 80;
 }
 
 #example {
     width: 100%; /* Set the width to 100% */
-	height: 90%;
+	height: 100%;
     margin-top: 20px; /* Add margin-top as needed */
+	border-spacing: 0;
 }
 
 /* Apply DataTable styles */
@@ -259,7 +280,116 @@ a:active,a:focus,a:hover {
 #toggleInformationButton {
     display: block;
     background-color: #333333;
+	width: 1490px;
     height: 30px;
     cursor: pointer;
 	z-index: 100;
+}
+.custom-font-size {
+    font-size: 16px; /* 设置你想要的字体大小 */
+}
+
+#graphs {
+	display: flex;
+	position: relative;
+	width: 745px;
+	height: 805px;
+	border: 2px solid rgba(255, 255, 255, 0.5); /* 透明边框 */ 
+	background-color: rgba(255, 255, 255, 0.1); /* 透明背景 */
+}
+
+#T2Gcompare {
+	display: flex;
+	position: relative;
+	width: 745px;
+	height: 805px;
+	border: 2px solid rgba(255, 255, 255, 0.5); /* 透明边框 */ 
+	background-color: rgba(255, 255, 255, 0.1); /* 透明背景 */
+}
+
+.axis path,
+.axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+.line {
+	fill: none;
+	stroke-opacity: 0.5;
+}
+.legend {
+font-size: 15px;
+}
+
+.legend-item {
+display: inline-block;
+margin-right: 10px;
+}
+
+.legend-color {
+display: inline-block;
+width: 15px;
+height: 15px;
+margin-right: 5px;
+}
+
+.p-b {
+	display: flex;
+}
+
+#toggleBundling {
+    padding: 5px 10px; /* 设置按钮内边距 */
+    font-size: 12px; /* 设置字体大小 */
+    background-color: transparent; /* 设置背景透明 */
+    color: #fff; /* 设置字体颜色为白色 */
+}
+
+#scatterChart {
+	border: 2px solid rgba(255, 255, 255, 0.5); /* 透明边框 */ 
+	background-color: rgba(255, 255, 255, 0.1); /* 透明背景 */
+}
+
+#csp{
+	display: flex;
+}
+
+#radius{
+	width: 590px;
+	height: 805px;
+	border: 2px solid rgba(255, 255, 255, 0.5); /* 透明边框 */ 
+	background-color: rgba(255, 255, 255, 0.1); /* 透明背景 */
+}
+
+#t2gform{
+	width: 900px;
+	height: 805px;
+	border: 2px solid rgba(255, 255, 255, 0.5); /* 透明边框 */ 
+	background-color: rgba(255, 255, 255, 0.1); /* 透明背景 */
+}
+.axis line {
+	stroke: #ddd;
+}
+.axis text {
+	font-size: 15px;
+	fill: #ffffff;
+}
+.area {
+	fill: rgba(0, 150, 200, 0.5);
+	stroke: rgba(0, 150, 200, 0.7);
+	stroke-width: 2px;
+}
+.gridCircle {
+	fill: none;
+	stroke: #CDCDCD;
+	stroke-width: 0.5px;
+}
+.radarCircle {
+	fill: rgba(213, 235, 11, 0.7);
+}
+.legend {
+	font-size: 15px;
+}
+.radarValue {
+	font-size: 20px;
+	fill: #ffffff;
 }

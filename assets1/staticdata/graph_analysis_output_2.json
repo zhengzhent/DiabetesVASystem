@@ -1,0 +1,956 @@
+{
+    "nodes": [
+        {
+            "id": "Age",
+            "name": "Age",
+            "symbolSize": 4.239389234404776,
+            "x": 0.42730043185036337,
+            "y": 0.6486212389978097,
+            "value": 0.04239389234404776,
+            "category": 0
+        },
+        {
+            "id": "Height ",
+            "name": "Height ",
+            "symbolSize": 3.868028345961063,
+            "x": 0.28381197930369445,
+            "y": 0.40278000285207277,
+            "value": 0.03868028345961063,
+            "category": 2
+        },
+        {
+            "id": "Weight",
+            "name": "Weight",
+            "symbolSize": 3.9874241228286076,
+            "x": -0.11794529129866575,
+            "y": 0.16783375395707467,
+            "value": 0.039874241228286075,
+            "category": 2
+        },
+        {
+            "id": "BMI",
+            "name": "BMI",
+            "symbolSize": 3.8961612098296863,
+            "x": -0.34885180329825877,
+            "y": -0.733913622950509,
+            "value": 0.03896161209829686,
+            "category": 1
+        },
+        {
+            "id": "SmokingHistory ",
+            "name": "SmokingHistory ",
+            "symbolSize": 3.8784258793837205,
+            "x": 0.675388835870952,
+            "y": 0.07476985483375886,
+            "value": 0.038784258793837206,
+            "category": 3
+        },
+        {
+            "id": "Fasting Plasma Glucose",
+            "name": "Fasting Plasma Glucose",
+            "symbolSize": 2.9766413050978255,
+            "x": -0.9092895974854402,
+            "y": -0.10319035296896047,
+            "value": 0.029766413050978255,
+            "category": 1
+        },
+        {
+            "id": "2-hour Postprandial Plasma Glucose",
+            "name": "2-hour Postprandial Plasma Glucose",
+            "symbolSize": 3.701137806804175,
+            "x": -0.6544039578915812,
+            "y": -0.5945100599187709,
+            "value": 0.03701137806804175,
+            "category": 1
+        },
+        {
+            "id": "Fasting C-peptide",
+            "name": "Fasting C-peptide",
+            "symbolSize": 3.2637228933749043,
+            "x": -0.9205975575641602,
+            "y": -0.42218138655271514,
+            "value": 0.03263722893374904,
+            "category": 1
+        },
+        {
+            "id": "2-hour Postprandial C-peptide",
+            "name": "2-hour Postprandial C-peptide",
+            "symbolSize": 3.222740561937161,
+            "x": -0.785933973895248,
+            "y": 0.4978813857762096,
+            "value": 0.03222740561937161,
+            "category": 2
+        },
+        {
+            "id": "Fasting Insulin",
+            "name": "Fasting Insulin",
+            "symbolSize": 3.699959962049499,
+            "x": 0.40268796775076066,
+            "y": 0.023607599317307434,
+            "value": 0.03699959962049499,
+            "category": 3
+        },
+        {
+            "id": "2-hour Postprandial insulin",
+            "name": "2-hour Postprandial insulin",
+            "symbolSize": 3.860147512515155,
+            "x": -0.8677021027657129,
+            "y": -0.6793989859982635,
+            "value": 0.03860147512515155,
+            "category": 1
+        },
+        {
+            "id": "HbA1c",
+            "name": "HbA1c",
+            "symbolSize": 3.0914600881520227,
+            "x": 0.4506260132262745,
+            "y": -0.8223331203831592,
+            "value": 0.03091460088152023,
+            "category": 3
+        },
+        {
+            "id": "Glycated Albumin",
+            "name": "Glycated Albumin",
+            "symbolSize": 3.7974315719803524,
+            "x": -0.5571693887721948,
+            "y": 0.021184038992499755,
+            "value": 0.037974315719803524,
+            "category": 2
+        },
+        {
+            "id": "Total Cholesterol",
+            "name": "Total Cholesterol",
+            "symbolSize": 2.800227012014382,
+            "x": 0.1752941343169107,
+            "y": 0.9098748388606949,
+            "value": 0.028002270120143818,
+            "category": 0
+        },
+        {
+            "id": "Triglyceride",
+            "name": "Triglyceride",
+            "symbolSize": 3.4862428498149307,
+            "x": -0.350686702482097,
+            "y": -0.42267830984173405,
+            "value": 0.03486242849814931,
+            "category": 1
+        },
+        {
+            "id": "High-Density Lipoprotein Cholesterol",
+            "name": "High-Density Lipoprotein Cholesterol",
+            "symbolSize": 3.787327121907167,
+            "x": 0.48370860911123803,
+            "y": -0.5520856793412688,
+            "value": 0.03787327121907167,
+            "category": 3
+        },
+        {
+            "id": "Low-Density Lipoprotein Cholesterol",
+            "name": "Low-Density Lipoprotein Cholesterol",
+            "symbolSize": 3.701806949066154,
+            "x": -0.566131661764874,
+            "y": 0.6795470217314025,
+            "value": 0.03701806949066154,
+            "category": 2
+        },
+        {
+            "id": "Creatinine",
+            "name": "Creatinine",
+            "symbolSize": 3.1341575071404537,
+            "x": 0.7754740443931447,
+            "y": 0.7439258695116303,
+            "value": 0.03134157507140454,
+            "category": 0
+        },
+        {
+            "id": "Estimated Glomerular Filtration Rate ",
+            "name": "Estimated Glomerular Filtration Rate ",
+            "symbolSize": 3.700108556558679,
+            "x": 0.7658488009070892,
+            "y": 0.4159741639244599,
+            "value": 0.03700108556558679,
+            "category": 3
+        },
+        {
+            "id": "Uric Acid",
+            "name": "Uric Acid",
+            "symbolSize": 3.737131974868926,
+            "x": 0.28430482069154567,
+            "y": -0.35860485432602307,
+            "value": 0.037371319748689256,
+            "category": 3
+        },
+        {
+            "id": "Blood Urea Nitrogen",
+            "name": "Blood Urea Nitrogen",
+            "symbolSize": 3.6956052982798187,
+            "x": 0.8052338888220281,
+            "y": -0.45484743715139697,
+            "value": 0.036956052982798186,
+            "category": 3
+        },
+        {
+            "id": "Duration of diabetes",
+            "name": "Duration of diabetes",
+            "symbolSize": 3.7731114985156076,
+            "x": 0.1287750669829189,
+            "y": -0.6004349838245812,
+            "value": 0.03773111498515608,
+            "category": 3
+        },
+        {
+            "id": "Alcohol Drinking History ",
+            "name": "Alcohol Drinking History ",
+            "symbolSize": 3.7510441004971486,
+            "x": 0.060403296866632546,
+            "y": 0.6033012372731588,
+            "value": 0.03751044100497149,
+            "category": 2
+        },
+        {
+            "id": "Vascular Complications",
+            "name": "Vascular Complications",
+            "symbolSize": 3.6710429653839367,
+            "x": -0.12461518610463863,
+            "y": -0.1692224119216912,
+            "value": 0.03671042965383937,
+            "category": 3
+        },
+        {
+            "id": "HypoglycemicAgents",
+            "name": "HypoglycemicAgents",
+            "symbolSize": 3.5421114811365797,
+            "x": -0.24946320392069068,
+            "y": 0.7686023183249147,
+            "value": 0.0354211148113658,
+            "category": 2
+        },
+        {
+            "id": "OtherAgents",
+            "name": "OtherAgents",
+            "symbolSize": 2.1884943908333754,
+            "x": -0.31898587178830623,
+            "y": 0.32153892566481473,
+            "value": 0.021884943908333756,
+            "category": 0
+        },
+        {
+            "id": "Gender ",
+            "name": "Gender ",
+            "symbolSize": 3.7053355949115256,
+            "x": 1.0,
+            "y": -0.3206201493297443,
+            "value": 0.037053355949115255,
+            "category": 3
+        },
+        {
+            "id": "Hypoglycemia ",
+            "name": "Hypoglycemia ",
+            "symbolSize": 3.8435822047523738,
+            "x": 0.05291840893831577,
+            "y": -0.04542089550899299,
+            "value": 0.038435822047523736,
+            "category": 1
+        }
+    ],
+    "links": [
+        {
+            "source": "Age",
+            "target": "Height "
+        },
+        {
+            "source": "Age",
+            "target": "BMI"
+        },
+        {
+            "source": "Age",
+            "target": "SmokingHistory "
+        },
+        {
+            "source": "Age",
+            "target": "2-hour Postprandial C-peptide"
+        },
+        {
+            "source": "Age",
+            "target": "Total Cholesterol"
+        },
+        {
+            "source": "Age",
+            "target": "Triglyceride"
+        },
+        {
+            "source": "Age",
+            "target": "High-Density Lipoprotein Cholesterol"
+        },
+        {
+            "source": "Age",
+            "target": "Creatinine"
+        },
+        {
+            "source": "Age",
+            "target": "Estimated Glomerular Filtration Rate "
+        },
+        {
+            "source": "Age",
+            "target": "Uric Acid"
+        },
+        {
+            "source": "Age",
+            "target": "Duration of diabetes"
+        },
+        {
+            "source": "Age",
+            "target": "Alcohol Drinking History "
+        },
+        {
+            "source": "Age",
+            "target": "HypoglycemicAgents"
+        },
+        {
+            "source": "Age",
+            "target": "Hypoglycemia "
+        },
+        {
+            "source": "Height ",
+            "target": "Weight"
+        },
+        {
+            "source": "Height ",
+            "target": "SmokingHistory "
+        },
+        {
+            "source": "Height ",
+            "target": "2-hour Postprandial C-peptide"
+        },
+        {
+            "source": "Height ",
+            "target": "Fasting Insulin"
+        },
+        {
+            "source": "Height ",
+            "target": "HbA1c"
+        },
+        {
+            "source": "Height ",
+            "target": "Total Cholesterol"
+        },
+        {
+            "source": "Height ",
+            "target": "High-Density Lipoprotein Cholesterol"
+        },
+        {
+            "source": "Height ",
+            "target": "Low-Density Lipoprotein Cholesterol"
+        },
+        {
+            "source": "Height ",
+            "target": "Creatinine"
+        },
+        {
+            "source": "Height ",
+            "target": "Estimated Glomerular Filtration Rate "
+        },
+        {
+            "source": "Height ",
+            "target": "Alcohol Drinking History "
+        },
+        {
+            "source": "Height ",
+            "target": "HypoglycemicAgents"
+        },
+        {
+            "source": "Height ",
+            "target": "Gender "
+        },
+        {
+            "source": "Weight",
+            "target": "BMI"
+        },
+        {
+            "source": "Weight",
+            "target": "SmokingHistory "
+        },
+        {
+            "source": "Weight",
+            "target": "2-hour Postprandial C-peptide"
+        },
+        {
+            "source": "Weight",
+            "target": "2-hour Postprandial insulin"
+        },
+        {
+            "source": "Weight",
+            "target": "Glycated Albumin"
+        },
+        {
+            "source": "Weight",
+            "target": "Triglyceride"
+        },
+        {
+            "source": "Weight",
+            "target": "Low-Density Lipoprotein Cholesterol"
+        },
+        {
+            "source": "Weight",
+            "target": "Creatinine"
+        },
+        {
+            "source": "Weight",
+            "target": "Estimated Glomerular Filtration Rate "
+        },
+        {
+            "source": "Weight",
+            "target": "Uric Acid"
+        },
+        {
+            "source": "Weight",
+            "target": "Alcohol Drinking History "
+        },
+        {
+            "source": "Weight",
+            "target": "OtherAgents"
+        },
+        {
+            "source": "BMI",
+            "target": "Fasting Plasma Glucose"
+        },
+        {
+            "source": "BMI",
+            "target": "2-hour Postprandial Plasma Glucose"
+        },
+        {
+            "source": "BMI",
+            "target": "Fasting C-peptide"
+        },
+        {
+            "source": "BMI",
+            "target": "2-hour Postprandial insulin"
+        },
+        {
+            "source": "BMI",
+            "target": "Glycated Albumin"
+        },
+        {
+            "source": "BMI",
+            "target": "Triglyceride"
+        },
+        {
+            "source": "BMI",
+            "target": "High-Density Lipoprotein Cholesterol"
+        },
+        {
+            "source": "BMI",
+            "target": "Uric Acid"
+        },
+        {
+            "source": "BMI",
+            "target": "OtherAgents"
+        },
+        {
+            "source": "BMI",
+            "target": "Hypoglycemia "
+        },
+        {
+            "source": "SmokingHistory ",
+            "target": "Triglyceride"
+        },
+        {
+            "source": "SmokingHistory ",
+            "target": "High-Density Lipoprotein Cholesterol"
+        },
+        {
+            "source": "SmokingHistory ",
+            "target": "Creatinine"
+        },
+        {
+            "source": "SmokingHistory ",
+            "target": "Estimated Glomerular Filtration Rate "
+        },
+        {
+            "source": "SmokingHistory ",
+            "target": "Uric Acid"
+        },
+        {
+            "source": "SmokingHistory ",
+            "target": "Duration of diabetes"
+        },
+        {
+            "source": "SmokingHistory ",
+            "target": "Alcohol Drinking History "
+        },
+        {
+            "source": "SmokingHistory ",
+            "target": "OtherAgents"
+        },
+        {
+            "source": "SmokingHistory ",
+            "target": "Gender "
+        },
+        {
+            "source": "SmokingHistory ",
+            "target": "Hypoglycemia "
+        },
+        {
+            "source": "Fasting Plasma Glucose",
+            "target": "2-hour Postprandial Plasma Glucose"
+        },
+        {
+            "source": "Fasting Plasma Glucose",
+            "target": "Fasting C-peptide"
+        },
+        {
+            "source": "Fasting Plasma Glucose",
+            "target": "2-hour Postprandial C-peptide"
+        },
+        {
+            "source": "Fasting Plasma Glucose",
+            "target": "2-hour Postprandial insulin"
+        },
+        {
+            "source": "Fasting Plasma Glucose",
+            "target": "Triglyceride"
+        },
+        {
+            "source": "Fasting Plasma Glucose",
+            "target": "Low-Density Lipoprotein Cholesterol"
+        },
+        {
+            "source": "Fasting Plasma Glucose",
+            "target": "Uric Acid"
+        },
+        {
+            "source": "Fasting Plasma Glucose",
+            "target": "Duration of diabetes"
+        },
+        {
+            "source": "Fasting Plasma Glucose",
+            "target": "Vascular Complications"
+        },
+        {
+            "source": "Fasting Plasma Glucose",
+            "target": "HypoglycemicAgents"
+        },
+        {
+            "source": "2-hour Postprandial Plasma Glucose",
+            "target": "Fasting C-peptide"
+        },
+        {
+            "source": "2-hour Postprandial Plasma Glucose",
+            "target": "2-hour Postprandial C-peptide"
+        },
+        {
+            "source": "2-hour Postprandial Plasma Glucose",
+            "target": "2-hour Postprandial insulin"
+        },
+        {
+            "source": "2-hour Postprandial Plasma Glucose",
+            "target": "HbA1c"
+        },
+        {
+            "source": "2-hour Postprandial Plasma Glucose",
+            "target": "Glycated Albumin"
+        },
+        {
+            "source": "2-hour Postprandial Plasma Glucose",
+            "target": "Triglyceride"
+        },
+        {
+            "source": "2-hour Postprandial Plasma Glucose",
+            "target": "Duration of diabetes"
+        },
+        {
+            "source": "2-hour Postprandial Plasma Glucose",
+            "target": "Hypoglycemia "
+        },
+        {
+            "source": "Fasting C-peptide",
+            "target": "Fasting Insulin"
+        },
+        {
+            "source": "Fasting C-peptide",
+            "target": "2-hour Postprandial insulin"
+        },
+        {
+            "source": "Fasting C-peptide",
+            "target": "Glycated Albumin"
+        },
+        {
+            "source": "Fasting C-peptide",
+            "target": "Triglyceride"
+        },
+        {
+            "source": "Fasting C-peptide",
+            "target": "High-Density Lipoprotein Cholesterol"
+        },
+        {
+            "source": "Fasting C-peptide",
+            "target": "Low-Density Lipoprotein Cholesterol"
+        },
+        {
+            "source": "Fasting C-peptide",
+            "target": "Vascular Complications"
+        },
+        {
+            "source": "2-hour Postprandial C-peptide",
+            "target": "Total Cholesterol"
+        },
+        {
+            "source": "2-hour Postprandial C-peptide",
+            "target": "Low-Density Lipoprotein Cholesterol"
+        },
+        {
+            "source": "2-hour Postprandial C-peptide",
+            "target": "Creatinine"
+        },
+        {
+            "source": "2-hour Postprandial C-peptide",
+            "target": "Alcohol Drinking History "
+        },
+        {
+            "source": "2-hour Postprandial C-peptide",
+            "target": "Vascular Complications"
+        },
+        {
+            "source": "2-hour Postprandial C-peptide",
+            "target": "HypoglycemicAgents"
+        },
+        {
+            "source": "2-hour Postprandial C-peptide",
+            "target": "OtherAgents"
+        },
+        {
+            "source": "Fasting Insulin",
+            "target": "Glycated Albumin"
+        },
+        {
+            "source": "Fasting Insulin",
+            "target": "Total Cholesterol"
+        },
+        {
+            "source": "Fasting Insulin",
+            "target": "Low-Density Lipoprotein Cholesterol"
+        },
+        {
+            "source": "Fasting Insulin",
+            "target": "Creatinine"
+        },
+        {
+            "source": "Fasting Insulin",
+            "target": "Estimated Glomerular Filtration Rate "
+        },
+        {
+            "source": "Fasting Insulin",
+            "target": "Blood Urea Nitrogen"
+        },
+        {
+            "source": "Fasting Insulin",
+            "target": "Alcohol Drinking History "
+        },
+        {
+            "source": "Fasting Insulin",
+            "target": "Vascular Complications"
+        },
+        {
+            "source": "Fasting Insulin",
+            "target": "HypoglycemicAgents"
+        },
+        {
+            "source": "Fasting Insulin",
+            "target": "OtherAgents"
+        },
+        {
+            "source": "Fasting Insulin",
+            "target": "Gender "
+        },
+        {
+            "source": "Fasting Insulin",
+            "target": "Hypoglycemia "
+        },
+        {
+            "source": "2-hour Postprandial insulin",
+            "target": "Glycated Albumin"
+        },
+        {
+            "source": "2-hour Postprandial insulin",
+            "target": "Triglyceride"
+        },
+        {
+            "source": "2-hour Postprandial insulin",
+            "target": "Vascular Complications"
+        },
+        {
+            "source": "2-hour Postprandial insulin",
+            "target": "OtherAgents"
+        },
+        {
+            "source": "2-hour Postprandial insulin",
+            "target": "Hypoglycemia "
+        },
+        {
+            "source": "HbA1c",
+            "target": "High-Density Lipoprotein Cholesterol"
+        },
+        {
+            "source": "HbA1c",
+            "target": "Creatinine"
+        },
+        {
+            "source": "HbA1c",
+            "target": "Uric Acid"
+        },
+        {
+            "source": "HbA1c",
+            "target": "Blood Urea Nitrogen"
+        },
+        {
+            "source": "HbA1c",
+            "target": "Duration of diabetes"
+        },
+        {
+            "source": "HbA1c",
+            "target": "Vascular Complications"
+        },
+        {
+            "source": "HbA1c",
+            "target": "HypoglycemicAgents"
+        },
+        {
+            "source": "HbA1c",
+            "target": "Gender "
+        },
+        {
+            "source": "Glycated Albumin",
+            "target": "Total Cholesterol"
+        },
+        {
+            "source": "Glycated Albumin",
+            "target": "Low-Density Lipoprotein Cholesterol"
+        },
+        {
+            "source": "Glycated Albumin",
+            "target": "Blood Urea Nitrogen"
+        },
+        {
+            "source": "Glycated Albumin",
+            "target": "Alcohol Drinking History "
+        },
+        {
+            "source": "Glycated Albumin",
+            "target": "Vascular Complications"
+        },
+        {
+            "source": "Glycated Albumin",
+            "target": "HypoglycemicAgents"
+        },
+        {
+            "source": "Glycated Albumin",
+            "target": "Hypoglycemia "
+        },
+        {
+            "source": "Total Cholesterol",
+            "target": "Low-Density Lipoprotein Cholesterol"
+        },
+        {
+            "source": "Total Cholesterol",
+            "target": "Creatinine"
+        },
+        {
+            "source": "Total Cholesterol",
+            "target": "Estimated Glomerular Filtration Rate "
+        },
+        {
+            "source": "Total Cholesterol",
+            "target": "Alcohol Drinking History "
+        },
+        {
+            "source": "Total Cholesterol",
+            "target": "Vascular Complications"
+        },
+        {
+            "source": "Total Cholesterol",
+            "target": "HypoglycemicAgents"
+        },
+        {
+            "source": "Total Cholesterol",
+            "target": "OtherAgents"
+        },
+        {
+            "source": "Total Cholesterol",
+            "target": "Hypoglycemia "
+        },
+        {
+            "source": "Triglyceride",
+            "target": "High-Density Lipoprotein Cholesterol"
+        },
+        {
+            "source": "Triglyceride",
+            "target": "Uric Acid"
+        },
+        {
+            "source": "Triglyceride",
+            "target": "Duration of diabetes"
+        },
+        {
+            "source": "Triglyceride",
+            "target": "OtherAgents"
+        },
+        {
+            "source": "Triglyceride",
+            "target": "Hypoglycemia "
+        },
+        {
+            "source": "High-Density Lipoprotein Cholesterol",
+            "target": "Creatinine"
+        },
+        {
+            "source": "High-Density Lipoprotein Cholesterol",
+            "target": "Estimated Glomerular Filtration Rate "
+        },
+        {
+            "source": "High-Density Lipoprotein Cholesterol",
+            "target": "Uric Acid"
+        },
+        {
+            "source": "High-Density Lipoprotein Cholesterol",
+            "target": "Blood Urea Nitrogen"
+        },
+        {
+            "source": "High-Density Lipoprotein Cholesterol",
+            "target": "Duration of diabetes"
+        },
+        {
+            "source": "High-Density Lipoprotein Cholesterol",
+            "target": "Vascular Complications"
+        },
+        {
+            "source": "High-Density Lipoprotein Cholesterol",
+            "target": "Gender "
+        },
+        {
+            "source": "Low-Density Lipoprotein Cholesterol",
+            "target": "Creatinine"
+        },
+        {
+            "source": "Low-Density Lipoprotein Cholesterol",
+            "target": "Alcohol Drinking History "
+        },
+        {
+            "source": "Low-Density Lipoprotein Cholesterol",
+            "target": "Vascular Complications"
+        },
+        {
+            "source": "Low-Density Lipoprotein Cholesterol",
+            "target": "HypoglycemicAgents"
+        },
+        {
+            "source": "Low-Density Lipoprotein Cholesterol",
+            "target": "OtherAgents"
+        },
+        {
+            "source": "Creatinine",
+            "target": "Estimated Glomerular Filtration Rate "
+        },
+        {
+            "source": "Creatinine",
+            "target": "Blood Urea Nitrogen"
+        },
+        {
+            "source": "Creatinine",
+            "target": "Alcohol Drinking History "
+        },
+        {
+            "source": "Creatinine",
+            "target": "HypoglycemicAgents"
+        },
+        {
+            "source": "Creatinine",
+            "target": "OtherAgents"
+        },
+        {
+            "source": "Estimated Glomerular Filtration Rate ",
+            "target": "Uric Acid"
+        },
+        {
+            "source": "Estimated Glomerular Filtration Rate ",
+            "target": "Blood Urea Nitrogen"
+        },
+        {
+            "source": "Estimated Glomerular Filtration Rate ",
+            "target": "Alcohol Drinking History "
+        },
+        {
+            "source": "Estimated Glomerular Filtration Rate ",
+            "target": "HypoglycemicAgents"
+        },
+        {
+            "source": "Estimated Glomerular Filtration Rate ",
+            "target": "Gender "
+        },
+        {
+            "source": "Uric Acid",
+            "target": "Duration of diabetes"
+        },
+        {
+            "source": "Uric Acid",
+            "target": "OtherAgents"
+        },
+        {
+            "source": "Uric Acid",
+            "target": "Gender "
+        },
+        {
+            "source": "Blood Urea Nitrogen",
+            "target": "Duration of diabetes"
+        },
+        {
+            "source": "Blood Urea Nitrogen",
+            "target": "Vascular Complications"
+        },
+        {
+            "source": "Blood Urea Nitrogen",
+            "target": "Gender "
+        },
+        {
+            "source": "Duration of diabetes",
+            "target": "Alcohol Drinking History "
+        },
+        {
+            "source": "Duration of diabetes",
+            "target": "Gender "
+        },
+        {
+            "source": "Duration of diabetes",
+            "target": "Hypoglycemia "
+        },
+        {
+            "source": "Alcohol Drinking History ",
+            "target": "HypoglycemicAgents"
+        },
+        {
+            "source": "Alcohol Drinking History ",
+            "target": "Hypoglycemia "
+        },
+        {
+            "source": "Vascular Complications",
+            "target": "OtherAgents"
+        },
+        {
+            "source": "Vascular Complications",
+            "target": "Gender "
+        }
+    ],
+    "categories": [
+        {
+            "name": "Community 0"
+        },
+        {
+            "name": "Community 1"
+        },
+        {
+            "name": "Community 2"
+        },
+        {
+            "name": "Community 3"
+        }
+    ]
+}

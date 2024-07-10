@@ -9,16 +9,9 @@
     <link rel="stylesheet" href="assets1/css/style.min.css">
     <link rel="stylesheet" href="assets1/css/style-black.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
-    
-    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
-	<script src="assets1/plugin/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets1/js/flod.js"></script>
-    <script type='module' src="assets1/js/information.js"></script>
-    <script src="assets1/js/g2.min.js"></script>
 </head>
 <body>
-    <!-- 最顶层栏 -->
+
     <div class="fixed-navbar">
         <div class="header1">
             <div class="lights-container">
@@ -27,7 +20,7 @@
                 <a class="traffic-light green"></a>
             </div>
             <header class="header">
-                <a href="index1.html" class="logo"><i class="ico mdi mdi-cube-outline"></i>Diabetes Visualization System</a>
+                <a href="index1.html" class="logo"><i class="ico mdi mdi-cube-outline"></i>Diabetes visualization system</a>
                 <!-- /.user -->
             </header>
             
@@ -35,18 +28,23 @@
     </div>
     <div class="mainbox">
         <div class="parllel-times">
-            <!-- 特征平行坐标图 -->
-            <div class="parllel">
-                <div id="parallel-container"></div>
-                <script src="./assets1/js/parallelCoordinates.js"></script>
-            </div>
-
-            <!-- 时序图 -->
             <div class="otherbox">
+                <div class="title-box">
+                    <h2>CGM distribution boxplot and temporal variation</h2>
+                </div>
                 <div id="times">
-    
+                    <div id="boxplotChart" style="width: 900px; height: 650px;"></div>
+                    <div id="scatterplotChart" style="width: 900px; height: 650px;"></div>
                 </div>
             </div>
+
+            <div class="p-b">
+                <div class="parllel" id="parallel-container">
+                
+                </div>
+                <div id="scatterChart" style="width: 1000px; height: 1050px;"></div>
+            </div>
+
         </div>
         <div class="information-T2G">
             <button id="toggleInformationButton">▼  Unfold Information  ▲</button>
@@ -56,32 +54,32 @@
                         <thead>
                             <tr>
                                 <th>ID</th>
+                                <th>Gender</th>
                                 <th>Age</th>
                                 <th>BMI</th>
-                                <th>Family history</th>
-                                <th>RBC</th>
-                                <th>CREA</th>
-                                <th>Degree grading</th>
+                                <th>Duration of diabetes</th>
+                                <th>Hypoglycemia</th>
+                                <th>Vascular Complications</th>
+                                <th>Comorbidities</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="patients-data">
                         </tbody>
-                        <!-- <tfoot>
+                        <tfoot>
                             <tr>
                                 <th>ID</th>
+                                <th>Gender</th>
                                 <th>Age</th>
                                 <th>BMI</th>
-                                <th>Family history</th>
-                                <th>RBC</th>
-                                <th>CREA</th>
-                                <th>Degree grading</th>
+                                <th>Duration of diabetes</th>
+                                <th>Hypoglycemia</th>
+                                <th>Vascular Complications</th>
+                                <th>Comorbidities</th>
                             </tr>
-                        </tfoot> -->
+                        </tfoot>
                     </table>
                 </div>
             </div>
-
-            <!-- 模型参数设置 -->
             <div class="T2G-setting">
                 <button id="toggleButton">▼  Unfold  / fold  ▲</button>
                 <!-- <textarea id="foldableContent" class="editable-textarea">
@@ -97,6 +95,10 @@
                         table, th, td {
                           text-align: center;
                         }
+                        #model-setting1, #model-setting2 {
+        max-width: 100%;
+        overflow-x: auto;
+    }
                     </style>
                     <table id="model-setting1" style="margin:20px;">
                         <thead>
@@ -182,14 +184,34 @@
                         </tbody>
                     </table>
                 </div>
-                <button id="saveButton" onclick="saveParameters()" >Save</button>
+                <button id="saveButton" onclick="saveParameters()" >Save & Run</button>
+            </div>
+            <div id="csp">
+                <div class="T2G" id="t2gform">
+                </div>
+                <div id="radius"></div>
             </div>
 
-            <!-- 模型展示 -->
-            <div class="T2G">
-            
-            </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="assets1/js/ecStat.min.js"></script>
+    <script src="assets1/scripts/echarts.js"></script>
+    <script src="assets1/scripts/dataTool.min.js"></script>
+    <script src="./assets1/scripts/g2.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+	<script src="assets1/plugin/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets1/js/flod.js"></script>
+    <script type='module' src="assets1/js/information.js"></script>
+    <script src="./assets1/scripts/d3-ForceEdgeBundling.js"></script>
+    <script src="./assets1/scripts/d3.KernelEdgeBundling.js"></script>
+    <script src="./assets1/js/parallel1.js"></script>
+    <script src="./assets1/js/times2.js"></script>
+
+    <script src="./assets1/js/graphs.js"></script>
+    <script src="./assets1/js/LE.js"></script>
+    <script src="./assets1/js/rad.js"></script>
+
 </body>
 </html>
