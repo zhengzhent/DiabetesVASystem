@@ -50,45 +50,51 @@ fetch('assets1/staticdata/shanghaiinformations.json')
 
 function renderBoxplot(dynamicData) {
   // ECharts 箱型图配置
-  var optionBoxplot = {
-      tooltip: {
-          trigger: 'item',
-          axisPointer: {
-              type: 'shadow'
-          }
-      },
-      xAxis: {
-          type: 'category',
-          data: dynamicData.map(function(item) {
-              return item.date;
-          }),
-          axisLabel: {
-            formatter: function (value) {
-                // 自定义格式化函数，只显示月份和日期
-                const date = new Date(value);
-                const month = date.getMonth() + 1; // 月份从0开始，需要加1
-                const day = date.getDate();
-                return month + '-' + day;
-              },
-            textStyle: {
-                color: 'white',  // 设置坐标轴文字颜色为白色
-                fontSize: 25
-            }
-        }
-      },
-      yAxis: {
-          type: 'value',
-          name: 'CGM (mg/dl)',
-          axisLabel: {
-            textStyle: {
-                color: 'white',  // 设置坐标轴文字颜色为白色
-                fontSize: 25
+    var optionBoxplot = {
+        tooltip: {
+            trigger: 'item',
+            axisPointer: {
+                type: 'shadow'
             }
         },
-        nameTextStyle: {
-          color: 'white',  // 设置坐标轴名称颜色为白色
-          fontSize: 20
-      }
+        xAxis: {
+            type: 'category',
+            name: 'Date',
+            data: dynamicData.map(function(item) {
+                return item.date;
+            }),
+            axisLabel: {
+                formatter: function (value) {
+                    // 自定义格式化函数，只显示月份和日期
+                    const date = new Date(value);
+                    const month = date.getMonth() + 1; // 月份从0开始，需要加1
+                    const day = date.getDate();
+                    return month + '-' + day;
+                },
+                textStyle: {
+                    color: 'white',  // 设置坐标轴文字颜色为白色
+                    fontSize: 25
+                },
+            },
+            nameTextStyle:{
+                color:'white',
+                fontSize:20,
+                location:'down'
+            }
+        },
+        yAxis: {
+            type: 'value',
+            name: 'CGM (mg/dl)',
+            axisLabel: {
+                textStyle: {
+                    color: 'white',  // 设置坐标轴文字颜色为白色
+                    fontSize: 25
+                }
+            },
+            nameTextStyle: {
+                color: 'white',  // 设置坐标轴名称颜色为白色
+                fontSize: 20
+            }
       },
       series: [{
           type: 'boxplot',
@@ -140,6 +146,7 @@ function renderScatterplot(date) {
       },
       xAxis: {
           type: 'category',
+          name: 'Time',
           data: selectedData.values.map(function(d) {
               return d.time;
           }),
@@ -148,6 +155,10 @@ function renderScatterplot(date) {
                 color: 'white',  // 设置坐标轴文字颜色为白色
                 fontSize: 25
             }
+        },
+        nameTextStyle: {
+            color: 'white',  // 设置坐标轴名称颜色为白色
+            fontSize: 20
         }
       },
       yAxis: {
