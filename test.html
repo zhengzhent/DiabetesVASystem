@@ -30,31 +30,6 @@
     <div class="mainbox">
         <!-- 左侧模块 -->
         <div class="parllel-times">
-            <div class="otherbox">
-                <!-- 血糖时序数据展示 -->
-                <div class="title-box">
-                    <h2>CGM distribution boxplot and temporal variation</h2>
-                </div>
-                <div id="times">
-                    <!-- 血糖箱线图 -->
-                    <div id="boxplotChart" style="width: 900px; height: 650px;"></div>
-                    <!-- 每日血糖散点图 -->
-                    <div id="scatterplotChart" style="width: 900px; height: 650px;"></div>
-                </div>
-            </div>
-            
-            <div class="p-b">
-                <!-- 下方患者分层模块 -->
-                <!-- 平行坐标图 -->
-                <div class="parllel" id="parallel-container"></div> 
-                <!-- 降维散点图 -->
-                <div id="scatterChart" style="width: 1000px; height: 1050px;"></div>
-            </div>
-        </div>
-
-        <!-- 右侧模块 -->
-        <div class="information-T2G">
-            <button id="toggleInformationButton">▼  Unfold Information  ▲</button>
             <!-- 患者详细信息 -->
             <div class="information">
                 <div id="sicker">
@@ -88,6 +63,21 @@
                     </table>
                 </div>
             </div>
+        
+            <div class="p-b">
+                <!-- 下方患者分层模块 -->
+                
+                <!-- 降维散点图 -->
+                <div id="scatterChart" style="width: 1000px; height: 1050px;"></div>
+            </div>
+        </div>
+
+        <!-- 右侧模块 -->
+        <div class="information-T2G">
+            <button id="toggleInformationButton">▼  Unfold Information  ▲</button>
+
+            <!-- 平行坐标图(修改为Bar) -->
+            <div class="parllel" id="parallel-container"></div>
 
             <!-- T2G模块 -->
             <div class="T2G-setting">
