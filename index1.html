@@ -26,28 +26,37 @@
             
         </div>
     </div>
+    <!-- 整体 -->
     <div class="mainbox">
+        <!-- 左侧模块 -->
         <div class="parllel-times">
             <div class="otherbox">
+                <!-- 血糖时序数据展示 -->
                 <div class="title-box">
                     <h2>CGM distribution boxplot and temporal variation</h2>
                 </div>
                 <div id="times">
+                    <!-- 血糖箱线图 -->
                     <div id="boxplotChart" style="width: 900px; height: 650px;"></div>
+                    <!-- 每日血糖散点图 -->
                     <div id="scatterplotChart" style="width: 900px; height: 650px;"></div>
                 </div>
             </div>
-
+            
             <div class="p-b">
-                <div class="parllel" id="parallel-container">
-                
-                </div>
+                <!-- 下方患者分层模块 -->
+                <!-- 平行坐标图 -->
+                <div class="parllel" id="parallel-container"></div> 
+                <!-- 降维散点图 -->
                 <div id="scatterChart" style="width: 1000px; height: 1050px;"></div>
             </div>
-
         </div>
+
+        <!-- 右侧模块 -->
         <div class="information-T2G">
+            <!-- 折叠按钮 -->
             <button id="toggleInformationButton">▼  Unfold Information  ▲</button>
+            <!-- 患者详细信息 -->
             <div class="information">
                 <div id="sicker">
                     <table id="example" class="display" style="width:100%">
@@ -65,7 +74,7 @@
                         </thead>
                         <tbody id="patients-data">
                         </tbody>
-                        <tfoot>
+                        <!-- <tfoot>
                             <tr>
                                 <th>ID</th>
                                 <th>Gender</th>
@@ -76,10 +85,12 @@
                                 <th>Vascular Complications</th>
                                 <th>Comorbidities</th>
                             </tr>
-                        </tfoot>
+                        </tfoot> -->
                     </table>
                 </div>
             </div>
+
+            <!-- T2G模块 -->
             <div class="T2G-setting">
                 <button id="toggleButton">▼  Unfold  / fold  ▲</button>
                 <!-- <textarea id="foldableContent" class="editable-textarea">
@@ -90,16 +101,17 @@
                 <div id="foldableContent" >
                     <style>
                         table {
-                          width: 100%;
+                            width: 100%;
                         }
                         table, th, td {
-                          text-align: center;
+                            text-align: center;
                         }
                         #model-setting1, #model-setting2 {
-        max-width: 100%;
-        overflow-x: auto;
-    }
+                            max-width: 100%;
+                            overflow-x: auto;
+                        }
                     </style>
+                    <!-- 第一行设置参数 -->
                     <table id="model-setting1" style="margin:20px;">
                         <thead>
                             <tr>
@@ -134,7 +146,7 @@
                             </tr>
                         </tbody>
                     </table>
-                    
+                    <!-- 第二行设置参数 -->
                     <table id="model-setting2" style="margin: 10px;">
                         <thead>
                             <tr>
@@ -186,9 +198,11 @@
                 </div>
                 <button id="saveButton" onclick="saveParameters()" >Save & Run</button>
             </div>
+            <!-- 特征图和雷达图 -->
             <div id="csp">
-                <div class="T2G" id="t2gform">
-                </div>
+                <!-- 特征图 -->
+                <div class="T2G" id="t2gform"></div>
+                <!-- 雷达图 -->
                 <div id="radius"></div>
             </div>
 
