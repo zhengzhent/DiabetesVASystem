@@ -6,7 +6,7 @@ var categories = [];  // 存储不同的分类变量值
 var patientNumbers = [];  // 存储每个人的编号
 
 // 使用 Fetch API 获取 CSV 文件数据
-fetch('/assets1/staticdata/spectral_result.csv')
+fetch('/assets1/staticdata/reduced_data.csv')
     .then(response => response.text())
     .then(text => {
         data = text.trim().split('\n').map(line => line.split(',').map(item => item.trim()));
@@ -28,19 +28,16 @@ function renderChart() {
                         comorbidityText = 'None';
                         break;
                     case '1':
-                        comorbidityText = 'Few Com';
-                        break;
-                    case '2':
-                        comorbidityText = 'Numerous Com';
+                        comorbidityText = 'Com';
                         break;
                     default:
-                        comorbidityText = params.data[2];
+                        comorbidityText = params.data[1];
                 }
                 return 'Comorbidities: ' + comorbidityText;
             }
         },
         legend: {
-            data: ['None', 'Few Com', 'Numerous Com'],
+            data: ['None', 'Com'],
             textStyle: {
                 color: '#ffffff',
                 fontSize: 20
@@ -80,20 +77,12 @@ function renderChart() {
                 color: '#925EB0'
             }
         }, {
-            name: 'Few Com',
+            name: 'Com',
             type: 'scatter',
             symbolSize: 15,
             data: data.filter(item => item[2] === '1').map(item => [item[0], item[1], item[2], item[3]]),
             itemStyle: {
                 color: '#7AB656'
-            }
-        }, {
-            name: 'Numerous Com',
-            type: 'scatter',
-            symbolSize: 15,
-            data: data.filter(item => item[2] === '2').map(item => [item[0], item[1], item[2], item[3]]),
-            itemStyle: {
-                color: '#CC7C71'
             }
         }]
     };
