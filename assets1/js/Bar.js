@@ -1,0 +1,59 @@
+var chartDom = document.getElementById('Feature-Bar');
+var myChart = echarts.init(chartDom);   
+var option;
+
+option = {
+    title: {
+        text: 'Top Feature',
+        top: 'top',
+        left: 'center',
+        textStyle: {
+            color: '#ffffff', // 字体颜色调白
+            fontSize: 30 // 字体大小调大
+        }
+    },
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'shadow'
+        }
+    },
+    legend: {
+        show: false
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis: {
+        type: 'value',
+        boundaryGap: [0, 0.01],
+        axisLabel: {
+            textStyle: {
+                color: '#ffffff', // 标签字体颜色调白
+                fontSize: 20 // 标签字体大小调大
+            }
+        }
+    },
+    yAxis: {
+        type: 'category',
+        data: ['BMI','Glycated Albumin','Age', '2h Postprandial C-peptide','Total Cholesterol','Uric Acid', 'Triglyceride','HbA1c'],
+        axisLabel: {
+            textStyle: {
+                color: '#ffffff', // 标签字体颜色调白
+                fontSize: 20 // 标签字体大小调大
+            }
+        }
+    },
+    series: [
+        {
+            name: 'Feature',
+            type: 'bar',
+            data: [0.0503, 0.0614, 0.0743, 0.0751, 0.0770, 0.0940, 0.1116, 0.1553]
+        }
+    ]
+};
+
+option && myChart.setOption(option);
