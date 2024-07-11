@@ -1,0 +1,936 @@
+{
+    "nodes": [
+        {
+            "id": "Age",
+            "name": "Age",
+            "symbolSize": 3.413158750454125,
+            "x": 0.1480116433276363,
+            "y": 0.18402208571298337,
+            "value": 0.034131587504541254,
+            "category": 3
+        },
+        {
+            "id": "Height ",
+            "name": "Height ",
+            "symbolSize": 4.5588776776882245,
+            "x": 0.3498947557177793,
+            "y": 0.4114498194061672,
+            "value": 0.045588776776882244,
+            "category": 3
+        },
+        {
+            "id": "Weight",
+            "name": "Weight",
+            "symbolSize": 2.8959248573252183,
+            "x": -0.5479291993517745,
+            "y": 0.435631660577903,
+            "value": 0.028959248573252182,
+            "category": 0
+        },
+        {
+            "id": "BMI",
+            "name": "BMI",
+            "symbolSize": 3.397658240647899,
+            "x": -0.40446887436396695,
+            "y": -0.25773484933578555,
+            "value": 0.03397658240647899,
+            "category": 0
+        },
+        {
+            "id": "SmokingHistory ",
+            "name": "SmokingHistory ",
+            "symbolSize": 3.598967438356783,
+            "x": 0.2935656330473265,
+            "y": -0.06458689044788281,
+            "value": 0.03598967438356783,
+            "category": 3
+        },
+        {
+            "id": "Fasting Plasma Glucose (mg165.26dl)",
+            "name": "Fasting Plasma Glucose (mg165.26dl)",
+            "symbolSize": 3.6120689709843115,
+            "x": -0.33266860844223334,
+            "y": 0.07075627726842829,
+            "value": 0.03612068970984311,
+            "category": 0
+        },
+        {
+            "id": "2-hour Postprandial Plasma Glucose (mg256.19dl)",
+            "name": "2-hour Postprandial Plasma Glucose (mg256.19dl)",
+            "symbolSize": 2.3525682376988133,
+            "x": -0.7000148380460894,
+            "y": -0.3491269956255171,
+            "value": 0.02352568237698813,
+            "category": 0
+        },
+        {
+            "id": "Fasting C-peptide (nmol0.47L)",
+            "name": "Fasting C-peptide (nmol0.47L)",
+            "symbolSize": 3.0675403890097526,
+            "x": -0.7489588689874906,
+            "y": 0.01675835102760724,
+            "value": 0.030675403890097524,
+            "category": 0
+        },
+        {
+            "id": "2-hour Postprandial C-peptide (nmol0.96L)",
+            "name": "2-hour Postprandial C-peptide (nmol0.96L)",
+            "symbolSize": 3.5098159979800947,
+            "x": -0.2586272805883784,
+            "y": 0.39665487893795676,
+            "value": 0.035098159979800946,
+            "category": 2
+        },
+        {
+            "id": "Fasting Insulin (pmol111.99L)",
+            "name": "Fasting Insulin (pmol111.99L)",
+            "symbolSize": 3.312986248888207,
+            "x": -0.028677421899439896,
+            "y": 0.2378507777485119,
+            "value": 0.03312986248888207,
+            "category": 2
+        },
+        {
+            "id": "2-hour Postprandial insulin (pmol307.47L)",
+            "name": "2-hour Postprandial insulin (pmol307.47L)",
+            "symbolSize": 3.7356096885408308,
+            "x": -0.5784884338951253,
+            "y": 0.19265278251708068,
+            "value": 0.03735609688540831,
+            "category": 0
+        },
+        {
+            "id": "HbA1c (mmol74.85mol)",
+            "name": "HbA1c (mmol74.85mol)",
+            "symbolSize": 4.325684347812849,
+            "x": 0.6764169736496182,
+            "y": -0.40598039603928837,
+            "value": 0.043256843478128484,
+            "category": 1
+        },
+        {
+            "id": "Glycated Albumin (%)",
+            "name": "Glycated Albumin (%)",
+            "symbolSize": 3.5888223542405324,
+            "x": -0.37654917061312815,
+            "y": 0.6813587162703791,
+            "value": 0.035888223542405326,
+            "category": 0
+        },
+        {
+            "id": "Total Cholesterol (mmol4.84L)",
+            "name": "Total Cholesterol (mmol4.84L)",
+            "symbolSize": 3.359238209003185,
+            "x": 0.0982256940962668,
+            "y": 0.7624986906813507,
+            "value": 0.03359238209003185,
+            "category": 2
+        },
+        {
+            "id": "Triglyceride (mmol1.79L)",
+            "name": "Triglyceride (mmol1.79L)",
+            "symbolSize": 4.003568429312709,
+            "x": -0.21566741945934742,
+            "y": -0.10944589887317722,
+            "value": 0.040035684293127094,
+            "category": 0
+        },
+        {
+            "id": "High-Density Lipoprotein Cholesterol (mmol1.13L)",
+            "name": "High-Density Lipoprotein Cholesterol (mmol1.13L)",
+            "symbolSize": 3.2978220877928397,
+            "x": 0.4751521427349669,
+            "y": -0.058343770843226006,
+            "value": 0.0329782208779284,
+            "category": 3
+        },
+        {
+            "id": "Low-Density Lipoprotein Cholesterol (mmol3.12L)",
+            "name": "Low-Density Lipoprotein Cholesterol (mmol3.12L)",
+            "symbolSize": 4.060206673867485,
+            "x": -0.22362350445525875,
+            "y": 0.6258521480582689,
+            "value": 0.04060206673867486,
+            "category": 0
+        },
+        {
+            "id": "Creatinine (umol63.83L)",
+            "name": "Creatinine (umol63.83L)",
+            "symbolSize": 3.4981894609971658,
+            "x": 0.5647739992491158,
+            "y": 0.1795132552938677,
+            "value": 0.034981894609971656,
+            "category": 3
+        },
+        {
+            "id": "Estimated Glomerular Filtration Rate  (ml116.68min116.681.73m2) ",
+            "name": "Estimated Glomerular Filtration Rate  (ml116.68min116.681.73m2) ",
+            "symbolSize": 4.4913654404733165,
+            "x": 0.5398488548934909,
+            "y": -1.0,
+            "value": 0.04491365440473316,
+            "category": 1
+        },
+        {
+            "id": "Uric Acid (mmol333.88L)",
+            "name": "Uric Acid (mmol333.88L)",
+            "symbolSize": 3.4764079541969384,
+            "x": 0.1693949474204468,
+            "y": -0.424270610535904,
+            "value": 0.03476407954196938,
+            "category": 3
+        },
+        {
+            "id": "Blood Urea Nitrogen (mmol6.04L)",
+            "name": "Blood Urea Nitrogen (mmol6.04L)",
+            "symbolSize": 3.582206923968603,
+            "x": 0.34378007254738113,
+            "y": -0.9915904916539448,
+            "value": 0.03582206923968603,
+            "category": 1
+        },
+        {
+            "id": "Duration of diabetes (years)",
+            "name": "Duration of diabetes (years)",
+            "symbolSize": 3.351398762297059,
+            "x": 0.08548990263684052,
+            "y": -0.5361596545074885,
+            "value": 0.03351398762297059,
+            "category": 3
+        },
+        {
+            "id": "Alcohol Drinking History ",
+            "name": "Alcohol Drinking History ",
+            "symbolSize": 3.768406645016749,
+            "x": 0.1417138276808611,
+            "y": 0.4576975766354763,
+            "value": 0.03768406645016749,
+            "category": 3
+        },
+        {
+            "id": "Vascular Complications",
+            "name": "Vascular Complications",
+            "symbolSize": 3.552090469601718,
+            "x": 0.16438414781449173,
+            "y": -0.8391779371466662,
+            "value": 0.03552090469601718,
+            "category": 2
+        },
+        {
+            "id": "HypoglycemicAgents",
+            "name": "HypoglycemicAgents",
+            "symbolSize": 3.5413457905533354,
+            "x": 0.01670319770054265,
+            "y": 0.5986853975901167,
+            "value": 0.03541345790553335,
+            "category": 0
+        },
+        {
+            "id": "OtherAgents",
+            "name": "OtherAgents",
+            "symbolSize": 3.6069642845418413,
+            "x": -0.02248337864426813,
+            "y": -0.1306159914035761,
+            "value": 0.036069642845418415,
+            "category": 2
+        },
+        {
+            "id": "Gender ",
+            "name": "Gender ",
+            "symbolSize": 3.4756970188333014,
+            "x": 0.465777827609495,
+            "y": -0.5041395297584988,
+            "value": 0.034756970188333014,
+            "category": 3
+        },
+        {
+            "id": "Hypoglycemia ",
+            "name": "Hypoglycemia ",
+            "symbolSize": 3.56540864991612,
+            "x": -0.09497662137975896,
+            "y": 0.41979059844485805,
+            "value": 0.0356540864991612,
+            "category": 2
+        }
+    ],
+    "links": [
+        {
+            "source": "Age",
+            "target": "Height "
+        },
+        {
+            "source": "Age",
+            "target": "BMI"
+        },
+        {
+            "source": "Age",
+            "target": "SmokingHistory "
+        },
+        {
+            "source": "Age",
+            "target": "2-hour Postprandial C-peptide (nmol0.96L)"
+        },
+        {
+            "source": "Age",
+            "target": "Fasting Insulin (pmol111.99L)"
+        },
+        {
+            "source": "Age",
+            "target": "Total Cholesterol (mmol4.84L)"
+        },
+        {
+            "source": "Age",
+            "target": "Triglyceride (mmol1.79L)"
+        },
+        {
+            "source": "Age",
+            "target": "High-Density Lipoprotein Cholesterol (mmol1.13L)"
+        },
+        {
+            "source": "Age",
+            "target": "Low-Density Lipoprotein Cholesterol (mmol3.12L)"
+        },
+        {
+            "source": "Age",
+            "target": "Creatinine (umol63.83L)"
+        },
+        {
+            "source": "Age",
+            "target": "Estimated Glomerular Filtration Rate  (ml116.68min116.681.73m2) "
+        },
+        {
+            "source": "Age",
+            "target": "Uric Acid (mmol333.88L)"
+        },
+        {
+            "source": "Age",
+            "target": "Alcohol Drinking History "
+        },
+        {
+            "source": "Age",
+            "target": "Hypoglycemia "
+        },
+        {
+            "source": "Height ",
+            "target": "SmokingHistory "
+        },
+        {
+            "source": "Height ",
+            "target": "2-hour Postprandial C-peptide (nmol0.96L)"
+        },
+        {
+            "source": "Height ",
+            "target": "Fasting Insulin (pmol111.99L)"
+        },
+        {
+            "source": "Height ",
+            "target": "HbA1c (mmol74.85mol)"
+        },
+        {
+            "source": "Height ",
+            "target": "Glycated Albumin (%)"
+        },
+        {
+            "source": "Height ",
+            "target": "Total Cholesterol (mmol4.84L)"
+        },
+        {
+            "source": "Height ",
+            "target": "High-Density Lipoprotein Cholesterol (mmol1.13L)"
+        },
+        {
+            "source": "Height ",
+            "target": "Low-Density Lipoprotein Cholesterol (mmol3.12L)"
+        },
+        {
+            "source": "Height ",
+            "target": "Creatinine (umol63.83L)"
+        },
+        {
+            "source": "Height ",
+            "target": "Estimated Glomerular Filtration Rate  (ml116.68min116.681.73m2) "
+        },
+        {
+            "source": "Height ",
+            "target": "Alcohol Drinking History "
+        },
+        {
+            "source": "Height ",
+            "target": "HypoglycemicAgents"
+        },
+        {
+            "source": "Height ",
+            "target": "Gender "
+        },
+        {
+            "source": "Weight",
+            "target": "BMI"
+        },
+        {
+            "source": "Weight",
+            "target": "2-hour Postprandial C-peptide (nmol0.96L)"
+        },
+        {
+            "source": "Weight",
+            "target": "2-hour Postprandial insulin (pmol307.47L)"
+        },
+        {
+            "source": "Weight",
+            "target": "Glycated Albumin (%)"
+        },
+        {
+            "source": "Weight",
+            "target": "Triglyceride (mmol1.79L)"
+        },
+        {
+            "source": "Weight",
+            "target": "Low-Density Lipoprotein Cholesterol (mmol3.12L)"
+        },
+        {
+            "source": "Weight",
+            "target": "Creatinine (umol63.83L)"
+        },
+        {
+            "source": "Weight",
+            "target": "Estimated Glomerular Filtration Rate  (ml116.68min116.681.73m2) "
+        },
+        {
+            "source": "Weight",
+            "target": "Alcohol Drinking History "
+        },
+        {
+            "source": "Weight",
+            "target": "OtherAgents"
+        },
+        {
+            "source": "BMI",
+            "target": "Fasting Plasma Glucose (mg165.26dl)"
+        },
+        {
+            "source": "BMI",
+            "target": "2-hour Postprandial Plasma Glucose (mg256.19dl)"
+        },
+        {
+            "source": "BMI",
+            "target": "Fasting C-peptide (nmol0.47L)"
+        },
+        {
+            "source": "BMI",
+            "target": "2-hour Postprandial insulin (pmol307.47L)"
+        },
+        {
+            "source": "BMI",
+            "target": "Triglyceride (mmol1.79L)"
+        },
+        {
+            "source": "BMI",
+            "target": "Uric Acid (mmol333.88L)"
+        },
+        {
+            "source": "BMI",
+            "target": "OtherAgents"
+        },
+        {
+            "source": "SmokingHistory ",
+            "target": "HbA1c (mmol74.85mol)"
+        },
+        {
+            "source": "SmokingHistory ",
+            "target": "Triglyceride (mmol1.79L)"
+        },
+        {
+            "source": "SmokingHistory ",
+            "target": "High-Density Lipoprotein Cholesterol (mmol1.13L)"
+        },
+        {
+            "source": "SmokingHistory ",
+            "target": "Creatinine (umol63.83L)"
+        },
+        {
+            "source": "SmokingHistory ",
+            "target": "Estimated Glomerular Filtration Rate  (ml116.68min116.681.73m2) "
+        },
+        {
+            "source": "SmokingHistory ",
+            "target": "Uric Acid (mmol333.88L)"
+        },
+        {
+            "source": "SmokingHistory ",
+            "target": "Duration of diabetes (years)"
+        },
+        {
+            "source": "SmokingHistory ",
+            "target": "Alcohol Drinking History "
+        },
+        {
+            "source": "SmokingHistory ",
+            "target": "Gender "
+        },
+        {
+            "source": "SmokingHistory ",
+            "target": "Hypoglycemia "
+        },
+        {
+            "source": "Fasting Plasma Glucose (mg165.26dl)",
+            "target": "2-hour Postprandial Plasma Glucose (mg256.19dl)"
+        },
+        {
+            "source": "Fasting Plasma Glucose (mg165.26dl)",
+            "target": "Fasting C-peptide (nmol0.47L)"
+        },
+        {
+            "source": "Fasting Plasma Glucose (mg165.26dl)",
+            "target": "2-hour Postprandial C-peptide (nmol0.96L)"
+        },
+        {
+            "source": "Fasting Plasma Glucose (mg165.26dl)",
+            "target": "2-hour Postprandial insulin (pmol307.47L)"
+        },
+        {
+            "source": "Fasting Plasma Glucose (mg165.26dl)",
+            "target": "Triglyceride (mmol1.79L)"
+        },
+        {
+            "source": "Fasting Plasma Glucose (mg165.26dl)",
+            "target": "Low-Density Lipoprotein Cholesterol (mmol3.12L)"
+        },
+        {
+            "source": "Fasting Plasma Glucose (mg165.26dl)",
+            "target": "Uric Acid (mmol333.88L)"
+        },
+        {
+            "source": "Fasting Plasma Glucose (mg165.26dl)",
+            "target": "Duration of diabetes (years)"
+        },
+        {
+            "source": "Fasting Plasma Glucose (mg165.26dl)",
+            "target": "Vascular Complications"
+        },
+        {
+            "source": "Fasting Plasma Glucose (mg165.26dl)",
+            "target": "HypoglycemicAgents"
+        },
+        {
+            "source": "Fasting Plasma Glucose (mg165.26dl)",
+            "target": "OtherAgents"
+        },
+        {
+            "source": "2-hour Postprandial Plasma Glucose (mg256.19dl)",
+            "target": "Fasting C-peptide (nmol0.47L)"
+        },
+        {
+            "source": "2-hour Postprandial Plasma Glucose (mg256.19dl)",
+            "target": "2-hour Postprandial insulin (pmol307.47L)"
+        },
+        {
+            "source": "2-hour Postprandial Plasma Glucose (mg256.19dl)",
+            "target": "HbA1c (mmol74.85mol)"
+        },
+        {
+            "source": "2-hour Postprandial Plasma Glucose (mg256.19dl)",
+            "target": "Glycated Albumin (%)"
+        },
+        {
+            "source": "2-hour Postprandial Plasma Glucose (mg256.19dl)",
+            "target": "Triglyceride (mmol1.79L)"
+        },
+        {
+            "source": "2-hour Postprandial Plasma Glucose (mg256.19dl)",
+            "target": "Duration of diabetes (years)"
+        },
+        {
+            "source": "Fasting C-peptide (nmol0.47L)",
+            "target": "2-hour Postprandial C-peptide (nmol0.96L)"
+        },
+        {
+            "source": "Fasting C-peptide (nmol0.47L)",
+            "target": "Fasting Insulin (pmol111.99L)"
+        },
+        {
+            "source": "Fasting C-peptide (nmol0.47L)",
+            "target": "2-hour Postprandial insulin (pmol307.47L)"
+        },
+        {
+            "source": "Fasting C-peptide (nmol0.47L)",
+            "target": "Glycated Albumin (%)"
+        },
+        {
+            "source": "Fasting C-peptide (nmol0.47L)",
+            "target": "Triglyceride (mmol1.79L)"
+        },
+        {
+            "source": "Fasting C-peptide (nmol0.47L)",
+            "target": "Low-Density Lipoprotein Cholesterol (mmol3.12L)"
+        },
+        {
+            "source": "Fasting C-peptide (nmol0.47L)",
+            "target": "Vascular Complications"
+        },
+        {
+            "source": "2-hour Postprandial C-peptide (nmol0.96L)",
+            "target": "Total Cholesterol (mmol4.84L)"
+        },
+        {
+            "source": "2-hour Postprandial C-peptide (nmol0.96L)",
+            "target": "Low-Density Lipoprotein Cholesterol (mmol3.12L)"
+        },
+        {
+            "source": "2-hour Postprandial C-peptide (nmol0.96L)",
+            "target": "Creatinine (umol63.83L)"
+        },
+        {
+            "source": "2-hour Postprandial C-peptide (nmol0.96L)",
+            "target": "Alcohol Drinking History "
+        },
+        {
+            "source": "2-hour Postprandial C-peptide (nmol0.96L)",
+            "target": "Vascular Complications"
+        },
+        {
+            "source": "2-hour Postprandial C-peptide (nmol0.96L)",
+            "target": "HypoglycemicAgents"
+        },
+        {
+            "source": "2-hour Postprandial C-peptide (nmol0.96L)",
+            "target": "OtherAgents"
+        },
+        {
+            "source": "Fasting Insulin (pmol111.99L)",
+            "target": "2-hour Postprandial insulin (pmol307.47L)"
+        },
+        {
+            "source": "Fasting Insulin (pmol111.99L)",
+            "target": "Glycated Albumin (%)"
+        },
+        {
+            "source": "Fasting Insulin (pmol111.99L)",
+            "target": "Total Cholesterol (mmol4.84L)"
+        },
+        {
+            "source": "Fasting Insulin (pmol111.99L)",
+            "target": "Low-Density Lipoprotein Cholesterol (mmol3.12L)"
+        },
+        {
+            "source": "Fasting Insulin (pmol111.99L)",
+            "target": "Creatinine (umol63.83L)"
+        },
+        {
+            "source": "Fasting Insulin (pmol111.99L)",
+            "target": "Alcohol Drinking History "
+        },
+        {
+            "source": "Fasting Insulin (pmol111.99L)",
+            "target": "Vascular Complications"
+        },
+        {
+            "source": "Fasting Insulin (pmol111.99L)",
+            "target": "HypoglycemicAgents"
+        },
+        {
+            "source": "Fasting Insulin (pmol111.99L)",
+            "target": "OtherAgents"
+        },
+        {
+            "source": "Fasting Insulin (pmol111.99L)",
+            "target": "Gender "
+        },
+        {
+            "source": "Fasting Insulin (pmol111.99L)",
+            "target": "Hypoglycemia "
+        },
+        {
+            "source": "2-hour Postprandial insulin (pmol307.47L)",
+            "target": "Glycated Albumin (%)"
+        },
+        {
+            "source": "2-hour Postprandial insulin (pmol307.47L)",
+            "target": "Triglyceride (mmol1.79L)"
+        },
+        {
+            "source": "2-hour Postprandial insulin (pmol307.47L)",
+            "target": "Low-Density Lipoprotein Cholesterol (mmol3.12L)"
+        },
+        {
+            "source": "2-hour Postprandial insulin (pmol307.47L)",
+            "target": "Vascular Complications"
+        },
+        {
+            "source": "2-hour Postprandial insulin (pmol307.47L)",
+            "target": "OtherAgents"
+        },
+        {
+            "source": "2-hour Postprandial insulin (pmol307.47L)",
+            "target": "Hypoglycemia "
+        },
+        {
+            "source": "HbA1c (mmol74.85mol)",
+            "target": "High-Density Lipoprotein Cholesterol (mmol1.13L)"
+        },
+        {
+            "source": "HbA1c (mmol74.85mol)",
+            "target": "Creatinine (umol63.83L)"
+        },
+        {
+            "source": "HbA1c (mmol74.85mol)",
+            "target": "Estimated Glomerular Filtration Rate  (ml116.68min116.681.73m2) "
+        },
+        {
+            "source": "HbA1c (mmol74.85mol)",
+            "target": "Uric Acid (mmol333.88L)"
+        },
+        {
+            "source": "HbA1c (mmol74.85mol)",
+            "target": "Blood Urea Nitrogen (mmol6.04L)"
+        },
+        {
+            "source": "HbA1c (mmol74.85mol)",
+            "target": "Duration of diabetes (years)"
+        },
+        {
+            "source": "HbA1c (mmol74.85mol)",
+            "target": "HypoglycemicAgents"
+        },
+        {
+            "source": "HbA1c (mmol74.85mol)",
+            "target": "Gender "
+        },
+        {
+            "source": "Glycated Albumin (%)",
+            "target": "Total Cholesterol (mmol4.84L)"
+        },
+        {
+            "source": "Glycated Albumin (%)",
+            "target": "Low-Density Lipoprotein Cholesterol (mmol3.12L)"
+        },
+        {
+            "source": "Glycated Albumin (%)",
+            "target": "Blood Urea Nitrogen (mmol6.04L)"
+        },
+        {
+            "source": "Glycated Albumin (%)",
+            "target": "Alcohol Drinking History "
+        },
+        {
+            "source": "Glycated Albumin (%)",
+            "target": "Vascular Complications"
+        },
+        {
+            "source": "Glycated Albumin (%)",
+            "target": "HypoglycemicAgents"
+        },
+        {
+            "source": "Glycated Albumin (%)",
+            "target": "Hypoglycemia "
+        },
+        {
+            "source": "Total Cholesterol (mmol4.84L)",
+            "target": "Low-Density Lipoprotein Cholesterol (mmol3.12L)"
+        },
+        {
+            "source": "Total Cholesterol (mmol4.84L)",
+            "target": "Creatinine (umol63.83L)"
+        },
+        {
+            "source": "Total Cholesterol (mmol4.84L)",
+            "target": "Estimated Glomerular Filtration Rate  (ml116.68min116.681.73m2) "
+        },
+        {
+            "source": "Total Cholesterol (mmol4.84L)",
+            "target": "Alcohol Drinking History "
+        },
+        {
+            "source": "Total Cholesterol (mmol4.84L)",
+            "target": "Vascular Complications"
+        },
+        {
+            "source": "Total Cholesterol (mmol4.84L)",
+            "target": "HypoglycemicAgents"
+        },
+        {
+            "source": "Total Cholesterol (mmol4.84L)",
+            "target": "OtherAgents"
+        },
+        {
+            "source": "Total Cholesterol (mmol4.84L)",
+            "target": "Hypoglycemia "
+        },
+        {
+            "source": "Triglyceride (mmol1.79L)",
+            "target": "High-Density Lipoprotein Cholesterol (mmol1.13L)"
+        },
+        {
+            "source": "Triglyceride (mmol1.79L)",
+            "target": "Uric Acid (mmol333.88L)"
+        },
+        {
+            "source": "Triglyceride (mmol1.79L)",
+            "target": "Duration of diabetes (years)"
+        },
+        {
+            "source": "Triglyceride (mmol1.79L)",
+            "target": "OtherAgents"
+        },
+        {
+            "source": "Triglyceride (mmol1.79L)",
+            "target": "Hypoglycemia "
+        },
+        {
+            "source": "High-Density Lipoprotein Cholesterol (mmol1.13L)",
+            "target": "Creatinine (umol63.83L)"
+        },
+        {
+            "source": "High-Density Lipoprotein Cholesterol (mmol1.13L)",
+            "target": "Estimated Glomerular Filtration Rate  (ml116.68min116.681.73m2) "
+        },
+        {
+            "source": "High-Density Lipoprotein Cholesterol (mmol1.13L)",
+            "target": "Uric Acid (mmol333.88L)"
+        },
+        {
+            "source": "High-Density Lipoprotein Cholesterol (mmol1.13L)",
+            "target": "Blood Urea Nitrogen (mmol6.04L)"
+        },
+        {
+            "source": "High-Density Lipoprotein Cholesterol (mmol1.13L)",
+            "target": "Duration of diabetes (years)"
+        },
+        {
+            "source": "High-Density Lipoprotein Cholesterol (mmol1.13L)",
+            "target": "Alcohol Drinking History "
+        },
+        {
+            "source": "High-Density Lipoprotein Cholesterol (mmol1.13L)",
+            "target": "Vascular Complications"
+        },
+        {
+            "source": "High-Density Lipoprotein Cholesterol (mmol1.13L)",
+            "target": "Gender "
+        },
+        {
+            "source": "Low-Density Lipoprotein Cholesterol (mmol3.12L)",
+            "target": "Creatinine (umol63.83L)"
+        },
+        {
+            "source": "Low-Density Lipoprotein Cholesterol (mmol3.12L)",
+            "target": "Alcohol Drinking History "
+        },
+        {
+            "source": "Low-Density Lipoprotein Cholesterol (mmol3.12L)",
+            "target": "Vascular Complications"
+        },
+        {
+            "source": "Low-Density Lipoprotein Cholesterol (mmol3.12L)",
+            "target": "HypoglycemicAgents"
+        },
+        {
+            "source": "Low-Density Lipoprotein Cholesterol (mmol3.12L)",
+            "target": "OtherAgents"
+        },
+        {
+            "source": "Low-Density Lipoprotein Cholesterol (mmol3.12L)",
+            "target": "Hypoglycemia "
+        },
+        {
+            "source": "Creatinine (umol63.83L)",
+            "target": "Estimated Glomerular Filtration Rate  (ml116.68min116.681.73m2) "
+        },
+        {
+            "source": "Creatinine (umol63.83L)",
+            "target": "Blood Urea Nitrogen (mmol6.04L)"
+        },
+        {
+            "source": "Creatinine (umol63.83L)",
+            "target": "Alcohol Drinking History "
+        },
+        {
+            "source": "Creatinine (umol63.83L)",
+            "target": "Vascular Complications"
+        },
+        {
+            "source": "Creatinine (umol63.83L)",
+            "target": "HypoglycemicAgents"
+        },
+        {
+            "source": "Creatinine (umol63.83L)",
+            "target": "OtherAgents"
+        },
+        {
+            "source": "Estimated Glomerular Filtration Rate  (ml116.68min116.681.73m2) ",
+            "target": "Uric Acid (mmol333.88L)"
+        },
+        {
+            "source": "Estimated Glomerular Filtration Rate  (ml116.68min116.681.73m2) ",
+            "target": "Blood Urea Nitrogen (mmol6.04L)"
+        },
+        {
+            "source": "Estimated Glomerular Filtration Rate  (ml116.68min116.681.73m2) ",
+            "target": "Alcohol Drinking History "
+        },
+        {
+            "source": "Estimated Glomerular Filtration Rate  (ml116.68min116.681.73m2) ",
+            "target": "HypoglycemicAgents"
+        },
+        {
+            "source": "Estimated Glomerular Filtration Rate  (ml116.68min116.681.73m2) ",
+            "target": "Gender "
+        },
+        {
+            "source": "Uric Acid (mmol333.88L)",
+            "target": "Duration of diabetes (years)"
+        },
+        {
+            "source": "Uric Acid (mmol333.88L)",
+            "target": "Gender "
+        },
+        {
+            "source": "Blood Urea Nitrogen (mmol6.04L)",
+            "target": "Duration of diabetes (years)"
+        },
+        {
+            "source": "Blood Urea Nitrogen (mmol6.04L)",
+            "target": "Vascular Complications"
+        },
+        {
+            "source": "Blood Urea Nitrogen (mmol6.04L)",
+            "target": "Gender "
+        },
+        {
+            "source": "Duration of diabetes (years)",
+            "target": "Alcohol Drinking History "
+        },
+        {
+            "source": "Duration of diabetes (years)",
+            "target": "Gender "
+        },
+        {
+            "source": "Alcohol Drinking History ",
+            "target": "HypoglycemicAgents"
+        },
+        {
+            "source": "Alcohol Drinking History ",
+            "target": "Hypoglycemia "
+        },
+        {
+            "source": "Vascular Complications",
+            "target": "OtherAgents"
+        },
+        {
+            "source": "Vascular Complications",
+            "target": "Gender "
+        }
+    ],
+    "categories": [
+        {
+            "name": "Community 0"
+        },
+        {
+            "name": "Community 1"
+        },
+        {
+            "name": "Community 2"
+        },
+        {
+            "name": "Community 3"
+        }
+    ]
+}

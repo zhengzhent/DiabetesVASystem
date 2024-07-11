@@ -25,9 +25,9 @@ const normalizedData = data.map(item => ({
 }));
     data = normalizedData
 
-    const width = 820; // 调整宽度
-    const height = 500; // 调整高度
-    const margin = { top: 50, right: 50, bottom: 30, left: 50 };
+    const width = 590; // 调整宽度
+    const height = 705; // 调整高度
+    const margin = { top: 50, right: 50, bottom: 50, left: 50 };
     const radius = Math.min(width, height) / 2 - Math.max(margin.top, margin.right, margin.bottom, margin.left);
 
     // 创建SVG容器
@@ -141,9 +141,9 @@ function drawChart2(){
         { axis: "SmokingHistory", value: 0.037274160026708955 }
     ];
 
-    const width = 820; // 调整宽度
-    const height = 500  ; // 调整高度
-    const margin = { top: 50, right: 50, bottom: 30, left: 50 };
+    const width = 500; // 调整宽度
+    const height = 805; // 调整高度
+    const margin = { top: 50, right: 50, bottom: 50, left: 50 };
     const radius = Math.min(width, height) / 2 - Math.max(margin.top, margin.right, margin.bottom, margin.left);
     const values = data.map(item => item.value);
 
@@ -286,9 +286,9 @@ const normalizedData = data.map(item => ({
 }));
     data = normalizedData
 
-    const width = 820; // 调整宽度
-    const height = 500; // 调整高度
-    const margin = { top: 50, right: 50, bottom: 30, left: 50 };
+    const width = 500; // 调整宽度
+    const height = 805; // 调整高度
+    const margin = { top: 50, right: 50, bottom: 50, left: 50 };
     const radius = Math.min(width, height) / 2 - Math.max(margin.top, margin.right, margin.bottom, margin.left);
 
     // 创建SVG容器
@@ -392,300 +392,113 @@ const normalizedData = data.map(item => ({
 }
 
 
-function graph1(){
+function graph(id) {
+    console.log(`Graph function called with ID: ${id}`);
     var myChart = echarts.init(document.getElementById('t2gform'));
+
+    // 构建文件路径
+    const filePath = `./assets1/staticdata/patientdata/Comorbidities10_shanghai_patient_${id}_graph_analysis_output.json`;
+    console.log(`Fetching data from: ${filePath}`);
+
     // 读取 JSON 数据
-    fetch('./assets1/staticdata/graph_analysis_output_0.json')
-    .then(response => response.json())
-    .then(data => {
-        // 获取所有节点的symbolSize值用于归一化
-        const symbolSizes = data.nodes.map(node => node.symbolSize);
-        const minSymbolSize = Math.min(...symbolSizes);
-        const maxSymbolSize = Math.max(...symbolSizes);
-
-        // 归一化函数
-        const normalize = (value) => {
-            if (maxSymbolSize === minSymbolSize) {
-                return 1; // 避免除以零的情况
+    fetch(filePath)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
             }
-            return (value - minSymbolSize) / (maxSymbolSize - minSymbolSize);
-        };
+            return response.json();
+        })
+        .then(data => {
+            console.log('Data fetched successfully', data);
 
-        // 类别颜色映射
-        const categoryColors = ['#FBEA2E', '#4F99C9', '#A8D3A0', '#EC3E31'];
+            // 获取所有节点的symbolSize值用于归一化
+            const symbolSizes = data.nodes.map(node => node.symbolSize);
+            const minSymbolSize = Math.min(...symbolSizes);
+            const maxSymbolSize = Math.max(...symbolSizes);
 
-        // 使用数据生成图表
-        var option = {
-            title: {
-                text: 'feature_graph',
-                top: 'top',
-                left: 'center',
-                textStyle: {
-                    color: '#ffffff', // 字体颜色调白
-                    fontSize: 20 // 字体大小调大
+            // 归一化函数
+            const normalize = (value) => {
+                if (maxSymbolSize === minSymbolSize) {
+                    return 1; // 避免除以零的情况
                 }
-            },
-            tooltip: {},
-            legend: [{
-                data: data.categories.map(function (a) {
-                    return a.name;
-                }),
-                bottom: 10,
-                textStyle: {
-                    color: '#ffffff', // 图例字体颜色调白
-                    fontSize: 14 // 图例字体大小调大
-                }
-            }],
-            series: [
-                {
-                    name: 'feature_graph',
-                    type: 'graph',
-                    layout: 'none',
-                    data: data.nodes.map(node => {
-                        const normalizedSize = normalize(node.symbolSize) * 5; // 归一化并放大
-                        return {
-                            ...node,
-                            symbolSize: normalizedSize * 10,
-                            itemStyle: {
-                                color: categoryColors[node.category] // 根据类别设置颜色
-                            },
-                            label: {
-                                show: true,
-                                fontSize: Math.max(10, normalizedSize * 10),
-                                color: '#ffffff' // 动态调整标签字体颜色
-                            }
-                        };
-                    }),
-                    links: data.links,
-                    categories: data.categories.map((category, index) => ({
-                        ...category,
-                        itemStyle: {
-                            color: categoryColors[index] // 设置类别颜色
-                        }
-                    })),
-                    roam: true,
-                    label: {
-                        position: 'right'
-                    },
-                    lineStyle: {
-                        color: 'source',
-                        curveness: 0.4
+                return (value - minSymbolSize) / (maxSymbolSize - minSymbolSize);
+            };
+
+            // 使用数据生成图表
+            var option = {
+                title: {
+                    text: 'feature_graph',
+                    top: 'top',
+                    left: 'center',
+                    textStyle: {
+                        color: '#ffffff', // 字体颜色调白
+                        fontSize: 15 // 字体大小调大
                     }
-                }
-            ]
-        };
-
-        // 使用刚指定的配置项和数据显示图表
-        myChart.setOption(option);
-    })
-    .catch(error => {
-        console.error('Error fetching the JSON data:', error);
-    });
-}
-
-
-function graph2(){
-    var myChart = echarts.init(document.getElementById('t2gform'));
-    // 读取 JSON 数据
-    fetch('./assets1/staticdata/graph_analysis_output_1.json')
-    .then(response => response.json())
-    .then(data => {
-        // 获取所有节点的symbolSize值用于归一化
-        const symbolSizes = data.nodes.map(node => node.symbolSize);
-        const minSymbolSize = Math.min(...symbolSizes);
-        const maxSymbolSize = Math.max(...symbolSizes);
-
-        // 归一化函数
-        const normalize = (value) => {
-            if (maxSymbolSize === minSymbolSize) {
-                return 1; // 避免除以零的情况
-            }
-            return (value - minSymbolSize) / (maxSymbolSize - minSymbolSize);
-        };
-
-        // 类别颜色映射
-        const categoryColors = ['#FBEA2E', '#4F99C9', '#A8D3A0', '#EC3E31'];
-
-        // 使用数据生成图表
-        var option = {
-            title: {
-                text: 'feature_graph',
-                top: 'top',
-                left: 'center',
-                textStyle: {
-                    color: '#ffffff', // 字体颜色调白
-                    fontSize: 20 // 字体大小调大
-                }
-            },
-            tooltip: {},
-            legend: [{
-                data: data.categories.map(function (a) {
-                    return a.name;
-                }),
-                bottom: 10,
-                textStyle: {
-                    color: '#ffffff', // 图例字体颜色调白
-                    fontSize: 14 // 图例字体大小调大
-                }
-            }],
-            series: [
-                {
-                    name: 'feature_graph',
-                    type: 'graph',
-                    layout: 'none',
-                    data: data.nodes.map(node => {
-                        const normalizedSize = normalize(node.symbolSize) * 5; // 归一化并放大
-                        return {
-                            ...node,
-                            symbolSize: normalizedSize * 10,
-                            itemStyle: {
-                                color: categoryColors[node.category] // 根据类别设置颜色
-                            },
-                            label: {
-                                show: true,
-                                fontSize: Math.max(10, normalizedSize * 10),
-                                color: '#ffffff' // 动态调整标签字体颜色
-                            }
-                        };
+                },
+                tooltip: {},
+                legend: {
+                    data: data.categories.map(function (a) {
+                        return a.name;
                     }),
-                    links: data.links,
-                    categories: data.categories.map((category, index) => ({
-                        ...category,
-                        itemStyle: {
-                            color: categoryColors[index] // 设置类别颜色
-                        }
-                    })),
-                    roam: true,
-                    label: {
-                        position: 'right'
-                    },
-                    lineStyle: {
-                        color: 'source',
-                        curveness: 0.4
+                    bottom: '0', // 向下移动
+                    textStyle: {
+                        color: '#ffffff', // 字体颜色调白
+                        fontSize: 15 // 字体大小调大
                     }
-                }
-            ]
-        };
-
-        // 使用刚指定的配置项和数据显示图表
-        myChart.setOption(option);
-    })
-    .catch(error => {
-        console.error('Error fetching the JSON data:', error);
-    });
-}
-
-
-function graph3(){
-    var myChart = echarts.init(document.getElementById('t2gform'));
-    // 读取 JSON 数据
-    fetch('./assets1/staticdata/graph_analysis_output_2.json')
-    .then(response => response.json())
-    .then(data => {
-        // 获取所有节点的symbolSize值用于归一化
-        const symbolSizes = data.nodes.map(node => node.symbolSize);
-        const minSymbolSize = Math.min(...symbolSizes);
-        const maxSymbolSize = Math.max(...symbolSizes);
-
-        // 归一化函数
-        const normalize = (value) => {
-            if (maxSymbolSize === minSymbolSize) {
-                return 1; // 避免除以零的情况
-            }
-            return (value - minSymbolSize) / (maxSymbolSize - minSymbolSize);
-        };
-
-        // 类别颜色映射
-        const categoryColors = ['#FBEA2E', '#4F99C9', '#A8D3A0', '#EC3E31'];
-
-        // 使用数据生成图表
-        var option = {
-            title: {
-                text: 'feature_graph',
-                top: 'top',
-                left: 'center',
-                textStyle: {
-                    color: '#ffffff', // 字体颜色调白
-                    fontSize: 20 // 字体大小调大
-                }
-            },
-            tooltip: {},
-            legend: [{
-                data: data.categories.map(function (a) {
-                    return a.name;
-                }),
-                bottom: 10,
-                textStyle: {
-                    color: '#ffffff', // 图例字体颜色调白
-                    fontSize: 14 // 图例字体大小调大
-                }
-            }],
-            series: [
-                {
-                    name: 'feature_graph',
-                    type: 'graph',
-                    layout: 'none',
-                    data: data.nodes.map(node => {
-                        const normalizedSize = normalize(node.symbolSize) * 5; // 归一化并放大
-                        return {
-                            ...node,
-                            symbolSize: normalizedSize * 10,
-                            itemStyle: {
-                                color: categoryColors[node.category] // 根据类别设置颜色
-                            },
-                            label: {
-                                show: true,
-                                fontSize: Math.max(10, normalizedSize * 6.5),
-                                color: '#ffffff' // 动态调整标签字体颜色
-                            }
-                        };
-                    }),
-                    links: data.links,
-                    categories: data.categories.map((category, index) => ({
-                        ...category,
-                        itemStyle: {
-                            color: categoryColors[index] // 设置类别颜色
+                },
+                series: [
+                    {
+                        name: 'feature_graph',
+                        type: 'graph',
+                        layout: 'none',
+                        data: data.nodes.map(node => {
+                            const normalizedSize = normalize(node.symbolSize) * 5; // 归一化并放大
+                            return {
+                                ...node,
+                                symbolSize: normalizedSize * 10,
+                                label: {
+                                    show: true,
+                                    fontSize: Math.max(10, normalizedSize * 5), // 动态调整标签字体大小
+                                    color: '#ffffff' // 节点标签颜色调白
+                                }
+                            };
+                        }),
+                        links: data.links,
+                        categories: data.categories,
+                        roam: true,
+                        label: {
+                            position: 'right'
+                        },
+                        lineStyle: {
+                            color: 'source',
+                            curveness: 0.4
                         }
-                    })),
-                    roam: true,
-                    label: {
-                        position: 'right'
-                    },
-                    lineStyle: {
-                        color: 'source',
-                        curveness: 0.4
                     }
-                }
-            ]
-        };
+                ]
+            };
 
-        // 使用刚指定的配置项和数据显示图表
-        myChart.setOption(option);
-    })
-    .catch(error => {
-        console.error('Error fetching the JSON data:', error);
-    });
+            // 使用刚指定的配置项和数据显示图表
+            myChart.setOption(option);
+        })
+        .catch(error => {
+            console.error('Error fetching the JSON data:', error);
+        });
 }
-
-
-
-
 
 function handleRowClick(event) {
-    const comorbidities = event.currentTarget.cells[7].innerText; // Get the Comorbidities value
-    console.log(comorbidities);
+    const comorbidities = event.currentTarget.cells[7].innerText;
+    const patientId = event.currentTarget.cells[0].innerText;
+    graph(patientId); // Get the Comorbidities value
+    console.log(patientId);
 
     d3.select("#radius").selectAll("*").remove();
 
     if (comorbidities === 'No') {
         drawChart1();
-        graph1();
     } else if (comorbidities === 'few') {
         drawChart2();
-        graph2();
     } else if (comorbidities === 'Numerous') {
         drawChart3();
-        graph3();
     }
 }
 
