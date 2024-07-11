@@ -1,0 +1,29 @@
+Feature,Importance
+Uric Acid (mmol333.88L),0.15530577
+Triglyceride (mmol1.79L),0.11160908
+HbA1c (mmol74.85mol),0.094037995
+Total Cholesterol (mmol4.84L),0.07700003
+2-hour Postprandial C-peptide (nmol0.96L),0.075162224
+Age,0.07439309
+Glycated Albumin (%),0.061436243
+BMI,0.050321516
+Creatinine (umol63.83L),0.050312378
+2-hour Postprandial Plasma Glucose (mg256.19dl),0.040021498
+2-hour Postprandial insulin (pmol307.47L),0.035422936
+Fasting Plasma Glucose (mg165.26dl),0.035208385
+Gender ,0.021817701
+Blood Urea Nitrogen (mmol6.04L),0.02075914
+OtherAgents,0.019423794
+Estimated Glomerular Filtration Rate  (ml116.68min116.681.73m2) ,0.017749442
+Fasting Insulin (pmol111.99L),0.012353758
+Low-Density Lipoprotein Cholesterol (mmol3.12L),0.012239088
+High-Density Lipoprotein Cholesterol (mmol1.13L),0.011214886
+Height ,0.010628011
+Duration of diabetes (years),0.006701772
+Fasting C-peptide (nmol0.47L),0.004856904
+Weight,0.002024358
+Alcohol Drinking History ,0
+Vascular Complications,0
+HypoglycemicAgents,0
+SmokingHistory ,0
+Hypoglycemia ,0
