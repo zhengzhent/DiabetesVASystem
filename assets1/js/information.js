@@ -23,7 +23,7 @@ $(document).ready(function() {
                     row["BMI (kg\/m2)"],
                     row["Duration of diabetes (years)"],
                     row["Hypoglycemia "],
-                    row["Vascular Complications"],
+                    row["Vascular Complications"], 
                     row["Comorbidities"]
                 ]);
             });
@@ -32,7 +32,7 @@ $(document).ready(function() {
             dataTable.draw();
             
             // 添加自定义字体大小样式
-            $('#example.custom-font-size').css('font-size', '16px'); // 根据需要调整字体大小
+            $('#example.custom-font-size').css('font-size', '18px'); // 根据需要调整字体大小
         },
         error: function(xhr, status, error) {
             console.error('Failed to load JSON file:', status, error);
