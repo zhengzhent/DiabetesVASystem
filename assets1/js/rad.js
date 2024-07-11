@@ -25,9 +25,9 @@ const normalizedData = data.map(item => ({
 }));
     data = normalizedData
 
-    const width = 590; // 调整宽度
-    const height = 705; // 调整高度
-    const margin = { top: 50, right: 50, bottom: 50, left: 50 };
+    const width = 820; // 调整宽度
+    const height = 500; // 调整高度
+    const margin = { top: 50, right: 50, bottom: 30, left: 50 };
     const radius = Math.min(width, height) / 2 - Math.max(margin.top, margin.right, margin.bottom, margin.left);
 
     // 创建SVG容器
@@ -141,9 +141,9 @@ function drawChart2(){
         { axis: "SmokingHistory", value: 0.037274160026708955 }
     ];
 
-    const width = 500; // 调整宽度
-    const height = 805; // 调整高度
-    const margin = { top: 50, right: 50, bottom: 50, left: 50 };
+    const width = 820; // 调整宽度
+    const height = 500  ; // 调整高度
+    const margin = { top: 50, right: 50, bottom: 30, left: 50 };
     const radius = Math.min(width, height) / 2 - Math.max(margin.top, margin.right, margin.bottom, margin.left);
     const values = data.map(item => item.value);
 
@@ -286,9 +286,9 @@ const normalizedData = data.map(item => ({
 }));
     data = normalizedData
 
-    const width = 500; // 调整宽度
-    const height = 805; // 调整高度
-    const margin = { top: 50, right: 50, bottom: 50, left: 50 };
+    const width = 820; // 调整宽度
+    const height = 500; // 调整高度
+    const margin = { top: 50, right: 50, bottom: 30, left: 50 };
     const radius = Math.min(width, height) / 2 - Math.max(margin.top, margin.right, margin.bottom, margin.left);
 
     // 创建SVG容器
