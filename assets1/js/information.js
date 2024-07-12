@@ -32,7 +32,7 @@ $(document).ready(function() {
             dataTable.draw();
             
             // 添加自定义字体大小样式
-            $('#example.custom-font-size').css('font-size', '18px'); // 根据需要调整字体大小
+            $('#example.custom-font-size').css('font-size', '20 px'); // 根据需要调整字体大小
         },
         error: function(xhr, status, error) {
             console.error('Failed to load JSON file:', status, error);

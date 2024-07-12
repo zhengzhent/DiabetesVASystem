@@ -9,7 +9,7 @@ option = {
         left: 'center',
         textStyle: {
             color: '#ffffff', // 字体颜色调白
-            fontSize: 30 // 字体大小调大
+            fontSize: 25 // 字体大小调大
         }
     },
     tooltip: {

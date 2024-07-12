@@ -20,6 +20,15 @@ fetch('/assets1/staticdata/reduced_data.csv')
 function renderChart() {
     // 定义图表配置
     var option = {
+        title: {
+            text: 'Patients Distribution',
+            top: 'top',
+            left: 'center',
+            textStyle: {
+                color: '#ffffff', // 字体颜色调白
+                fontSize: 25 // 字体大小调大
+            }
+        },
         tooltip: {
             formatter: function (params) {
                 var comorbidityText;
@@ -28,21 +37,23 @@ function renderChart() {
                         comorbidityText = 'None';
                         break;
                     case '1':
-                        comorbidityText = 'Com';
+                        comorbidityText = 'Complications';
                         break;
                     default:
                         comorbidityText = params.data[1];
                 }
                 return 'Comorbidities: ' + comorbidityText;
-            }
+            },
+            
         },
         legend: {
             data: ['None', 'Com'],
             textStyle: {
                 color: '#ffffff',
                 fontSize: 20
-            },
-            left: 'center',
+            }, 
+        //    left: 'center',
+            x:'right',
         },
         xAxis: {
             axisLine: {
@@ -52,7 +63,8 @@ function renderChart() {
             },
             axisLabel: {
                 textStyle: {
-                    color: '#ffffff'
+                    color: '#ffffff',
+                    fontSize:'20px'
                 }
             }
         },
@@ -64,7 +76,8 @@ function renderChart() {
             },
             axisLabel: {
                 textStyle: {
-                    color: '#ffffff'
+                    color: '#ffffff',
+                    fontSize:'20px'
                 }
             }
         },

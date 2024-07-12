@@ -344,10 +344,6 @@ margin-right: 5px;
     color: #fff; /* 设置字体颜色为白色 */
 }
 
-#scatterChart {
-	border: 2px solid rgba(255, 255, 255, 0.5); /* 透明边框 */ 
-	background-color: rgba(255, 255, 255, 0.1); /* 透明背景 */
-}
 
 #csp{
 	display: flex;
@@ -360,12 +356,20 @@ margin-right: 5px;
 	background-color: rgba(255, 255, 255, 0.1); /* 透明背景 */
 }
 
-#t2gform{
-	width: 900px;
-	height: 805px;
+#radius-none{
 	border: 2px solid rgba(255, 255, 255, 0.5); /* 透明边框 */ 
 	background-color: rgba(255, 255, 255, 0.1); /* 透明背景 */
 }
+
+#t2gform{
+	width: 900px;
+	height: 842px;
+	border: 2px solid rgba(255, 255, 255, 0.5); /* 透明边框 */ 
+	background-color: rgba(255, 255, 255, 0.1); /* 透明背景 */
+}
+
+
+
 .axis line {
 	stroke: #ddd;
 }
