@@ -357,7 +357,7 @@ function graph(id) {
                     data: data.categories.map(function (a) {
                         return a.name;
                     }),
-                    bottom: '20', // 向下移动
+                    bottom: '30', // 向下移动
                     textStyle: {
                         color: '#ffffff', // 字体颜色调白
                         fontSize: 15 // 字体大小调大
