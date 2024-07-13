@@ -1,29 +1,29 @@
 Feature,Importance
-Uric Acid (mmol333.88L),1.0
-Triglyceride (mmol1.79L),0.7186409107659039
-HbA1c (mmol74.85mol),0.6055022617640027
-Total Cholesterol (mmol4.84L),0.4957963248886374
-2-hour Postprandial C-peptide (nmol0.96L),0.48396285598403715
-Age,0.4790104707635781
-Glycated Albumin (%),0.3955824886609171
-BMI,0.3240157529240542
-Creatinine (umol63.83L),0.32395691415714944
-2-hour Postprandial Plasma Glucose (mg256.19dl),0.2576948557674322
-2-hour Postprandial insulin (pmol307.47L),0.22808512523391758
-Fasting Plasma Glucose (mg165.26dl),0.22670365048252875
-Gender ,0.14048223063444457
-Blood Urea Nitrogen (mmol6.04L),0.13366625077741798
-OtherAgents,0.12506807699417732
-Estimated Glomerular Filtration Rate  (ml116.68min116.681.73m2) ,0.11428707381573781
-Fasting Insulin (pmol111.99L),0.07954474582624974
-Low-Density Lipoprotein Cholesterol (mmol3.12L),0.07880639592463307
-High-Density Lipoprotein Cholesterol (mmol1.13L),0.07221165060383783
-Height ,0.06843281482716322
-Duration of diabetes (years),0.04315211212049623
-Fasting C-peptide (nmol0.47L),0.03127317162781525
-Weight,0.013034660592455772
-Alcohol Drinking History ,0.0
-Vascular Complications,0.0
-HypoglycemicAgents,0.0
-SmokingHistory ,0.0
-Hypoglycemia ,0.0
+HbA1c (mmol74.85mol),1
+Triglyceride (mmol1.79L),0.718640911
+Uric Acid (mmol333.88L),0.605502262
+Total Cholesterol (mmol4.84L),0.495796325
+2-hour Postprandial C-peptide (nmol0.96L),0.483962856
+Age,0.479010471
+Glycated Albumin (%),0.395582489
+BMI,0.324015753
+Creatinine (umol63.83L),0.323956914
+2-hour Postprandial Plasma Glucose (mg256.19dl),0.257694856
+2-hour Postprandial insulin (pmol307.47L),0.228085125
+Fasting Plasma Glucose (mg165.26dl),0.22670365
+Gender ,0.140482231
+Blood Urea Nitrogen (mmol6.04L),0.133666251
+OtherAgents,0.125068077
+Estimated Glomerular Filtration Rate  (ml116.68min116.681.73m2) ,0.114287074
+Fasting Insulin (pmol111.99L),0.079544746
+Low-Density Lipoprotein Cholesterol (mmol3.12L),0.078806396
+High-Density Lipoprotein Cholesterol (mmol1.13L),0.072211651
+Height ,0.068432815
+Duration of diabetes (years),0.043152112
+Fasting C-peptide (nmol0.47L),0.031273172
+Weight,0.013034661
+Alcohol Drinking History ,0
+Vascular Complications,0
+HypoglycemicAgents,0
+SmokingHistory ,0
+Hypoglycemia ,0

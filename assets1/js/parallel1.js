@@ -1,32 +1,32 @@
 // 加载 CSV 数据
-d3.csv("assets1/staticdata/parllel.csv").then(function(data) {
+d3.csv("assets1/staticdata/normalized_PatientLineData.csv").then(function(data) {
     // 将 CSV 数据转换为 ECharts 所需的格式
     var chartData = data.map(function(d) {
         return [
-            parseFloat(d.Triglyceride),
-            parseFloat(d.Creatinine),
             parseFloat(d.HbA1c),
+            parseFloat(d.Triglyceride),
+            parseFloat(d["Uric Acid"]),
             parseFloat(d["Total Cholesterol"]),
-            parseFloat(d["Glycated Albumin"]),
-            parseFloat(d.Age),
+            parseFloat(d["C-peptide"]),
+            parseFloat(d["Age"]),
             parseFloat(d.Comorbidities)
         ];
     });
 
-    var dimensions = ['Triglyceride', 'Creatinine', 'HbA1c', 'Total Cholesterol', 'Glycated Albumin', 'Age'];
-
+    var dimensions = ['HbA1c', 'Triglyceride', 'Uric Acid', 'Total Cholesterol', 'C-peptide', 'Age'];
+    var barHeights = [400, 280, 240, 200, 192, 184]; 
     var option = {
-        title: [
-            {
-              text: 'Parallel coordinate MPINF',
-              top: 0,
-              left: 300,
-              textStyle: {
-                color: '#fff',
-                fontSize:30
-              }
-            }
-          ],
+        // title: [
+        //     {
+        //       text: 'Parallel coordinate MPINF',
+        //       top: 0,
+        //       left: 300,
+        //       textStyle: {
+        //         color: '#fff',
+        //         fontSize:30
+        //       }
+        //     }
+        //   ],
         tooltip: {
             formatter: function (params) {
                 var tooltipContent = 'Patient Number: ' + data[params.dataIndex]['Patient Number'] + '<br/>';
@@ -72,7 +72,15 @@ d3.csv("assets1/staticdata/parllel.csv").then(function(data) {
             type: 'value',
             nameLocation: 'end',
             nameGap: 20,
-            axisLine: {lineStyle: {color: '#ffffff'}}
+            axisLine: {lineStyle: {color: '#ffffff'}},
+            axisLabel: {
+                show: true,
+                color: '#ffffff', // 标签颜色
+                fontSize: 10,     // 标签字体大小
+                formatter: function (value) {
+                    return value; // 可以使用自定义格式化函数
+                }
+            }
         },
         parallel: {
             top: '10%',
@@ -82,6 +90,17 @@ d3.csv("assets1/staticdata/parllel.csv").then(function(data) {
                 nameLocation: 'end',
                 nameGap: 20
             }
+        },
+        legend: {
+            data: ['None', 'Comorbidities'],
+            textStyle: {
+                color: '#ffffff',
+                fontSize: 20
+            }, 
+        //    left: 'center',
+            x:'right',
+            y:'bottom',
+            right:'100px'
         },
         series: [
             {
@@ -113,7 +132,7 @@ d3.csv("assets1/staticdata/parllel.csv").then(function(data) {
                 }
             },
             {
-                name: 'Mean Line for Comorbidities 0',
+                name: 'None',
                 type: 'parallel',
                 lineStyle: {
                     width: 4,
@@ -132,7 +151,7 @@ d3.csv("assets1/staticdata/parllel.csv").then(function(data) {
                 }
             },
             {
-                name: 'Mean Line for Comorbidities 1',
+                name: 'Comorbidities',
                 type: 'parallel',
                 lineStyle: {
                     width: 4,
@@ -168,7 +187,19 @@ d3.csv("assets1/staticdata/parllel.csv").then(function(data) {
                     }
                 }
             }
-        ]
+        ],
+        graphic: barHeights.map((height, index) => ({
+            type: 'rect',
+            shape: {
+                x: index * 295 + 75,
+                y: 630 - height,
+                width: 20,
+                height: height
+            },
+            style: {
+                fill: 'rgba(204,132, 34, 1)'
+            }
+        }))
     };
 
     var myChart = echarts.init(document.getElementById('parallel-container'));

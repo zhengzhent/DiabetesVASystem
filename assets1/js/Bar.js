@@ -41,7 +41,7 @@ option = {
     },
     yAxis: {
         type: 'category',
-        data: ['BMI','Glycated Albumin','Age', '2h Postprandial C-peptide','Total Cholesterol','HbA1c', 'Triglyceride','Uric Acid'],
+        data: ['BMI','Glycated Albumin','Age', '2h Postprandial C-peptide','Total Cholesterol','Uric Acid', 'Triglyceride','HbA1c'],
         axisLabel: {
             textStyle: {
                 color: '#ffffff', // 标签字体颜色调白

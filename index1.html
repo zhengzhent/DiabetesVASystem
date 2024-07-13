@@ -20,7 +20,7 @@
                 <a class="traffic-light green"></a>
             </div>
             <header class="header">
-                <a href="index1.html" class="logo"><i class="ico mdi mdi-cube-outline"></i>Diabetes visualization system</a>
+                <a href="index1.html" class="logo"><i class="ico mdi mdi-cube-outline"></i>Diabetes Visualization System</a>
                 <!-- /.user -->
             </header>
             
@@ -56,8 +56,14 @@
         
             <!-- 下方患者分层模块 -->
             <div class="p-b" style="width: 100%; height: 60%;">
-                <!-- 降维散点图 -->
-                <div id="scatterChart" style="width: 50% ;height: 100%;"></div>
+                <!-- 降维散点图
+                <div id="scatterChart" style="width: 50% ;height: 100%;"></div> -->
+                <div class="graph" style="height: 100%;width: 50%;">
+                    <!-- 有并发症Graph -->
+                    <div id="graph-Com" style="width: 100%;height: 50%;"></div>
+                    <!-- 无并发症Graph -->
+                    <div id="graph-None" style="width: 100%;height: 50%;"></div>
+                </div>
                 <!-- 雷达图 -->
                 <div class="radar" style="height:100%;width: 50%;">
                     <!-- 有并发症患者 -->
@@ -71,7 +77,10 @@
         <!-- 右侧模块 -->
         <div class="information-T2G" style="height: 100%;width: 50%;">
             <!-- 平行坐标图(修改为Bar) -->
-            <div class="Bar" id="Feature-Bar" style="height: 40%;width: 100%;"></div>
+            <div id="title-box" style="text-align: center;">
+                <h2>Parallel Coordinate MPINF</h2>    
+            </div>
+            <div class="Bar" id="parallel-container" style="height: 40%;width: 100%;"></div>
 
             <!-- T2G模块 -->
             <div class="T2G-setting" style="height: 20%; width: 100%;">
@@ -183,19 +192,20 @@
             </div>
 
             <!-- 特征图和血糖图 -->
-            <div id="csp" style="height: 40%; width: 100%;">
+            <div id="csp" style="height: 40%; width: 100%; display: flex; flex-direction: column;">
                 <!-- 特征图 -->
-                <div class="T2G" id="t2gform" style="width: 50%;"></div>
-                <!-- 血糖箱线图 -->
-                <div id="times" style="display: flex; flex-direction: column; width: 50%;">
-                    <h2 style="font-size: 25px;color: white; text-align:center;margin-bottom: -10px;" >Chronological Blood Glucose</h2>
+                <!-- <div class="T2G" id="t2gform" style="width: 50%;"></div> -->
+                <!-- 血糖时序图 -->
+                <div id="title-box" style="width: 100%; text-align: center;margin-top: 30px;">
+                    <h2 style="font-size: 25px; color: white;">Chronological Blood Glucose</h2>
+                </div>
+                <div class="CGM" style="width: 100%; display: flex;height: 100%;">
                     <!-- 血糖箱线图 -->
-                    <div id="boxplotChart" style="width: 100%; height: 60%;margin-top: 1%;margin-bottom: -5%;margin-left: 1%;"></div>
+                    <div id="boxplotChart" style="width: 50%; height: 100%;margin-top: 40px;"></div>
                     <!-- 每日血糖散点图 -->
-                    <div id="scatterplotChart" style="width: 100%; height: 60%;margin-top: 5%; margin-bottom: -15%;margin-left: 1%;"></div>  
+                    <div id="scatterplotChart" style="width: 50%; height: 100%;margin-top: 40px;"></div>  
                 </div>
             </div>
-
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
@@ -210,8 +220,8 @@
     <script type='module' src="assets1/js/information.js"></script>
     <script src="./assets1/scripts/d3-ForceEdgeBundling.js"></script>
     <script src="./assets1/scripts/d3.KernelEdgeBundling.js"></script>
-    <!-- <script src="./assets1/js/parallel1.js"></script> -->
-    <script src="./assets1/js/Bar.js"></script>
+    <script src="./assets1/js/parallel1.js"></script>
+    <!-- <script src="./assets1/js/Bar.js"></script> -->
     <script src="./assets1/js/times2.js"></script>
 
     <script src="./assets1/js/graphs.js"></script>

@@ -42,13 +42,13 @@ const normalizedData = data.map(item => ({
     
         // 添加标题
     svg.append("text")
-        .attr("x", -5)
+        .attr("x", -30)
         .attr("y", -margin.top / 2)
         .attr("text-anchor", "start")
         .style("font-size", "24px")
         .style("font-weight", "bold")
         .style("fill", "white") // 设置字体颜色为白色
-        .text("Complications");
+        .text("No Complications");
     // 创建雷达图容器
     const radarGroup = svg.append("g")
         .attr("transform", `translate(${width / 2 - margin.left}, ${height / 2 - margin.top})`); // 调整雷达图位置
@@ -117,8 +117,8 @@ const normalizedData = data.map(item => ({
         .datum(data)
         .attr("class", "radarArea")
         .attr("d", radarLine)
-        .style("fill", "rgba(0, 150, 200, 0.5)")
-        .style("stroke", "rgba(0, 150, 200, 0.7)")
+        .style("fill", "rgba(146, 94, 176, 0.5)")
+        .style("stroke", "rgba(102, 28, 145, 0.7)")
         .style("stroke-width", 2);
 
     // 添加顶点小圆，其半径表示数值大小
@@ -194,7 +194,7 @@ function drawChart2() {
         .style("font-size", "24px")
         .style("font-weight", "bold")
         .style("fill", "white") // 设置字体颜色为白色
-        .text("No complications");
+        .text("Complications");
 
     // 创建雷达图容器
     const radarGroup = svg.append("g")
@@ -264,8 +264,8 @@ function drawChart2() {
         .datum(data)
         .attr("class", "radarArea")
         .attr("d", radarLine)
-        .style("fill", "rgba(0, 150, 200, 0.5)")
-        .style("stroke", "rgba(0, 150, 200, 0.7)")
+        .style("fill", "rgba(110, 177, 69, 0.5)")
+        .style("stroke", "rgba(27, 111, 10, 0.7)")
         .style("stroke-width", 2);
 
     // 添加顶点小圆，其半径表示数值大小
