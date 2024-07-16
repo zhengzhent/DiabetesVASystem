@@ -1,267 +1,204 @@
-var myChart = echarts.init(document.getElementById('graphs'));
+function graph1(){
+    var myChart = echarts.init(document.getElementById('graph-None'));
+    // 读取 JSON 数据
+    fetch('./assets1/staticdata/graphss_analysis_output_0.json')
+    .then(response => response.json())
+    .then(data => {
+        // 获取所有节点的symbolSize值用于归一化
+        const symbolSizes = data.nodes.map(node => node.symbolSize);
+        const minSymbolSize = Math.min(...symbolSizes);
+        const maxSymbolSize = Math.max(...symbolSizes);
 
-// 异步加载数据
-var option;
+        // 归一化函数
+        const normalize = (value) => {
+            if (maxSymbolSize === minSymbolSize) {
+                return 1; // 避免除以零的情况
+            }
+            return (value - minSymbolSize) / (maxSymbolSize - minSymbolSize);
+        };
 
-option = {
-backgroundColor: 'rgba(0,0,0,0)',
+        // 类别颜色映射
+        const categoryColors = ['#FBEA2E', '#4F99C9', '#A8D3A0', '#b44d58'];
 
-toolbox: {
-show: true,
-feature: {
-mark: { show: true },
-dataView: { show: true, readOnly: false },
-restore: { show: true },
-saveAsImage: { show: true },
+        // 按symbolSize对节点排序，并选择前7个节点
+        const topNodes = data.nodes
+            .map((node, index) => ({ ...node, index }))
+            .sort((a, b) => b.symbolSize - a.symbolSize)
+            .slice(0, 7)
+            .map(node => node.index);
 
+        // 使用数据生成图表
+        var option = {
+            title: {
+                text: 'No Complications',
+                top: '10px',
+                left: '10px',
+                textStyle: {
+                    color: '#ffffff', // 字体颜色调白
+                    fontSize: 25 // 字体大小调大
+                }
+            },
+            tooltip: {},
+            legend: [{
+                data: data.categories.map(function (a) {
+                    return a.name;
+                }),
+                bottom: 10,
+                textStyle: {
+                    color: '#ffffff', // 图例字体颜色调白
+                    fontSize: 14 // 图例字体大小调大
+                }
+            }],
+            series: [
+                {
+                    name: 'feature_graph',
+                    type: 'graph',
+                    layout: 'none',
+                    data: data.nodes.map((node, index) => {
+                        const normalizedSize = normalize(node.symbolSize) * 5; // 归一化并放大
+                        return {
+                            ...node,
+                            symbolSize: normalizedSize * 5,
+                            itemStyle: {
+                                color: categoryColors[node.category] // 根据类别设置颜色
+                            },
+                            label: {
+                                show: topNodes.includes(index), // 仅显示前7个节点的名字
+                                fontSize: Math.max(10, normalizedSize * 5),
+                                color: '#ffffff' // 动态调整标签字体颜色
+                            }
+                        };
+                    }),
+                    links: data.links,
+                    categories: data.categories.map((category, index) => ({
+                        ...category,
+                        itemStyle: {
+                            color: categoryColors[index] // 设置类别颜色
+                        }
+                    })),
+                    roam: true,
+                    label: {
+                        position: 'right'
+                    },
+                    lineStyle: {
+                        color: 'source',
+                        curveness: 0.4
+                    }
+                }
+            ]
+        };
+
+        // 使用刚指定的配置项和数据显示图表
+        myChart.setOption(option);
+    })
+    .catch(error => {
+        console.error('Error fetching the JSON data:', error);
+    });
 }
-},
-tooltip: {
-trigger: 'item'
-},
-series: [
-{
-name: 'Patient profile',
-type: 'pie',
-radius: [50, 250],
-center: ['50%', '50%'],
-roseType: 'area',
-itemStyle: {
-borderRadius: 8
-},
-data: [
-{ value: 52, name: 'level 1' },
-{ value: 10, name: 'level 2' },
-{ value: 5, name: 'level 3' }
-]
+
+
+
+function graph2(){
+    var myChart = echarts.init(document.getElementById('graph-Com'));
+    // 读取 JSON 数据
+    fetch('./assets1/staticdata/graphss_analysis_output_1.json')
+    .then(response => response.json())
+    .then(data => {
+        // 获取所有节点的symbolSize值用于归一化
+        const symbolSizes = data.nodes.map(node => node.symbolSize);
+        const minSymbolSize = Math.min(...symbolSizes);
+        const maxSymbolSize = Math.max(...symbolSizes);
+
+        // 归一化函数
+        const normalize = (value) => {
+            if (maxSymbolSize === minSymbolSize) {
+                return 1; // 避免除以零的情况
+            }
+            return (value - minSymbolSize) / (maxSymbolSize - minSymbolSize);
+        };
+
+        // 类别颜色映射
+        const categoryColors = ['#FBEA2E', '#4F99C9', '#A8D3A0', '#b44d58'];
+
+        // 按symbolSize对节点排序，并选择前7个节点
+        const topNodes = data.nodes
+            .map((node, index) => ({ ...node, index }))
+            .sort((a, b) => b.symbolSize - a.symbolSize)
+            .slice(0, 7)
+            .map(node => node.index);
+
+        // 使用数据生成图表
+        var option = {
+            title: {
+                text: 'Complications',
+                top: '10px',
+                left: '10px',
+                textStyle: {
+                    color: '#ffffff', // 字体颜色调白
+                    fontSize: 25 // 字体大小调大
+                }
+            },
+            tooltip: {},
+            legend: [{
+                data: data.categories.map(function (a) {
+                    return a.name;
+                }),
+                bottom: 10,
+                textStyle: {
+                    color: '#ffffff', // 图例字体颜色调白
+                    fontSize: 14 // 图例字体大小调大
+                }
+            }],
+            series: [
+                {
+                    name: 'feature_graph',
+                    type: 'graph',
+                    layout: 'none',
+                    data: data.nodes.map((node, index) => {
+                        const normalizedSize = normalize(node.symbolSize) * 5; // 归一化并放大
+                        return {
+                            ...node,
+                            symbolSize: normalizedSize * 5,
+                            itemStyle: {
+                                color: categoryColors[node.category] // 根据类别设置颜色
+                            },
+                            label: {
+                                show: topNodes.includes(index), // 仅显示前7个节点的名字
+                                fontSize: Math.max(10, normalizedSize * 5),
+                                color: '#ffffff' // 动态调整标签字体颜色
+                            }
+                        };
+                    }),
+                    links: data.links,
+                    categories: data.categories.map((category, index) => ({
+                        ...category,
+                        itemStyle: {
+                            color: categoryColors[index] // 设置类别颜色
+                        }
+                    })),
+                    roam: true,
+                    label: {
+                        position: 'right'
+                    },
+                    lineStyle: {
+                        color: 'source',
+                        curveness: 0.4
+                    }
+                }
+            ]
+        };
+
+        // 使用刚指定的配置项和数据显示图表
+        myChart.setOption(option);
+    })
+    .catch(error => {
+        console.error('Error fetching the JSON data:', error);
+    });
 }
-]
-};
-    myChart.setOption(option);
-  myChart.on('click', function (params) {
-    // 处理点击事件，并在图表2中显示相应内容
-    console.log(params);
-    switch (params.name) {
-        case 'level 1':
-            // 加载 level 1 的数据
-            updateGraph1(params.name)
-            break;
-        case 'level 2':
-            // 加载 level 2 的数据
-            updateGraph1(params.name);
-            break;
-        case 'level 3':
-            // 加载 level 3 的数据
-            updateGraph1(params.name);
-            break;
-        default:
-            // 默认加载的数据
-            updateGraph1(params.name);
-    }
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    graph1();
+    graph2();
 });
-function updateGraph1(categoryName){
-  var myChart = echarts.init(document.getElementById('graphs'));
-myChart.showLoading();
-
-// 使用 jQuery 的 $.get 方法获取 GEXF 文件数据
-$.get('assets1/staticdata/level1.gexf', function (xml) {
-    myChart.hideLoading();
-
-    var graph = echarts.dataTool.gexf.parse(xml);
-    var categories = [];
-    var categories = [
-        { name: '社区1', itemStyle: { color: '#10ff1b' } },  // 绿色
-        { name: '社区2', itemStyle: { color: '#90d7ec' } },   // 蓝色
-        { name: '社区3', itemStyle: { color: '#ffe600' } }, // 黄色
-        { name: '社区4', itemStyle: { color: '#6950a1' } }  // 紫色
-    ];
-
-    graph.nodes.forEach(function (node) {
-        node.itemStyle = null;
-        node.value = node.symbolSize;
-        node.category = node.attributes.class;
-    });
-
-
-
-    var option = {
-      backgroundColor: 'rgba(0,0,0,0)',
-
-        tooltip: {},
-        legend: [{
-            data: categories.map(function (a) {
-                return a.name;
-            })
-        }],
-        animationDuration: 1500,
-        animationEasingUpdate: 'quinticInOut',
-        series: [
-            {
-                name: 'Graph Visualization',
-                type: 'graph',
-                layout: 'none',
-                data: graph.nodes,
-                links: graph.links,
-                categories: categories,
-                roam: true,
-                focusNodeAdjacency: true,
-
-            label: {
-                normal: {
-                    show: true,
-                    position: 'right',
-                    formatter: '{b}'
-                }
-            },
-            lineStyle: {
-            normal: {
-                color: 'source',
-                opacity: 0.15, 
-                curveness: 0.3
-            }
-        }
-            }
-        ]
-    };
-
-    myChart.setOption(option);
-}, 'xml');
-}
-
-function updateGraph2(categoryName){
-  var myChart = echarts.init(document.getElementById('graphs'));
-myChart.showLoading();
-
-// 使用 jQuery 的 $.get 方法获取 GEXF 文件数据
-$.get('assets1/staticdata/level2.gexf', function (xml) {
-    myChart.hideLoading();
-
-    var graph = echarts.dataTool.gexf.parse(xml);
-    var categories = [];
-    var categories = [
-        { name: '社区1', itemStyle: { color: '#10ff1b' } },  // 绿色
-        { name: '社区2', itemStyle: { color: '#90d7ec' } },   // 蓝色
-        { name: '社区3', itemStyle: { color: '#ffe600' } }, // 黄色
-        { name: '社区4', itemStyle: { color: '#6950a1' } }  // 紫色
-    ];
-
-    graph.nodes.forEach(function (node) {
-        node.itemStyle = null;
-        node.value = node.symbolSize;
-        node.category = node.attributes.class;
-    });
-
-
-
-    var option = {
-      backgroundColor: 'rgba(0,0,0,0)',
-
-        tooltip: {},
-        legend: [{
-            data: categories.map(function (a) {
-                return a.name;
-            })
-        }],
-        animationDuration: 1500,
-        animationEasingUpdate: 'quinticInOut',
-        series: [
-            {
-                name: 'Graph Visualization',
-                type: 'graph',
-                layout: 'none',
-                data: graph.nodes,
-                links: graph.links,
-                categories: categories,
-                roam: true,
-                focusNodeAdjacency: true,
-
-            label: {
-                normal: {
-                    show: true,
-                    position: 'right',
-                    formatter: '{b}'
-                }
-            },
-            lineStyle: {
-            normal: {
-                color: 'source',
-                opacity: 0.15, 
-                curveness: 0.3
-            }
-        }
-            }
-        ]
-    };
-
-    myChart.setOption(option);
-}, 'xml');
-}
-
-function updateGraph3(categoryName){
-  var myChart = echarts.init(document.getElementById('graphs'));
-myChart.showLoading();
-
-// 使用 jQuery 的 $.get 方法获取 GEXF 文件数据
-$.get('assets1/staticdata/level3.gexf', function (xml) {
-    myChart.hideLoading();
-
-    var graph = echarts.dataTool.gexf.parse(xml);
-    var categories = [];
-    var categories = [
-        { name: '社区1', itemStyle: { color: '#10ff1b' } },  // 绿色
-        { name: '社区2', itemStyle: { color: '#90d7ec' } },   // 蓝色
-        { name: '社区3', itemStyle: { color: '#ffe600' } }, // 黄色
-        { name: '社区4', itemStyle: { color: '#6950a1' } }  // 紫色
-    ];
-
-    graph.nodes.forEach(function (node) {
-        node.itemStyle = null;
-        node.value = node.symbolSize;
-        node.category = node.attributes.class;
-    });
-
-
-
-    var option = {
-      backgroundColor: 'rgba(0,0,0,0)',
-
-        tooltip: {},
-        legend: [{
-            data: categories.map(function (a) {
-                return a.name;
-            })
-        }],
-        animationDuration: 1500,
-        animationEasingUpdate: 'quinticInOut',
-        series: [
-            {
-                name: 'Graph Visualization',
-                type: 'graph',
-                layout: 'none',
-                data: graph.nodes,
-                links: graph.links,
-                categories: categories,
-                roam: true,
-                focusNodeAdjacency: true,
-
-            label: {
-                normal: {
-                    show: true,
-                    position: 'right',
-                    formatter: '{b}'
-                }
-            },
-            lineStyle: {
-            normal: {
-                color: 'source',
-                opacity: 0.15, 
-                curveness: 0.3
-            }
-        }
-            }
-        ]
-    };
-
-    myChart.setOption(option);
-}, 'xml');
-}

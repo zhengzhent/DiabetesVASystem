@@ -27,7 +27,7 @@ const normalizedData = data.map(item => ({
     data = normalizedData
 
     const width = 900; // 调整宽度
-    const height = 550; // 调整高度
+    const height = 480; // 调整高度
     const margin = { top: 80, right: 50, bottom: 50, left: 50 };
     const radius = Math.min(width, height) / 2 - Math.max(margin.top, margin.right, margin.bottom, margin.left);
 
@@ -117,8 +117,8 @@ const normalizedData = data.map(item => ({
         .datum(data)
         .attr("class", "radarArea")
         .attr("d", radarLine)
-        .style("fill", "rgba(146, 94, 176, 0.5)")
-        .style("stroke", "rgba(102, 28, 145, 0.7)")
+        .style("fill", "rgba(110, 177, 69, 0.5)")
+        .style("stroke", "rgba(27, 111, 10, 0.7)")
         .style("stroke-width", 2);
 
     // 添加顶点小圆，其半径表示数值大小
@@ -159,7 +159,7 @@ function drawChart2() {
     ];
 
     const width = 900; // 调整宽度
-    const height = 550; // 调整高度
+    const height = 480; // 调整高度
     const margin = { top: 80, right: 50, bottom: 50, left: 20 }; // 调整左边距
     const radius = Math.min(width, height) / 2 - Math.max(margin.top, margin.right, margin.bottom, margin.left);
     const values = data.map(item => item.value);
@@ -264,8 +264,8 @@ function drawChart2() {
         .datum(data)
         .attr("class", "radarArea")
         .attr("d", radarLine)
-        .style("fill", "rgba(110, 177, 69, 0.5)")
-        .style("stroke", "rgba(27, 111, 10, 0.7)")
+        .style("fill", "rgba(204,132, 34, 0.5)")
+        .style("stroke", "rgba(221, 122, 28, 0.7)")
         .style("stroke-width", 2);
 
     // 添加顶点小圆，其半径表示数值大小

@@ -13,8 +13,8 @@ d3.csv("assets1/staticdata/normalized_PatientLineData.csv").then(function(data) 
         ];
     });
 
-    var dimensions = ['HbA1c', 'Triglyceride', 'Age','Uric Acid', 'Total Cholesterol', 'C-peptide', ];
-    var barHeights = [500, 280, 240, 200, 192, 184]; 
+    var dimensions = ['HbA1c', 'Triglyceride', 'Uric Acid', 'Total Cholesterol', 'C-peptide', 'Age'];
+    var barHeights = [420, 383, 357, 340, 330, 300]; 
     var option = {
         // title: [
         //     {

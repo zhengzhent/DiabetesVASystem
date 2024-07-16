@@ -52,9 +52,10 @@ function renderBoxplot(dynamicData) {
   // ECharts 箱型图配置
     var optionBoxplot = {
         // title: {
-        //     text: 'Chronological blood glucose',
-        //     top: '5px',
+        //     text: 'CGM Distribution Boxplot',
+        //     y:'bottom',
         //     left: 'center',
+        //     bottom:'10%',
         //     textStyle: {
         //         color: '#ffffff', // 字体颜色调白
         //         fontSize: 25 // 字体大小调大
